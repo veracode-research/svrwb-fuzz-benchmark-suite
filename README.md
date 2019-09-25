@@ -84,3 +84,12 @@ which include:
 - (f)lex
 - bison/yacc
 - libasound2-dev
+
+# Thanks
+
+Thank you to Veracode Applied Research Group for making the time for working
+on (a questionable?) this project. Thank you to Stefan Nagy of VA Tech for
+his comments and concerns. I also thank Marcel Boehme (Monash), Jared Carlson
+(Veracode), Brandon Falk, Valentin Manes (KAIST), Mansi Sheth (Veracode), 
+Niels Tanis (Veracode), and others for their conversations and encouragements
+to go forward even if uncertain.
