@@ -41,6 +41,9 @@ but perhaps more variety than this.
 *Obviously number of issues is likely incomplete, but hopefully providing
 a reasonable number of bugs.
 
+See the `bugs.json` file in each of the case directories for configuration
+and traces.
+
 Note, I am looking at stack trace w/o PCs included, but that does not mean
 it is an accurate count above! That being said, things like the 34 for
 TCPDump should be as they were part of the slew of bugs Ian Beer pushed in 
