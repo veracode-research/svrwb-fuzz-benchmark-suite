@@ -1,0 +1,243 @@
+{
+    "application": "audiofile",
+    "apppath": "audiofile-0.3.6/install/bin/sfinfo",
+    "args": "@@",
+    "bugs": {
+        "CVE-2017-6827": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b59a0 sfinfo`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d3bea sfinfo`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b528e sfinfo`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b5141 sfinfo`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140727614783232, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=false) at asan_report.cc:466",
+                            "frame #4: 0x00000000004a6f81 sfinfo`::__asan_memcpy(to=0x00006190000000ec, from=0x000061a000000104, size=33872) at asan_interceptors_memintrinsics.cc:22",
+                            "frame #5: 0x00007fceaf051986 libaudiofile.so.1`___lldb_unnamed_symbol1120$$libaudiofile.so.1 + 806",
+                            "frame #6: 0x00007fceaf051ab3 libaudiofile.so.1`___lldb_unnamed_symbol1121$$libaudiofile.so.1 + 99",
+                            "frame #7: 0x00007fceaf051ff2 libaudiofile.so.1`___lldb_unnamed_symbol1124$$libaudiofile.so.1 + 66",
+                            "frame #8: 0x00007fceaf0345c4 libaudiofile.so.1`___lldb_unnamed_symbol743$$libaudiofile.so.1 + 1652",
+                            "frame #9: 0x00007fceaf034a35 libaudiofile.so.1`___lldb_unnamed_symbol744$$libaudiofile.so.1 + 37",
+                            "frame #10: 0x00007fceaf020713 libaudiofile.so.1`___lldb_unnamed_symbol579$$libaudiofile.so.1 + 3987",
+                            "frame #11: 0x00007fceaf020f5f libaudiofile.so.1`afOpenFile + 719",
+                            "frame #12: 0x00000000004ec6fc sfinfo`printfileinfo + 300",
+                            "frame #13: 0x00000000004ec49c sfinfo`main + 812",
+                            "frame #14: 0x00007fceadfe9b97 libc.so.6`__libc_start_main(main=(sfinfo`main), argc=2, argv=0x00007ffdb37d54d8, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffdb37d54c8) at libc-start.c:310",
+                            "frame #15: 0x000000000041b2aa sfinfo`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/02/20/audiofile-heap-based-buffer-overflow-in-msadpcminitializecoefficients-msadpcm-cpp/",
+            "testcase": "bug_2017_6827",
+            "testcase_url": "https://github.com/asarubbo/poc/raw/master/00136-audiofile-heapoverflow-MSADPCM-initializeCoefficients"
+        },
+        "CVE-2017-6828": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b59a0 sfinfo`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d3bea sfinfo`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b528e sfinfo`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b5141 sfinfo`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140732735641808, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=false) at asan_report.cc:466",
+                            "frame #4: 0x0000000000439c22 sfinfo`::__interceptor_read(fd=<unavailable>, ptr=<unavailable>, count=<unavailable>) at sanitizer_common_interceptors.inc:1002",
+                            "frame #5: 0x00007fec70e24a15 libaudiofile.so.1`___lldb_unnamed_symbol140$$libaudiofile.so.1 + 117",
+                            "frame #6: 0x00007fec70e2c006 libaudiofile.so.1`___lldb_unnamed_symbol221$$libaudiofile.so.1 + 134",
+                            "frame #7: 0x00007fec70e296c0 libaudiofile.so.1`___lldb_unnamed_symbol184$$libaudiofile.so.1 + 32",
+                            "frame #8: 0x00007fec70e29688 libaudiofile.so.1`___lldb_unnamed_symbol183$$libaudiofile.so.1 + 184",
+                            "frame #9: 0x00007fec70e5810c libaudiofile.so.1`___lldb_unnamed_symbol478$$libaudiofile.so.1 + 5884",
+                            "frame #10: 0x00007fec70e5d95c libaudiofile.so.1`___lldb_unnamed_symbol489$$libaudiofile.so.1 + 1388",
+                            "frame #11: 0x00007fec70e731f4 libaudiofile.so.1`___lldb_unnamed_symbol579$$libaudiofile.so.1 + 2676",
+                            "frame #12: 0x00007fec70e73f5f libaudiofile.so.1`afOpenFile + 719",
+                            "frame #13: 0x00000000004ec6fc sfinfo`printfileinfo + 300",
+                            "frame #14: 0x00000000004ec49c sfinfo`main + 812",
+                            "frame #15: 0x00007fec6fe3cb97 libc.so.6`__libc_start_main(main=(sfinfo`main), argc=2, argv=0x00007ffee4b775a8, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffee4b77598) at libc-start.c:310",
+                            "frame #16: 0x000000000041b2aa sfinfo`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/02/20/audiofile-heap-based-buffer-overflow-in-readvalue-filehandle-cpp/",
+            "testcase": "bug_2017_6828",
+            "testcase_url": "https://github.com/asarubbo/poc/raw/master/00135-audiofile-heapoverflow-readValue"
+        },
+        "CVE-2017-6829": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/02/20/audiofile-global-buffer-overflow-in-decodesample-ima-cpp/",
+            "testcase": "bug_2017_6829",
+            "testcase_url": "https://github.com/asarubbo/poc/raw/master/00183-audiofile-globaloverflow-decodeSample"
+        },
+        "CVE-2017-6830": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/02/20/audiofile-heap-based-buffer-overflow-in-alaw2linear_buf-g711-cpp/",
+            "testcase": "bug_2017_6830",
+            "testcase_url": "https://github.com/asarubbo/poc/raw/master/00184-audiofile-heapoverflow-alaw2linear_buf"
+        },
+        "CVE-2017-6831": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/02/20/audiofile-heap-based-buffer-overflow-in-imadecodeblockwave-ima-cpp/",
+            "testcase": "bug_2017_6831",
+            "testcase_url": "https://github.com/asarubbo/poc/raw/master/00185-audiofile-heapoverflow-IMA-decodeBlockWAVE"
+        },
+        "CVE-2017-6832": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/02/20/audiofile-heap-based-buffer-overflow-in-msadpcmdecodeblock-msadpcm-cpp/",
+            "testcase": "bug_2017_6832",
+            "testcase_url": "https://github.com/asarubbo/poc/raw/master/00186-audiofile-heapoverflow-MSADPCM-decodeBlock"
+        },
+        "CVE-2017-6833": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/02/20/audiofile-divide-by-zero-in-blockcodecrunpull-blockcodec-cpp/",
+            "testcase": "bug_2017_6833",
+            "testcase_url": "https://github.com/asarubbo/poc/raw/master/00187-audiofile-fpe-BlockCodec-runPull"
+        },
+        "CVE-2017-6834": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/02/20/audiofile-heap-based-buffer-overflow-in-ulaw2linear_buf-g711-cpp/",
+            "testcase": "bug_2017_6834",
+            "testcase_url": "https://github.com/asarubbo/poc/raw/master/00188-audiofile-heapoverflow-ulaw2linear_buf"
+        },
+        "CVE-2017-6835": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00007f525cd03b10 libaudiofile.so.1`___lldb_unnamed_symbol647$$libaudiofile.so.1 + 224",
+                            "frame #1: 0x00007f525cd0f85f libaudiofile.so.1`___lldb_unnamed_symbol748$$libaudiofile.so.1 + 719",
+                            "frame #2: 0x00007f525cd0dbe2 libaudiofile.so.1`___lldb_unnamed_symbol746$$libaudiofile.so.1 + 4338",
+                            "frame #3: 0x00007f525ccf5a45 libaudiofile.so.1`afGetFrameCount + 165",
+                            "frame #4: 0x00000000004ecbe1 sfinfo`printfileinfo + 1553",
+                            "frame #5: 0x00000000004ec49c sfinfo`main + 812",
+                            "frame #6: 0x00007f525bcc1b97 libc.so.6`__libc_start_main(main=(sfinfo`main), argc=2, argv=0x00007ffdb64dfa18, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffdb64dfa08) at libc-start.c:310",
+                            "frame #7: 0x000000000041b2aa sfinfo`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/02/20/audiofile-divide-by-zero-in-blockcodecreset1-blockcodec-cpp/",
+            "testcase": "bug_2017_6835",
+            "testcase_url": "https://github.com/asarubbo/poc/raw/master/00189-audiofile-fpe-BlockCodec-reset1"
+        },
+        "CVE-2017-6836": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/02/20/audiofile-heap-based-buffer-overflow-in-expand3to4modulerun-simplemodule-h/",
+            "testcase": "bug_2017_6836",
+            "testcase_url": "https://github.com/asarubbo/poc/raw/master/00190-audiofile-heapoverflow-Expand3To4Module-run"
+        },
+        "CVE-2017-6837": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b59a0 sfinfo`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d3bea sfinfo`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b528e sfinfo`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b5141 sfinfo`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140725189701696, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=false) at asan_report.cc:466",
+                            "frame #4: 0x00000000004a6f81 sfinfo`::__asan_memcpy(to=0x00006190000000ec, from=0x000061a000000104, size=261180) at asan_interceptors_memintrinsics.cc:22",
+                            "frame #5: 0x00007f50166d2986 libaudiofile.so.1`___lldb_unnamed_symbol1120$$libaudiofile.so.1 + 806",
+                            "frame #6: 0x00007f50166d2ab3 libaudiofile.so.1`___lldb_unnamed_symbol1121$$libaudiofile.so.1 + 99",
+                            "frame #7: 0x00007f50166d2ff2 libaudiofile.so.1`___lldb_unnamed_symbol1124$$libaudiofile.so.1 + 66",
+                            "frame #8: 0x00007f50166b55c4 libaudiofile.so.1`___lldb_unnamed_symbol743$$libaudiofile.so.1 + 1652",
+                            "frame #9: 0x00007f50166b5a35 libaudiofile.so.1`___lldb_unnamed_symbol744$$libaudiofile.so.1 + 37",
+                            "frame #10: 0x00007f50166a1713 libaudiofile.so.1`___lldb_unnamed_symbol579$$libaudiofile.so.1 + 3987",
+                            "frame #11: 0x00007f50166a1f5f libaudiofile.so.1`afOpenFile + 719",
+                            "frame #12: 0x00000000004ec6fc sfinfo`printfileinfo + 300",
+                            "frame #13: 0x00000000004ec49c sfinfo`main + 812",
+                            "frame #14: 0x00007f501566ab97 libc.so.6`__libc_start_main(main=(sfinfo`main), argc=2, argv=0x00007ffd22f18618, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffd22f18608) at libc-start.c:310",
+                            "frame #15: 0x000000000041b2aa sfinfo`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/02/20/audiofile-multiple-ubsan-crashes/",
+            "testcase": "bug_2017_6837",
+            "testcase_url": "https://github.com/asarubbo/poc/raw/master/00191-audiofile-indexoob"
+        },
+        "CVE-2017-6838": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/02/20/audiofile-multiple-ubsan-crashes/",
+            "testcase": "bug_2017_6838",
+            "testcase_url": "https://github.com/asarubbo/poc/raw/master/00192-audiofile-signintoverflow-sfconvert"
+        },
+        "CVE-2017-6839": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/02/20/audiofile-multiple-ubsan-crashes/",
+            "testcase": "bug_2017_6839",
+            "testcase_url": "https://github.com/asarubbo/poc/raw/master/00193-audiofile-signintoverflow-MSADPCM"
+        },
+        "CVE-2018-13440": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00007f3d7a2f1292 libaudiofile.so.1`___lldb_unnamed_symbol746$$libaudiofile.so.1 + 1954",
+                            "frame #1: 0x00007f3d7a2d9a45 libaudiofile.so.1`afGetFrameCount + 165",
+                            "frame #2: 0x00000000004ecbe1 sfinfo`printfileinfo + 1553",
+                            "frame #3: 0x00000000004ec49c sfinfo`main + 812",
+                            "frame #4: 0x00007f3d792a5b97 libc.so.6`__libc_start_main(main=(sfinfo`main), argc=2, argv=0x00007ffc89c31648, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffc89c31638) at libc-start.c:310",
+                            "frame #5: 0x000000000041b2aa sfinfo`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://github.com/mpruett/audiofile/issues/49",
+            "testcase": "bug_2018_13440",
+            "testcase_url": "https://github.com/mpruett/audiofile/files/2170994/poc.zip"
+        },
+        "CVE-2018-17095": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://github.com/mpruett/audiofile/issues/50",
+            "testcase": "bug_2018_17095",
+            "testcase_url": "https://github.com/fCorleone/fuzz_programs/raw/master/audiofile/test1"
+        }
+    },
+    "cve": "kjsd",
+    "evars": {
+        "ASAN_OPTIONS": "detect_leaks=0",
+        "LD_LIBRARY_PATH": "../cases/audiofile+0.3.6/install/lib"
+    },
+    "known_vuln_count": 0,
+    "source": "https://audiofile.68k.org/audiofile-0.3.6.tar.gz",
+    "version": "0.3.6"
+}

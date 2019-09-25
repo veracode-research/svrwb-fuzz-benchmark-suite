@@ -1,0 +1,419 @@
+{
+    "application": "imagew",
+    "apppath": "CHANGEME/install/bin/imagew",
+    "args": "@@ foo.png",
+    "bugs": {
+        "CVE-2017-12804": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|imagew`__sanitizer::Die()|172",
+                            "2|imagew`::~ScopedInErrorReport()|441",
+                            "3|imagew`::ReportOutOfMemory()|207",
+                            "4|imagew`::Allocate()|2192",
+                            "5|imagew`::asan_malloc()|36",
+                            "6|imagew`::__interceptor_malloc()|252",
+                            "7|imagew`my_mallocfn|74",
+                            "8|libimageworsener-1.2.0.so`iw_malloc_ex|257",
+                            "9|libimageworsener-1.2.0.so`iw_malloc_large|152",
+                            "10|libimageworsener-1.2.0.so`iw_process_internal|1605",
+                            "11|libimageworsener-1.2.0.so`iw_process_image|434",
+                            "12|imagew`iwcmd_run|27065",
+                            "13|imagew`iwcmd_main|357",
+                            "14|imagew`main|34",
+                            "15|libc.so.6`__libc_start_main|235",
+                            "16|imagew`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12804",
+            "testcase": "CVE-2017-12804.data"
+        },
+        "CVE-2017-7452": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|imagew`__sanitizer::Die()|172",
+                            "2|imagew`::~ScopedInErrorReport()|441",
+                            "3|imagew`::ReportGenericError()|367",
+                            "4|imagew`::__interceptor_fread()|467",
+                            "5|imagew`my_readfn|962",
+                            "6|libimageworsener-1.2.0.so`iwbmp_read|521",
+                            "7|libimageworsener-1.2.0.so`iwbmp_read_info_header|588",
+                            "8|libimageworsener-1.2.0.so`iw_read_bmp_file|962",
+                            "9|libimageworsener-1.2.0.so`iw_read_file_by_fmt|197",
+                            "10|imagew`iwcmd_run|8864",
+                            "11|imagew`iwcmd_main|357",
+                            "12|imagew`main|34",
+                            "13|libc.so.6`__libc_start_main|235",
+                            "14|imagew`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-7452",
+            "testcase": "CVE-2017-7452.data"
+        },
+        "CVE-2017-7453": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|libimageworsener-1.2.0.so`iwgif_record_pixel|706",
+                            "1|libimageworsener-1.2.0.so`lzw_emit_code|269",
+                            "2|libimageworsener-1.2.0.so`lzw_process_code|534",
+                            "3|libimageworsener-1.2.0.so`lzw_process_bytes|904",
+                            "4|libimageworsener-1.2.0.so`iwgif_read_image|2831",
+                            "5|libimageworsener-1.2.0.so`iwgif_read_main|1733",
+                            "6|libimageworsener-1.2.0.so`iw_read_gif_file|1087",
+                            "7|libimageworsener-1.2.0.so`iw_read_file_by_fmt|169",
+                            "8|imagew`iwcmd_run|8864",
+                            "9|imagew`iwcmd_main|357",
+                            "10|imagew`main|34",
+                            "11|libc.so.6`__libc_start_main|235",
+                            "12|imagew`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-7453",
+            "testcase": "CVE-2017-7453.data"
+        },
+        "CVE-2017-7454": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|imagew`__sanitizer::Die()|172",
+                            "2|imagew`::~ScopedInErrorReport()|441",
+                            "3|imagew`::ReportGenericError()|367",
+                            "4|imagew`__asan_report_load8|40",
+                            "5|libimageworsener-1.2.0.so`iwgif_record_pixel|738",
+                            "6|libimageworsener-1.2.0.so`lzw_emit_code|269",
+                            "7|libimageworsener-1.2.0.so`lzw_process_code|774",
+                            "8|libimageworsener-1.2.0.so`lzw_process_bytes|904",
+                            "9|libimageworsener-1.2.0.so`iwgif_read_image|2831",
+                            "10|libimageworsener-1.2.0.so`iwgif_read_main|1733",
+                            "11|libimageworsener-1.2.0.so`iw_read_gif_file|1087",
+                            "12|libimageworsener-1.2.0.so`iw_read_file_by_fmt|169",
+                            "13|imagew`iwcmd_run|8864",
+                            "14|imagew`iwcmd_main|357",
+                            "15|imagew`main|34",
+                            "16|libc.so.6`__libc_start_main|235",
+                            "17|imagew`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-7454",
+            "testcase": "CVE-2017-7454.data"
+        },
+        "CVE-2017-7623": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|imagew`__sanitizer::Die()|172",
+                            "2|imagew`::~ScopedInErrorReport()|441",
+                            "3|imagew`::ReportGenericError()|367",
+                            "4|imagew`__asan_report_load1|40",
+                            "5|libimageworsener-1.2.0.so`iwmiffr_convert_row32|228",
+                            "6|libimageworsener-1.2.0.so`iwmiff_read_pixels|1629",
+                            "7|libimageworsener-1.2.0.so`iw_read_miff_file|2702",
+                            "8|libimageworsener-1.2.0.so`iw_read_file_by_fmt|141",
+                            "9|imagew`iwcmd_run|8864",
+                            "10|imagew`iwcmd_main|357",
+                            "11|imagew`main|34",
+                            "12|libc.so.6`__libc_start_main|235",
+                            "13|imagew`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-7623",
+            "testcase": "CVE-2017-7623.data"
+        },
+        "CVE-2017-7624": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-7624",
+            "testcase": "CVE-2017-7624.data"
+        },
+        "CVE-2017-7939": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|imagew`__sanitizer::Die()|172",
+                            "2|imagew`::~ScopedInErrorReport()|441",
+                            "3|imagew`::ReportGenericError()|367",
+                            "4|imagew`__asan_report_load1|40",
+                            "5|libimageworsener-1.2.0.so`read_next_pam_token|244",
+                            "6|libimageworsener-1.2.0.so`iwpnm_read_pam_header|972",
+                            "7|libimageworsener-1.2.0.so`iwpnm_read_header|1320",
+                            "8|libimageworsener-1.2.0.so`iw_read_pnm_file|301",
+                            "9|libimageworsener-1.2.0.so`iw_read_pam_file|29",
+                            "10|libimageworsener-1.2.0.so`iw_read_file_by_fmt|258",
+                            "11|imagew`iwcmd_run|8864",
+                            "12|imagew`iwcmd_main|357",
+                            "13|imagew`main|34",
+                            "14|libc.so.6`__libc_start_main|235",
+                            "15|imagew`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-7939",
+            "testcase": "CVE-2017-7939.data"
+        },
+        "CVE-2017-7940": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-7940",
+            "testcase": "CVE-2017-7940.data"
+        },
+        "CVE-2017-7962": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|libimageworsener-1.2.0.so`iwgif_record_pixel|237",
+                            "1|libimageworsener-1.2.0.so`lzw_emit_code|269",
+                            "2|libimageworsener-1.2.0.so`lzw_process_code|534",
+                            "3|libimageworsener-1.2.0.so`lzw_process_bytes|904",
+                            "4|libimageworsener-1.2.0.so`iwgif_read_image|2831",
+                            "5|libimageworsener-1.2.0.so`iwgif_read_main|1733",
+                            "6|libimageworsener-1.2.0.so`iw_read_gif_file|1087",
+                            "7|libimageworsener-1.2.0.so`iw_read_file_by_fmt|169",
+                            "8|imagew`iwcmd_run|8864",
+                            "9|imagew`iwcmd_main|357",
+                            "10|imagew`main|34",
+                            "11|libc.so.6`__libc_start_main|235",
+                            "12|imagew`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-7962",
+            "testcase": "CVE-2017-7962.data"
+        },
+        "CVE-2017-8325": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|imagew`__sanitizer::Die()|172",
+                            "2|imagew`::~ScopedInErrorReport()|441",
+                            "3|imagew`::ReportGenericError()|367",
+                            "4|imagew`__asan_report_store4|43",
+                            "5|libimageworsener-1.2.0.so`iw_process_cols_to_intermediate|2963",
+                            "6|libimageworsener-1.2.0.so`iw_process_one_channel|39",
+                            "7|libimageworsener-1.2.0.so`iw_process_internal|4033",
+                            "8|libimageworsener-1.2.0.so`iw_process_image|434",
+                            "9|imagew`iwcmd_run|27065",
+                            "10|imagew`iwcmd_main|357",
+                            "11|imagew`main|34",
+                            "12|libc.so.6`__libc_start_main|235",
+                            "13|imagew`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-8325",
+            "testcase": "CVE-2017-8325.data"
+        },
+        "CVE-2017-8326": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|imagew`__sanitizer::Die()|172",
+                            "2|imagew`::~ScopedInErrorReport()|441",
+                            "3|imagew`::ReportOutOfMemory()|207",
+                            "4|imagew`::Allocate()|2192",
+                            "5|imagew`::asan_malloc()|36",
+                            "6|imagew`::__interceptor_malloc()|252",
+                            "7|imagew`my_mallocfn|74",
+                            "8|libimageworsener-1.2.0.so`iw_malloc_ex|257",
+                            "9|libimageworsener-1.2.0.so`iw_malloc_large|152",
+                            "10|libimageworsener-1.2.0.so`bmpr_read_rle|1495",
+                            "11|libimageworsener-1.2.0.so`iwbmp_read_bits|1631",
+                            "12|libimageworsener-1.2.0.so`iw_read_bmp_file|1195",
+                            "13|libimageworsener-1.2.0.so`iw_read_file_by_fmt|197",
+                            "14|imagew`iwcmd_run|8864",
+                            "15|imagew`iwcmd_main|357",
+                            "16|imagew`main|34",
+                            "17|libc.so.6`__libc_start_main|235",
+                            "18|imagew`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-8326",
+            "testcase": "CVE-2017-8326.data"
+        },
+        "CVE-2017-8327": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|imagew`__sanitizer::Die()|172",
+                            "2|imagew`::~ScopedInErrorReport()|441",
+                            "3|imagew`::ReportOutOfMemory()|207",
+                            "4|imagew`::Allocate()|2192",
+                            "5|imagew`::asan_malloc()|36",
+                            "6|imagew`::__interceptor_malloc()|252",
+                            "7|imagew`my_mallocfn|74",
+                            "8|libimageworsener-1.2.0.so`iw_malloc_ex|257",
+                            "9|libimageworsener-1.2.0.so`iw_malloc_large|152",
+                            "10|libimageworsener-1.2.0.so`bmpr_read_uncompressed|2328",
+                            "11|libimageworsener-1.2.0.so`iwbmp_read_bits|1391",
+                            "12|libimageworsener-1.2.0.so`iw_read_bmp_file|1195",
+                            "13|libimageworsener-1.2.0.so`iw_read_file_by_fmt|197",
+                            "14|imagew`iwcmd_run|8864",
+                            "15|imagew`iwcmd_main|357",
+                            "16|imagew`main|34",
+                            "17|libc.so.6`__libc_start_main|235",
+                            "18|imagew`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-8327",
+            "testcase": "CVE-2017-8327.data"
+        },
+        "CVE-2017-9093": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-9093",
+            "testcase": "CVE-2017-9093.data"
+        },
+        "CVE-2017-9094": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-9094",
+            "testcase": "CVE-2017-9094.data"
+        },
+        "CVE-2017-9201": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-9201",
+            "testcase": "CVE-2017-9201.data"
+        },
+        "CVE-2017-9202": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-9202",
+            "testcase": "CVE-2017-9202.data"
+        },
+        "CVE-2017-9203": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-9203",
+            "testcase": "CVE-2017-9203.data"
+        },
+        "CVE-2017-9204": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-9204",
+            "testcase": "CVE-2017-9204.data"
+        },
+        "CVE-2017-9205": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-9205",
+            "testcase": "CVE-2017-9205.data"
+        },
+        "CVE-2017-9206": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-9206",
+            "testcase": "CVE-2017-9206.data"
+        },
+        "CVE-2017-9207": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-9207",
+            "testcase": "CVE-2017-9207.data"
+        },
+        "CVE-2018-16782": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|imagew`__sanitizer::Die()|172",
+                            "2|imagew`::~ScopedInErrorReport()|441",
+                            "3|imagew`::ReportGenericError()|367",
+                            "4|imagew`::__interceptor_fread()|467",
+                            "5|imagew`my_readfn|962",
+                            "6|libimageworsener-1.2.0.so`iwbmp_read|521",
+                            "7|libimageworsener-1.2.0.so`bmpr_read_rle_internal|2630",
+                            "8|libimageworsener-1.2.0.so`bmpr_read_rle|1762",
+                            "9|libimageworsener-1.2.0.so`iwbmp_read_bits|1631",
+                            "10|libimageworsener-1.2.0.so`iw_read_bmp_file|1195",
+                            "11|libimageworsener-1.2.0.so`iw_read_file_by_fmt|197",
+                            "12|imagew`iwcmd_run|8864",
+                            "13|imagew`iwcmd_main|357",
+                            "14|imagew`main|34",
+                            "15|libc.so.6`__libc_start_main|235",
+                            "16|imagew`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2018-16782",
+            "testcase": "CVE-2018-16782.data"
+        },
+        "CVE-2018-5252": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2018-5252",
+            "testcase": "CVE-2018-5252.data"
+        }
+    },
+    "evars": {
+        "ASAN_OPTIONS": "detect_leaks=0",
+        "LD_LIBRARY_PATH": "/home/areiter/fuzz_test_suite/cases/imageworsener+1.3.0/imageworsener-1.3.0/install/lib"
+    },
+    "source": "https://github.com/jsummers/imageworsener",
+    "version": "1.3.0"
+}

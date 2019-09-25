@@ -1,0 +1,1783 @@
+{
+    "application": "tcpdump",
+    "apppath": "tcpdump-4.9.1/install/sbin/tcpdump",
+    "args": "-n -r @@",
+    "bugs": {
+        "CVE-2017-11108": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-11108",
+            "testcase": "CVE-2017-11108.pcap"
+        },
+        "CVE-2017-11541": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a3c8|tcpdump`__asan_report_load1|40",
+                            "5|0x000000000071d339|tcpdump`safeputs|89",
+                            "6|0x0000000000603d0b|tcpdump`lldp_print|3291",
+                            "7|0x0000000000571bdf|tcpdump`ethertype_print|1551",
+                            "8|0x000000000057100e|tcpdump`ether_print|2798",
+                            "9|0x0000000000571df5|tcpdump`ether_if_print|245",
+                            "10|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "11|0x00000000004cd473|tcpdump`print_packet|83",
+                            "12|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "13|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "14|0x00000000004c8888|tcpdump`main|18600",
+                            "15|0x00007fb9c96dfb6b|libc.so.6`__libc_start_main|235",
+                            "16|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-11541",
+            "testcase": "CVE-2017-11541.pcap"
+        },
+        "CVE-2017-11542": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a3c8|tcpdump`__asan_report_load1|40",
+                            "5|0x000000000066e305|tcpdump`pimv1_print|5077",
+                            "6|0x00000000005a247d|tcpdump`igmp_print|4237",
+                            "7|0x00000000005a82c8|tcpdump`ip_print_demux|6440",
+                            "8|0x00000000005ab5aa|tcpdump`ip_print|8586",
+                            "9|0x000000000057187b|tcpdump`ethertype_print|683",
+                            "10|0x000000000057100e|tcpdump`ether_print|2798",
+                            "11|0x0000000000571df5|tcpdump`ether_if_print|245",
+                            "12|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "13|0x00000000004cd473|tcpdump`print_packet|83",
+                            "14|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "15|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "16|0x00000000004c8888|tcpdump`main|18600",
+                            "17|0x00007f2d6e7aab6b|libc.so.6`__libc_start_main|235",
+                            "18|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-11542",
+            "testcase": "CVE-2017-11542.pcap"
+        },
+        "CVE-2017-11543": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-11543",
+            "testcase": "CVE-2017-11543.pcap"
+        },
+        "CVE-2017-12893": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12893",
+            "testcase": "CVE-2017-12893.pcap"
+        },
+        "CVE-2017-12894": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x0000000000433a51|tcpdump`::MemcmpInterceptorCommon()|705",
+                            "5|0x0000000000433ddb|tcpdump`__interceptor_memcmp|91",
+                            "6|0x00000000004d1ed7|tcpdump`lookup_bytestring|1559",
+                            "7|0x00000000004d2388|tcpdump`linkaddr_string|168",
+                            "8|0x0000000000508fcf|tcpdump`arp_print|4047",
+                            "9|0x00000000005718b6|tcpdump`ethertype_print|742",
+                            "10|0x000000000057100e|tcpdump`ether_print|2798",
+                            "11|0x0000000000571df5|tcpdump`ether_if_print|245",
+                            "12|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "13|0x00000000004cd473|tcpdump`print_packet|83",
+                            "14|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "15|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "16|0x00000000004c8888|tcpdump`main|18600",
+                            "17|0x00007f77c40f5b6b|libc.so.6`__libc_start_main|235",
+                            "18|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12894",
+            "testcase": "CVE-2017-12894.pcap"
+        },
+        "CVE-2017-12895+0": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12895",
+            "testcase": "CVE-2017-12895+0.pcap"
+        },
+        "CVE-2017-12895+1": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12895",
+            "testcase": "CVE-2017-12895+1.pcap"
+        },
+        "CVE-2017-12896": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a3c8|tcpdump`__asan_report_load1|40",
+                            "5|0x00000000005b69fa|tcpdump`isakmp_rfc3948_print|634",
+                            "6|0x000000000070634e|tcpdump`udp_print|5854",
+                            "7|0x00000000005a7bd3|tcpdump`ip_print_demux|4659",
+                            "8|0x00000000005ab5aa|tcpdump`ip_print|8586",
+                            "9|0x000000000057187b|tcpdump`ethertype_print|683",
+                            "10|0x000000000057100e|tcpdump`ether_print|2798",
+                            "11|0x0000000000571df5|tcpdump`ether_if_print|245",
+                            "12|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "13|0x00000000004cd473|tcpdump`print_packet|83",
+                            "14|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "15|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "16|0x00000000004c8888|tcpdump`main|18600",
+                            "17|0x00007fc21b52fb6b|libc.so.6`__libc_start_main|235",
+                            "18|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12896",
+            "testcase": "CVE-2017-12896.pcap"
+        },
+        "CVE-2017-12897": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a3c8|tcpdump`__asan_report_load1|40",
+                            "5|0x00000000005d061b|tcpdump`isoclns_print|523",
+                            "6|0x0000000000678bf0|tcpdump`handle_ppp|672",
+                            "7|0x0000000000678864|tcpdump`ppp_print|1844",
+                            "8|0x00000000005d08c6|tcpdump`isoclns_print|1206",
+                            "9|0x0000000000571aa6|tcpdump`ethertype_print|1238",
+                            "10|0x000000000057100e|tcpdump`ether_print|2798",
+                            "11|0x0000000000571df5|tcpdump`ether_if_print|245",
+                            "12|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "13|0x00000000004cd473|tcpdump`print_packet|83",
+                            "14|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "15|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "16|0x00000000004c8888|tcpdump`main|18600",
+                            "17|0x00007fec07590b6b|libc.so.6`__libc_start_main|235",
+                            "18|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12897",
+            "testcase": "CVE-2017-12897.pcap"
+        },
+        "CVE-2017-12898": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a508|tcpdump`__asan_report_load4|40",
+                            "5|0x0000000000627611|tcpdump`EXTRACT_32BITS|81",
+                            "6|0x00000000006299b6|tcpdump`interp_reply|3270",
+                            "7|0x0000000000627f00|tcpdump`nfsreply_print_noaddr|1088",
+                            "8|0x00000000007058b2|tcpdump`udp_print|3138",
+                            "9|0x00000000005a7bd3|tcpdump`ip_print_demux|4659",
+                            "10|0x00000000005ab5aa|tcpdump`ip_print|8586",
+                            "11|0x000000000057187b|tcpdump`ethertype_print|683",
+                            "12|0x000000000057100e|tcpdump`ether_print|2798",
+                            "13|0x0000000000571df5|tcpdump`ether_if_print|245",
+                            "14|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "15|0x00000000004cd473|tcpdump`print_packet|83",
+                            "16|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "17|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "18|0x00000000004c8888|tcpdump`main|18600",
+                            "19|0x00007f3a4545db6b|libc.so.6`__libc_start_main|235",
+                            "20|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12898",
+            "testcase": "CVE-2017-12898.pcap"
+        },
+        "CVE-2017-12899": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a3c8|tcpdump`__asan_report_load1|40",
+                            "5|0x000000000055003a|tcpdump`decnet_print|1882",
+                            "6|0x00000000005718d5|tcpdump`ethertype_print|773",
+                            "7|0x000000000057100e|tcpdump`ether_print|2798",
+                            "8|0x0000000000571df5|tcpdump`ether_if_print|245",
+                            "9|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "10|0x00000000004cd473|tcpdump`print_packet|83",
+                            "11|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "12|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "13|0x00000000004c8888|tcpdump`main|18600",
+                            "14|0x00007f28040f7b6b|libc.so.6`__libc_start_main|235",
+                            "15|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12899",
+            "testcase": "CVE-2017-12899.pcap"
+        },
+        "CVE-2017-12900+0": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12900",
+            "testcase": "CVE-2017-12900+0.pcap"
+        },
+        "CVE-2017-12900+1": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12900",
+            "testcase": "CVE-2017-12900+1.pcap"
+        },
+        "CVE-2017-12901": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12901",
+            "testcase": "CVE-2017-12901.pcap"
+        },
+        "CVE-2017-12902": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a3c8|tcpdump`__asan_report_load1|40",
+                            "5|0x0000000000715802|tcpdump`parse_field|722",
+                            "6|0x00000000007127a2|tcpdump`zephyr_print|1074",
+                            "7|0x00000000007065cd|tcpdump`udp_print|6493",
+                            "8|0x00000000005a7bd3|tcpdump`ip_print_demux|4659",
+                            "9|0x00000000005ab5aa|tcpdump`ip_print|8586",
+                            "10|0x000000000057187b|tcpdump`ethertype_print|683",
+                            "11|0x000000000057100e|tcpdump`ether_print|2798",
+                            "12|0x0000000000571df5|tcpdump`ether_if_print|245",
+                            "13|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "14|0x00000000004cd473|tcpdump`print_packet|83",
+                            "15|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "16|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "17|0x00000000004c8888|tcpdump`main|18600",
+                            "18|0x00007f4141bd8b6b|libc.so.6`__libc_start_main|235",
+                            "19|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12902",
+            "testcase": "CVE-2017-12902.pcap"
+        },
+        "CVE-2017-12985+0": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a3c8|tcpdump`__asan_report_load1|40",
+                            "5|0x00000000006a5817|tcpdump`rt6_print|103",
+                            "6|0x00000000005af02c|tcpdump`ip6_print|3868",
+                            "7|0x00000000005ac64f|tcpdump`ipN_print|463",
+                            "8|0x0000000000692561|tcpdump`raw_if_print|289",
+                            "9|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "10|0x00000000004cd473|tcpdump`print_packet|83",
+                            "11|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "12|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "13|0x00000000004c8888|tcpdump`main|18600",
+                            "14|0x00007f90e0b73b6b|libc.so.6`__libc_start_main|235",
+                            "15|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12985",
+            "testcase": "CVE-2017-12985+0.pcap"
+        },
+        "CVE-2017-12985+1": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a3c8|tcpdump`__asan_report_load1|40",
+                            "5|0x00000000005af1f6|tcpdump`ip6_print|4326",
+                            "6|0x00000000005ac64f|tcpdump`ipN_print|463",
+                            "7|0x0000000000692561|tcpdump`raw_if_print|289",
+                            "8|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "9|0x00000000004cd473|tcpdump`print_packet|83",
+                            "10|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "11|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "12|0x00000000004c8888|tcpdump`main|18600",
+                            "13|0x00007f209ebcab6b|libc.so.6`__libc_start_main|235",
+                            "14|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12985",
+            "testcase": "CVE-2017-12985+1.pcap"
+        },
+        "CVE-2017-12986": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a508|tcpdump`__asan_report_load4|40",
+                            "5|0x00000000006a6101|tcpdump`EXTRACT_32BITS|81",
+                            "6|0x00000000006a5e4c|tcpdump`rt6_print|1692",
+                            "7|0x00000000005af02c|tcpdump`ip6_print|3868",
+                            "8|0x00000000005ac64f|tcpdump`ipN_print|463",
+                            "9|0x0000000000692561|tcpdump`raw_if_print|289",
+                            "10|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "11|0x00000000004cd473|tcpdump`print_packet|83",
+                            "12|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "13|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "14|0x00000000004c8888|tcpdump`main|18600",
+                            "15|0x00007f2c3b450b6b|libc.so.6`__libc_start_main|235",
+                            "16|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12986",
+            "testcase": "CVE-2017-12986.pcap"
+        },
+        "CVE-2017-12987": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x00000000004939b9|tcpdump`::__asan_memcpy()|473",
+                            "5|0x00000000004f4e74|tcpdump`parse_elements|11028",
+                            "6|0x00000000004edc5a|tcpdump`handle_beacon|1642",
+                            "7|0x00000000004e7b8b|tcpdump`mgmt_body_print|395",
+                            "8|0x00000000004e5051|tcpdump`ieee802_11_print|2129",
+                            "9|0x00000000004e47f6|tcpdump`ieee802_11_if_print|246",
+                            "10|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "11|0x00000000004cd473|tcpdump`print_packet|83",
+                            "12|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "13|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "14|0x00000000004c8888|tcpdump`main|18600",
+                            "15|0x00007fb8af388b6b|libc.so.6`__libc_start_main|235",
+                            "16|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12987",
+            "testcase": "CVE-2017-12987.pcap"
+        },
+        "CVE-2017-12988": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a3c8|tcpdump`__asan_report_load1|40",
+                            "5|0x00000000006fe25d|tcpdump`telnet_parse|2413",
+                            "6|0x00000000006fd32e|tcpdump`telnet_print|382",
+                            "7|0x00000000006fbdf0|tcpdump`tcp_print|24176",
+                            "8|0x00000000005a7a29|tcpdump`ip_print_demux|4233",
+                            "9|0x00000000005ab5aa|tcpdump`ip_print|8586",
+                            "10|0x000000000057187b|tcpdump`ethertype_print|683",
+                            "11|0x000000000057100e|tcpdump`ether_print|2798",
+                            "12|0x0000000000571df5|tcpdump`ether_if_print|245",
+                            "13|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "14|0x00000000004cd473|tcpdump`print_packet|83",
+                            "15|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "16|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "17|0x00000000004c8888|tcpdump`main|18600",
+                            "18|0x00007f9d4ccb3b6b|libc.so.6`__libc_start_main|235",
+                            "19|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12988",
+            "testcase": "CVE-2017-12988.pcap"
+        },
+        "CVE-2017-12991": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12991",
+            "testcase": "CVE-2017-12991.pcap"
+        },
+        "CVE-2017-12992": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a3c8|tcpdump`__asan_report_load1|40",
+                            "5|0x0000000000696329|tcpdump`ripng_print|457",
+                            "6|0x000000000070667e|tcpdump`udp_print|6670",
+                            "7|0x00000000005a7bd3|tcpdump`ip_print_demux|4659",
+                            "8|0x00000000005ab5aa|tcpdump`ip_print|8586",
+                            "9|0x000000000057187b|tcpdump`ethertype_print|683",
+                            "10|0x000000000057100e|tcpdump`ether_print|2798",
+                            "11|0x0000000000571df5|tcpdump`ether_if_print|245",
+                            "12|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "13|0x00000000004cd473|tcpdump`print_packet|83",
+                            "14|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "15|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "16|0x00000000004c8888|tcpdump`main|18600",
+                            "17|0x00007fcf6343bb6b|libc.so.6`__libc_start_main|235",
+                            "18|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12992",
+            "testcase": "CVE-2017-12992.pcap"
+        },
+        "CVE-2017-12993+0": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a3c8|tcpdump`__asan_report_load1|40",
+                            "5|0x00000000005eb3ec|tcpdump`juniper_parse_header|7116",
+                            "6|0x00000000005f34d4|tcpdump`juniper_atm1_print|452",
+                            "7|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "8|0x00000000004cd473|tcpdump`print_packet|83",
+                            "9|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "10|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "11|0x00000000004c8888|tcpdump`main|18600",
+                            "12|0x00007f46ad62ab6b|libc.so.6`__libc_start_main|235",
+                            "13|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12993",
+            "testcase": "CVE-2017-12993+0.pcap"
+        },
+        "CVE-2017-12993+1": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a3c8|tcpdump`__asan_report_load1|40",
+                            "5|0x00000000005f386e|tcpdump`juniper_atm1_print|1374",
+                            "6|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "7|0x00000000004cd473|tcpdump`print_packet|83",
+                            "8|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "9|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "10|0x00000000004c8888|tcpdump`main|18600",
+                            "11|0x00007fae9503eb6b|libc.so.6`__libc_start_main|235",
+                            "12|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12993",
+            "testcase": "CVE-2017-12993+1.pcap"
+        },
+        "CVE-2017-12993+2": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a3c8|tcpdump`__asan_report_load1|40",
+                            "5|0x00000000005ede79|tcpdump`juniper_es_print|809",
+                            "6|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "7|0x00000000004cd473|tcpdump`print_packet|83",
+                            "8|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "9|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "10|0x00000000004c8888|tcpdump`main|18600",
+                            "11|0x00007f9273c93b6b|libc.so.6`__libc_start_main|235",
+                            "12|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12993",
+            "testcase": "CVE-2017-12993+2.pcap"
+        },
+        "CVE-2017-12994": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12994",
+            "testcase": "CVE-2017-12994.pcap"
+        },
+        "CVE-2017-12995+0": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x0000000000433908|tcpdump`::MemcmpInterceptorCommon()|376",
+                            "5|0x0000000000433ddb|tcpdump`__interceptor_memcmp|91",
+                            "6|0x00000000004d4cc5|tcpdump`lookup_nsap|1317",
+                            "7|0x00000000004d42d4|tcpdump`isonsap_string|84",
+                            "8|0x00000000005d1a0e|tcpdump`clnp_print|3806",
+                            "9|0x00000000005d06c5|tcpdump`isoclns_print|693",
+                            "10|0x0000000000571aa6|tcpdump`ethertype_print|1238",
+                            "11|0x000000000057100e|tcpdump`ether_print|2798",
+                            "12|0x0000000000571df5|tcpdump`ether_if_print|245",
+                            "13|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "14|0x00000000004cd473|tcpdump`print_packet|83",
+                            "15|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "16|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "17|0x00000000004c8888|tcpdump`main|18600",
+                            "18|0x00007f2478a40b6b|libc.so.6`__libc_start_main|235",
+                            "19|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12995",
+            "testcase": "CVE-2017-12995+0.pcap"
+        },
+        "CVE-2017-12995+1": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12995",
+            "testcase": "CVE-2017-12995+1.pcap"
+        },
+        "CVE-2017-12995+2": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12995",
+            "testcase": "CVE-2017-12995+2.pcap"
+        },
+        "CVE-2017-12995+3": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12995",
+            "testcase": "CVE-2017-12995+3.pcap"
+        },
+        "CVE-2017-12995+4": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12995",
+            "testcase": "CVE-2017-12995+4.pcap"
+        },
+        "CVE-2017-12996+0": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12996",
+            "testcase": "CVE-2017-12996+0.pcap"
+        },
+        "CVE-2017-12996+1": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12996",
+            "testcase": "CVE-2017-12996+1.pcap"
+        },
+        "CVE-2017-12996+2": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12996",
+            "testcase": "CVE-2017-12996+2.pcap"
+        },
+        "CVE-2017-12996+3": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12996",
+            "testcase": "CVE-2017-12996+3.pcap"
+        },
+        "CVE-2017-12997+0": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12997",
+            "testcase": "CVE-2017-12997+0.pcap"
+        },
+        "CVE-2017-12997+1": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12997",
+            "testcase": "CVE-2017-12997+1.pcap"
+        },
+        "CVE-2017-12998": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12998",
+            "testcase": "CVE-2017-12998.pcap"
+        },
+        "CVE-2017-12999+0": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12999",
+            "testcase": "CVE-2017-12999+0.pcap"
+        },
+        "CVE-2017-12999+1": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12999",
+            "testcase": "CVE-2017-12999+1.pcap"
+        },
+        "CVE-2017-13000": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13000",
+            "testcase": "CVE-2017-13000.pcap"
+        },
+        "CVE-2017-13000+0": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13000",
+            "testcase": "CVE-2017-13000+0.pcap"
+        },
+        "CVE-2017-13000+1": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13000",
+            "testcase": "CVE-2017-13000+1.pcap"
+        },
+        "CVE-2017-13001": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x00000000004808dd|tcpdump`::__interceptor_strncpy()|621",
+                            "5|0x0000000000631158|tcpdump`nfs_printfh|1256",
+                            "6|0x000000000062e9ba|tcpdump`parsefh|554",
+                            "7|0x000000000062b8a4|tcpdump`nfsreq_print_noaddr|1012",
+                            "8|0x00000000006fc717|tcpdump`tcp_print|26519",
+                            "9|0x00000000005a7a29|tcpdump`ip_print_demux|4233",
+                            "10|0x00000000005ab5aa|tcpdump`ip_print|8586",
+                            "11|0x000000000057187b|tcpdump`ethertype_print|683",
+                            "12|0x000000000057100e|tcpdump`ether_print|2798",
+                            "13|0x0000000000571df5|tcpdump`ether_if_print|245",
+                            "14|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "15|0x00000000004cd473|tcpdump`print_packet|83",
+                            "16|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "17|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "18|0x00000000004c8888|tcpdump`main|18600",
+                            "19|0x00007f12748c0b6b|libc.so.6`__libc_start_main|235",
+                            "20|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13001",
+            "testcase": "CVE-2017-13001.pcap"
+        },
+        "CVE-2017-13002": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a3c8|tcpdump`__asan_report_load1|40",
+                            "5|0x00000000005017e8|tcpdump`aodv_extension|88",
+                            "6|0x00000000004ffcc3|tcpdump`aodv_rrep|1059",
+                            "7|0x00000000004fe61f|tcpdump`aodv_print|511",
+                            "8|0x00000000007062ce|tcpdump`udp_print|5726",
+                            "9|0x00000000005a7bd3|tcpdump`ip_print_demux|4659",
+                            "10|0x00000000005ab5aa|tcpdump`ip_print|8586",
+                            "11|0x000000000057187b|tcpdump`ethertype_print|683",
+                            "12|0x000000000057100e|tcpdump`ether_print|2798",
+                            "13|0x0000000000571df5|tcpdump`ether_if_print|245",
+                            "14|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "15|0x00000000004cd473|tcpdump`print_packet|83",
+                            "16|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "17|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "18|0x00000000004c8888|tcpdump`main|18600",
+                            "19|0x00007fdf54b10b6b|libc.so.6`__libc_start_main|235",
+                            "20|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13002",
+            "testcase": "CVE-2017-13002.pcap"
+        },
+        "CVE-2017-13003": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13003",
+            "testcase": "CVE-2017-13003.pcap"
+        },
+        "CVE-2017-13004": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a468|tcpdump`__asan_report_load2|40",
+                            "5|0x00000000005edb31|tcpdump`EXTRACT_16BITS|81",
+                            "6|0x00000000005ec34d|tcpdump`juniper_parse_header|11053",
+                            "7|0x00000000005f34d4|tcpdump`juniper_atm1_print|452",
+                            "8|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "9|0x00000000004cd473|tcpdump`print_packet|83",
+                            "10|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "11|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "12|0x00000000004c8888|tcpdump`main|18600",
+                            "13|0x00007fe24df04b6b|libc.so.6`__libc_start_main|235",
+                            "14|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13004",
+            "testcase": "CVE-2017-13004.pcap"
+        },
+        "CVE-2017-13005": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a508|tcpdump`__asan_report_load4|40",
+                            "5|0x0000000000627611|tcpdump`EXTRACT_32BITS|81",
+                            "6|0x000000000062e2d9|tcpdump`xid_map_enter|937",
+                            "7|0x000000000062b6a9|tcpdump`nfsreq_print_noaddr|505",
+                            "8|0x00000000007057eb|tcpdump`udp_print|2939",
+                            "9|0x00000000005a7bd3|tcpdump`ip_print_demux|4659",
+                            "10|0x00000000005ab5aa|tcpdump`ip_print|8586",
+                            "11|0x000000000057187b|tcpdump`ethertype_print|683",
+                            "12|0x000000000057100e|tcpdump`ether_print|2798",
+                            "13|0x0000000000571df5|tcpdump`ether_if_print|245",
+                            "14|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "15|0x00000000004cd473|tcpdump`print_packet|83",
+                            "16|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "17|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "18|0x00000000004c8888|tcpdump`main|18600",
+                            "19|0x00007ff0f267ab6b|libc.so.6`__libc_start_main|235",
+                            "20|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13005",
+            "testcase": "CVE-2017-13005.pcap"
+        },
+        "CVE-2017-13006": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a468|tcpdump`__asan_report_load2|40",
+                            "5|0x00000000005f8131|tcpdump`EXTRACT_16BITS|81",
+                            "6|0x00000000005f9ac2|tcpdump`l2tp_accm_print|50",
+                            "7|0x00000000005f89cc|tcpdump`l2tp_avp_print|2172",
+                            "8|0x00000000005f7fae|tcpdump`l2tp_print|3934",
+                            "9|0x00000000007064cd|tcpdump`udp_print|6237",
+                            "10|0x00000000005a7bd3|tcpdump`ip_print_demux|4659",
+                            "11|0x00000000005ab5aa|tcpdump`ip_print|8586",
+                            "12|0x000000000057187b|tcpdump`ethertype_print|683",
+                            "13|0x000000000057100e|tcpdump`ether_print|2798",
+                            "14|0x0000000000571df5|tcpdump`ether_if_print|245",
+                            "15|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "16|0x00000000004cd473|tcpdump`print_packet|83",
+                            "17|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "18|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "19|0x00000000004c8888|tcpdump`main|18600",
+                            "20|0x00007f273b964b6b|libc.so.6`__libc_start_main|235",
+                            "21|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13006",
+            "testcase": "CVE-2017-13006.pcap"
+        },
+        "CVE-2017-13007": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a3c8|tcpdump`__asan_report_load1|40",
+                            "5|0x0000000000678fac|tcpdump`ppp_hdlc_if_print|364",
+                            "6|0x0000000000676a21|tcpdump`pktap_if_print|2241",
+                            "7|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "8|0x00000000004cd473|tcpdump`print_packet|83",
+                            "9|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "10|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "11|0x00000000004c8888|tcpdump`main|18600",
+                            "12|0x00007f5a7c234b6b|libc.so.6`__libc_start_main|235",
+                            "13|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13007",
+            "testcase": "CVE-2017-13007.pcap"
+        },
+        "CVE-2017-13008": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13008",
+            "testcase": "CVE-2017-13008.pcap"
+        },
+        "CVE-2017-13009": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a3c8|tcpdump`__asan_report_load1|40",
+                            "5|0x000000000061f4e2|tcpdump`mobility_print|6130",
+                            "6|0x00000000005aefa8|tcpdump`ip6_print|3736",
+                            "7|0x00000000005ac64f|tcpdump`ipN_print|463",
+                            "8|0x0000000000692561|tcpdump`raw_if_print|289",
+                            "9|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "10|0x00000000004cd473|tcpdump`print_packet|83",
+                            "11|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "12|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "13|0x00000000004c8888|tcpdump`main|18600",
+                            "14|0x00007f59d5df9b6b|libc.so.6`__libc_start_main|235",
+                            "15|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13009",
+            "testcase": "CVE-2017-13009.pcap"
+        },
+        "CVE-2017-13010": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x00000000004305bf|tcpdump`::__interceptor_strncmp()|959",
+                            "5|0x000000000051c630|tcpdump`l_strnstart|64",
+                            "6|0x000000000051c29e|tcpdump`beep_print|46",
+                            "7|0x00000000006fc00d|tcpdump`tcp_print|24717",
+                            "8|0x00000000005af117|tcpdump`ip6_print|4103",
+                            "9|0x00000000005ac64f|tcpdump`ipN_print|463",
+                            "10|0x0000000000692561|tcpdump`raw_if_print|289",
+                            "11|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "12|0x00000000004cd473|tcpdump`print_packet|83",
+                            "13|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "14|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "15|0x00000000004c8888|tcpdump`main|18600",
+                            "16|0x00007fd48c934b6b|libc.so.6`__libc_start_main|235",
+                            "17|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13010",
+            "testcase": "CVE-2017-13010.pcap"
+        },
+        "CVE-2017-13011": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13011",
+            "testcase": "CVE-2017-13011.pcap"
+        },
+        "CVE-2017-13012": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13012",
+            "testcase": "CVE-2017-13012.pcap"
+        },
+        "CVE-2017-13013": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13013",
+            "testcase": "CVE-2017-13013.pcap"
+        },
+        "CVE-2017-13014": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a508|tcpdump`__asan_report_load4|40",
+                            "5|0x0000000000711d81|tcpdump`EXTRACT_32BITS|81",
+                            "6|0x000000000071181f|tcpdump`wb_prep|191",
+                            "7|0x0000000000710220|tcpdump`wb_print|992",
+                            "8|0x00000000007067d7|tcpdump`udp_print|7015",
+                            "9|0x00000000005a7bd3|tcpdump`ip_print_demux|4659",
+                            "10|0x00000000005ab5aa|tcpdump`ip_print|8586",
+                            "11|0x0000000000678bae|tcpdump`handle_ppp|606",
+                            "12|0x0000000000678864|tcpdump`ppp_print|1844",
+                            "13|0x0000000000678e23|tcpdump`ppp_if_print|307",
+                            "14|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "15|0x00000000004cd473|tcpdump`print_packet|83",
+                            "16|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "17|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "18|0x00000000004c8888|tcpdump`main|18600",
+                            "19|0x00007f6030b21b6b|libc.so.6`__libc_start_main|235",
+                            "20|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13014",
+            "testcase": "CVE-2017-13014.pcap"
+        },
+        "CVE-2017-13015": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13015",
+            "testcase": "CVE-2017-13015.pcap"
+        },
+        "CVE-2017-13016+0": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13016",
+            "testcase": "CVE-2017-13016+0.pcap"
+        },
+        "CVE-2017-13016+1": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13016",
+            "testcase": "CVE-2017-13016+1.pcap"
+        },
+        "CVE-2017-13016+2": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13016",
+            "testcase": "CVE-2017-13016+2.pcap"
+        },
+        "CVE-2017-13016+3": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13016",
+            "testcase": "CVE-2017-13016+3.pcap"
+        },
+        "CVE-2017-13016+4": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13016",
+            "testcase": "CVE-2017-13016+4.pcap"
+        },
+        "CVE-2017-13017": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13017",
+            "testcase": "CVE-2017-13017.pcap"
+        },
+        "CVE-2017-13018": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13018",
+            "testcase": "CVE-2017-13018.pcap"
+        },
+        "CVE-2017-13019": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13019",
+            "testcase": "CVE-2017-13019.pcap"
+        },
+        "CVE-2017-13020": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13020",
+            "testcase": "CVE-2017-13020.pcap"
+        },
+        "CVE-2017-13021": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13021",
+            "testcase": "CVE-2017-13021.pcap"
+        },
+        "CVE-2017-13022": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13022",
+            "testcase": "CVE-2017-13022.pcap"
+        },
+        "CVE-2017-13023": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13023",
+            "testcase": "CVE-2017-13023.pcap"
+        },
+        "CVE-2017-13024": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13024",
+            "testcase": "CVE-2017-13024.pcap"
+        },
+        "CVE-2017-13025": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13025",
+            "testcase": "CVE-2017-13025.pcap"
+        },
+        "CVE-2017-13026+0": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13026",
+            "testcase": "CVE-2017-13026+0.pcap"
+        },
+        "CVE-2017-13026+1": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13026",
+            "testcase": "CVE-2017-13026+1.pcap"
+        },
+        "CVE-2017-13026+2": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13026",
+            "testcase": "CVE-2017-13026+2.pcap"
+        },
+        "CVE-2017-13026+3": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13026",
+            "testcase": "CVE-2017-13026+3.pcap"
+        },
+        "CVE-2017-13027": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13027",
+            "testcase": "CVE-2017-13027.pcap"
+        },
+        "CVE-2017-13028": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13028",
+            "testcase": "CVE-2017-13028.pcap"
+        },
+        "CVE-2017-13029": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13029",
+            "testcase": "CVE-2017-13029.pcap"
+        },
+        "CVE-2017-13030": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13030",
+            "testcase": "CVE-2017-13030.pcap"
+        },
+        "CVE-2017-13031": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13031",
+            "testcase": "CVE-2017-13031.pcap"
+        },
+        "CVE-2017-13032": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13032",
+            "testcase": "CVE-2017-13032.pcap"
+        },
+        "CVE-2017-13033": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13033",
+            "testcase": "CVE-2017-13033.pcap"
+        },
+        "CVE-2017-13034": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13034",
+            "testcase": "CVE-2017-13034.pcap"
+        },
+        "CVE-2017-13035": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13035",
+            "testcase": "CVE-2017-13035.pcap"
+        },
+        "CVE-2017-13036": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13036",
+            "testcase": "CVE-2017-13036.pcap"
+        },
+        "CVE-2017-13037": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13037",
+            "testcase": "CVE-2017-13037.pcap"
+        },
+        "CVE-2017-13038": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a468|tcpdump`__asan_report_load2|40",
+                            "5|0x0000000000678931|tcpdump`EXTRACT_16BITS|81",
+                            "6|0x000000000067b75c|tcpdump`handle_mlppp|252",
+                            "7|0x0000000000678b5a|tcpdump`handle_ppp|522",
+                            "8|0x0000000000678864|tcpdump`ppp_print|1844",
+                            "9|0x0000000000678e23|tcpdump`ppp_if_print|307",
+                            "10|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "11|0x00000000004cd473|tcpdump`print_packet|83",
+                            "12|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "13|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "14|0x00000000004c8888|tcpdump`main|18600",
+                            "15|0x00007f8e12f5ab6b|libc.so.6`__libc_start_main|235",
+                            "16|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13038",
+            "testcase": "CVE-2017-13038.pcap"
+        },
+        "CVE-2017-13039": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13039",
+            "testcase": "CVE-2017-13039.pcap"
+        },
+        "CVE-2017-13040": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a3c8|tcpdump`__asan_report_load1|40",
+                            "5|0x000000000062503b|tcpdump`mp_dss_len|91",
+                            "6|0x0000000000623ea5|tcpdump`mp_dss_print|53",
+                            "7|0x00000000006235f9|tcpdump`mptcp_print|505",
+                            "8|0x00000000006fb1de|tcpdump`tcp_print|21086",
+                            "9|0x00000000005a7a29|tcpdump`ip_print_demux|4233",
+                            "10|0x00000000005ab5aa|tcpdump`ip_print|8586",
+                            "11|0x000000000057187b|tcpdump`ethertype_print|683",
+                            "12|0x000000000057100e|tcpdump`ether_print|2798",
+                            "13|0x0000000000571df5|tcpdump`ether_if_print|245",
+                            "14|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "15|0x00000000004cd473|tcpdump`print_packet|83",
+                            "16|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "17|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "18|0x00000000004c8888|tcpdump`main|18600",
+                            "19|0x00007fd54d7c2b6b|libc.so.6`__libc_start_main|235",
+                            "20|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13040",
+            "testcase": "CVE-2017-13040.pcap"
+        },
+        "CVE-2017-13041": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a468|tcpdump`__asan_report_load2|40",
+                            "5|0x0000000000595c81|tcpdump`EXTRACT_16BITS|81",
+                            "6|0x000000000059d670|tcpdump`icmp6_nodeinfo_print|6320",
+                            "7|0x0000000000594f27|tcpdump`icmp6_print|11623",
+                            "8|0x00000000005af189|tcpdump`ip6_print|4217",
+                            "9|0x00000000006dc1ab|tcpdump`sl_if_print|747",
+                            "10|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "11|0x00000000004cd473|tcpdump`print_packet|83",
+                            "12|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "13|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "14|0x00000000004c8888|tcpdump`main|18600",
+                            "15|0x00007f8b9f8c0b6b|libc.so.6`__libc_start_main|235",
+                            "16|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13041",
+            "testcase": "CVE-2017-13041.pcap"
+        },
+        "CVE-2017-13042": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13042",
+            "testcase": "CVE-2017-13042.pcap"
+        },
+        "CVE-2017-13044": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13044",
+            "testcase": "CVE-2017-13044.pcap"
+        },
+        "CVE-2017-13045": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13045",
+            "testcase": "CVE-2017-13045.pcap"
+        },
+        "CVE-2017-13046": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13046",
+            "testcase": "CVE-2017-13046.pcap"
+        },
+        "CVE-2017-13047": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13047",
+            "testcase": "CVE-2017-13047.pcap"
+        },
+        "CVE-2017-13048": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13048",
+            "testcase": "CVE-2017-13048.pcap"
+        },
+        "CVE-2017-13049": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a508|tcpdump`__asan_report_load4|40",
+                            "5|0x00000000006a76b1|tcpdump`EXTRACT_32BITS|81",
+                            "6|0x00000000006d348a|tcpdump`ubik_print|6602",
+                            "7|0x00000000006b1496|tcpdump`prot_print|630",
+                            "8|0x00000000006a6ef1|tcpdump`rx_print|3297",
+                            "9|0x0000000000706642|tcpdump`udp_print|6610",
+                            "10|0x00000000005a7bd3|tcpdump`ip_print_demux|4659",
+                            "11|0x00000000005ab5aa|tcpdump`ip_print|8586",
+                            "12|0x000000000057187b|tcpdump`ethertype_print|683",
+                            "13|0x000000000057100e|tcpdump`ether_print|2798",
+                            "14|0x0000000000571df5|tcpdump`ether_if_print|245",
+                            "15|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "16|0x00000000004cd473|tcpdump`print_packet|83",
+                            "17|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "18|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "19|0x00000000004c8888|tcpdump`main|18600",
+                            "20|0x00007f705a38eb6b|libc.so.6`__libc_start_main|235",
+                            "21|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13049",
+            "testcase": "CVE-2017-13049.pcap"
+        },
+        "CVE-2017-13051+0": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13051",
+            "testcase": "CVE-2017-13051+0.pcap"
+        },
+        "CVE-2017-13051+1": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13051",
+            "testcase": "CVE-2017-13051+1.pcap"
+        },
+        "CVE-2017-13051+2": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13051",
+            "testcase": "CVE-2017-13051+2.pcap"
+        },
+        "CVE-2017-13052": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13052",
+            "testcase": "CVE-2017-13052.pcap"
+        },
+        "CVE-2017-13053": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13053",
+            "testcase": "CVE-2017-13053.pcap"
+        },
+        "CVE-2017-13054": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13054",
+            "testcase": "CVE-2017-13054.pcap"
+        },
+        "CVE-2017-13055": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13055",
+            "testcase": "CVE-2017-13055.pcap"
+        },
+        "CVE-2017-13687": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a3c8|tcpdump`__asan_report_load1|40",
+                            "5|0x0000000000546076|tcpdump`chdlc_print|646",
+                            "6|0x0000000000545dd3|tcpdump`chdlc_if_print|307",
+                            "7|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "8|0x00000000004cd473|tcpdump`print_packet|83",
+                            "9|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "10|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "11|0x00000000004c8888|tcpdump`main|18600",
+                            "12|0x00007f1e5be3eb6b|libc.so.6`__libc_start_main|235",
+                            "13|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13687",
+            "testcase": "CVE-2017-13687.pcap"
+        },
+        "CVE-2017-13688+0": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13688",
+            "testcase": "CVE-2017-13688+0.pcap"
+        },
+        "CVE-2017-13688+1": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13688",
+            "testcase": "CVE-2017-13688+1.pcap"
+        },
+        "CVE-2017-13689": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13689",
+            "testcase": "CVE-2017-13689.pcap"
+        },
+        "CVE-2017-13690": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13690",
+            "testcase": "CVE-2017-13690.pcap"
+        },
+        "CVE-2017-13725": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a3c8|tcpdump`__asan_report_load1|40",
+                            "5|0x00000000006a5817|tcpdump`rt6_print|103",
+                            "6|0x00000000005af02c|tcpdump`ip6_print|3868",
+                            "7|0x00000000005ac64f|tcpdump`ipN_print|463",
+                            "8|0x0000000000692561|tcpdump`raw_if_print|289",
+                            "9|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "10|0x00000000004cd473|tcpdump`print_packet|83",
+                            "11|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "12|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "13|0x00000000004c8888|tcpdump`main|18600",
+                            "14|0x00007f22bce19b6b|libc.so.6`__libc_start_main|235",
+                            "15|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13725",
+            "testcase": "CVE-2017-13725.pcap"
+        },
+        "CVE-2017-5204": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-5204",
+            "testcase": "CVE-2017-5204.pcap"
+        },
+        "CVE-2017-5341": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-5341",
+            "testcase": "CVE-2017-5341.pcap"
+        },
+        "CVE-2017-5342": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-5342",
+            "testcase": "CVE-2017-5342.pcap"
+        },
+        "CVE-2017-5482": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-5482",
+            "testcase": "CVE-2017-5482.pcap"
+        },
+        "CVE-2017-5483+0": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-5483",
+            "testcase": "CVE-2017-5483+0.pcap"
+        },
+        "CVE-2017-5483+1": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-5483",
+            "testcase": "CVE-2017-5483+1.pcap"
+        },
+        "CVE-2017-5484": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-5484",
+            "testcase": "CVE-2017-5484.pcap"
+        },
+        "CVE-2017-5485": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-5485",
+            "testcase": "CVE-2017-5485.pcap"
+        },
+        "CVE-2017-5486": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-5486",
+            "testcase": "CVE-2017-5486.pcap"
+        },
+        "UNK-JUNIPER-ES-OOBR": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b09dc|tcpdump`__sanitizer::Die()|172",
+                            "2|0x000000000049a249|tcpdump`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004997df|tcpdump`::ReportGenericError()|367",
+                            "4|0x000000000049a468|tcpdump`__asan_report_load2|40",
+                            "5|0x00000000005edb31|tcpdump`EXTRACT_16BITS|81",
+                            "6|0x00000000005ec34d|tcpdump`juniper_parse_header|11053",
+                            "7|0x00000000005edd1c|tcpdump`juniper_es_print|460",
+                            "8|0x00000000004e302b|tcpdump`pretty_print_packet|427",
+                            "9|0x00000000004cd473|tcpdump`print_packet|83",
+                            "10|0x000000000077c6e0|tcpdump`pcap_offline_read|1248",
+                            "11|0x0000000000734d14|tcpdump`pcap_loop|100",
+                            "12|0x00000000004c8888|tcpdump`main|18600",
+                            "13|0x00007ff12690cb6b|libc.so.6`__libc_start_main|235",
+                            "14|0x000000000041c65a|tcpdump`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "unkonwn from tcpdump tree",
+            "testcase": "juniper_es_oobr.pcap"
+        }
+    },
+    "evars": {
+        "ASAN_OPTIONS": "detect_leaks=0"
+    },
+    "source": "https://github.com/the-tcpdump-group/tcpdump",
+    "version": "4.9.1"
+}

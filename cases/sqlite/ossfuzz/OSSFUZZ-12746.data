@@ -1,0 +1,1 @@
+SELECT instr( randomblob(7261710),randomblob(3742066))

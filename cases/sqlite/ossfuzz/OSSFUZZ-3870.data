@@ -1,0 +1,1 @@
+WITH c(i)AS(VALUES(5)UNIoN SELECT 0)SELECT min(1)-i fROM c

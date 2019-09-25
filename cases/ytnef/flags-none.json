@@ -1,0 +1,273 @@
+{
+    "application": "ytnef",
+    "apppath": "ytnef-1.9.2/install/bin/ytnefprint",
+    "args": "@@",
+    "bugs": {
+        "CVE-2017-12141": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|ytnefprint`__sanitizer::Die()|172",
+                            "2|ytnefprint`::~ScopedInErrorReport()|441",
+                            "3|ytnefprint`::ReportGenericError()|367",
+                            "4|ytnefprint`__asan_report_store4|43",
+                            "5|libytnef.so.0`TNEFFillMapi|9162",
+                            "6|libytnef.so.0`TNEFMapiProperties|51",
+                            "7|libytnef.so.0`TNEFParse|5875",
+                            "8|libytnef.so.0`TNEFParseFile|984",
+                            "9|ytnefprint`main|603",
+                            "10|libc.so.6`__libc_start_main|235",
+                            "11|ytnefprint`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://github.com/Yeraze/ytnef/issues/50",
+            "testcase": "CVE-2017-12141.ytnef"
+        },
+        "CVE-2017-12142": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|libytnef.so.0`SwapDWord|507",
+                            "1|libytnef.so.0`IsCompressedRTF|217",
+                            "2|libytnef.so.0`MAPIPrint|5026",
+                            "3|ytnefprint`PrintTNEF|5398",
+                            "4|ytnefprint`main|658",
+                            "5|libc.so.6`__libc_start_main|235",
+                            "6|ytnefprint`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://github.com/Yeraze/ytnef/issues/49",
+            "testcase": "CVE-2017-12142.ytnef"
+        },
+        "CVE-2017-12144": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|ytnefprint`__sanitizer::Die()|172",
+                            "2|ytnefprint`::~ScopedInErrorReport()|441",
+                            "3|ytnefprint`::ReportOutOfMemory()|207",
+                            "4|ytnefprint`::Allocate()|2192",
+                            "5|ytnefprint`::asan_calloc() [inlined] Calloc|58",
+                            "6|ytnefprint`::asan_calloc()|17",
+                            "7|ytnefprint`::__interceptor_calloc()|260",
+                            "8|libytnef.so.0`TNEFFillMapi|5510",
+                            "9|libytnef.so.0`TNEFAttachmentMAPI|181",
+                            "10|libytnef.so.0`TNEFParse|5875",
+                            "11|libytnef.so.0`TNEFParseFile|984",
+                            "12|ytnefprint`main|603",
+                            "13|libc.so.6`__libc_start_main|235",
+                            "14|ytnefprint`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12144",
+            "testcase": "CVE-2017-12144.ytnef"
+        },
+        "CVE-2017-6802": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-6802",
+            "testcase": "CVE-2017-6802.ytnef"
+        },
+        "CVE-2017-9058": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|ytnefprint`__sanitizer::Die()|172",
+                            "2|ytnefprint`::~ScopedInErrorReport()|441",
+                            "3|ytnefprint`::ReportGenericError()|367",
+                            "4|ytnefprint`__asan_report_load1|40",
+                            "5|libytnef.so.0`TNEFFillMapi|3271",
+                            "6|libytnef.so.0`TNEFMapiProperties|51",
+                            "7|libytnef.so.0`TNEFParse|5875",
+                            "8|libytnef.so.0`TNEFParseFile|984",
+                            "9|ytnefprint`main|603",
+                            "10|libc.so.6`__libc_start_main|235",
+                            "11|ytnefprint`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=862556",
+            "testcase": "CVE-2017-9058.ytnef"
+        },
+        "CVE-2017-9146": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|ytnefprint`__sanitizer::Die()|172",
+                            "2|ytnefprint`::~ScopedInErrorReport()|441",
+                            "3|ytnefprint`::ReportGenericError()|367",
+                            "4|ytnefprint`__asan_report_store4|43",
+                            "5|libytnef.so.0`TNEFFillMapi|6706",
+                            "6|libytnef.so.0`TNEFMapiProperties|51",
+                            "7|libytnef.so.0`TNEFParse|5875",
+                            "8|libytnef.so.0`TNEFParseFile|984",
+                            "9|ytnefprint`main|603",
+                            "10|libc.so.6`__libc_start_main|235",
+                            "11|ytnefprint`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://github.com/Yeraze/ytnef/issues/47",
+            "testcase": "CVE-2017-9146.ytnef"
+        },
+        "CVE-2017-9470": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|libc.so.6`___lldb_unnamed_symbol1071$$libc.so.6|17",
+                            "1|ytnefprint`::__interceptor_strlen()|57",
+                            "2|libytnef.so.0`MAPIPrint|6178",
+                            "3|ytnefprint`PrintTNEF|5398",
+                            "4|ytnefprint`main|658",
+                            "5|libc.so.6`__libc_start_main|235",
+                            "6|ytnefprint`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/05/24/ytnef-null-pointer-dereference-in-mapiprint-ytnef-c/",
+            "testcase": "CVE-2017-9470.ytnef"
+        },
+        "CVE-2017-9471": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|ytnefprint`__sanitizer::Die()|172",
+                            "2|ytnefprint`::~ScopedInErrorReport()|441",
+                            "3|ytnefprint`::ReportGenericError()|367",
+                            "4|ytnefprint`__asan_report_load1|40",
+                            "5|libytnef.so.0`SwapWord|502",
+                            "6|libytnef.so.0`TNEFDateHandler|853",
+                            "7|libytnef.so.0`TNEFParse|5875",
+                            "8|libytnef.so.0`TNEFParseFile|984",
+                            "9|ytnefprint`main|603",
+                            "10|libc.so.6`__libc_start_main|235",
+                            "11|ytnefprint`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/05/24/ytnef-heap-based-buffer-overflow-in-swapword-ytnef-c/",
+            "testcase": "CVE-2017-9471.ytnef"
+        },
+        "CVE-2017-9472": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|ytnefprint`__sanitizer::Die()|172",
+                            "2|ytnefprint`::~ScopedInErrorReport()|441",
+                            "3|ytnefprint`::ReportGenericError()|367",
+                            "4|ytnefprint`__asan_report_load1|40",
+                            "5|libytnef.so.0`SwapDWord|503",
+                            "6|libytnef.so.0`TNEFFillMapi|1103",
+                            "7|libytnef.so.0`TNEFAttachmentMAPI|181",
+                            "8|libytnef.so.0`TNEFParse|5875",
+                            "9|libytnef.so.0`TNEFParseFile|984",
+                            "10|ytnefprint`main|603",
+                            "11|libc.so.6`__libc_start_main|235",
+                            "12|ytnefprint`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/05/24/ytnef-heap-based-buffer-overflow-in-swapdword-ytnef-c/",
+            "testcase": "CVE-2017-9472.ytnef"
+        },
+        "CVE-2017-9473": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|ytnefprint`__sanitizer::Die()|172",
+                            "2|ytnefprint`::~ScopedInErrorReport()|441",
+                            "3|ytnefprint`::ReportOutOfMemory()|207",
+                            "4|ytnefprint`::Allocate()|2192",
+                            "5|ytnefprint`::asan_calloc() [inlined] Calloc|58",
+                            "6|ytnefprint`::asan_calloc()|17",
+                            "7|ytnefprint`::__interceptor_calloc()|260",
+                            "8|libytnef.so.0`TNEFFillMapi|673",
+                            "9|libytnef.so.0`TNEFMapiProperties|51",
+                            "10|libytnef.so.0`TNEFParse|5875",
+                            "11|libytnef.so.0`TNEFParseFile|984",
+                            "12|ytnefprint`main|603",
+                            "13|libc.so.6`__libc_start_main|235",
+                            "14|ytnefprint`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/05/24/ytnef-memory-allocation-failure-in-tneffillmapi-ytnef-c/",
+            "testcase": "CVE-2017-9473.ytnef"
+        },
+        "CVE-2017-9474": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|ytnefprint`__sanitizer::Die()|172",
+                            "2|ytnefprint`::~ScopedInErrorReport()|441",
+                            "3|ytnefprint`::ReportGenericError()|367",
+                            "4|ytnefprint`__asan_report_load1|40",
+                            "5|libytnef.so.0`DecompressRTF|3146",
+                            "6|libytnef.so.0`MAPIPrint|5124",
+                            "7|ytnefprint`PrintTNEF|5398",
+                            "8|ytnefprint`main|658",
+                            "9|libc.so.6`__libc_start_main|235",
+                            "10|ytnefprint`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/05/24/ytnef-heap-based-buffer-overflow-in-decompressrtf-ytnef-c/",
+            "testcase": "CVE-2017-9474.ytnef"
+        },
+        "NOLABEL": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|ytnefprint`__sanitizer::Die()|172",
+                            "2|ytnefprint`::~ScopedInErrorReport()|441",
+                            "3|ytnefprint`::ReportGenericError()|367",
+                            "4|ytnefprint`::printf_common()|1481",
+                            "5|ytnefprint`::__interceptor_printf() [inlined] __interceptor_vprintf|239",
+                            "6|ytnefprint`::__interceptor_printf()|178",
+                            "7|libytnef.so.0`MAPIPrint|5254",
+                            "8|ytnefprint`PrintTNEF|5398",
+                            "9|ytnefprint`main|658",
+                            "10|libc.so.6`__libc_start_main|235",
+                            "11|ytnefprint`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/05/24/ytnef-heap-based-buffer-overflow-in-printtnef-ytnefprintmain-c/",
+            "testcase": "NONE-0000.ytnef"
+        }
+    },
+    "evars": {
+        "ASAN_OPTIONS": "detect_leaks=0",
+        "LD_LIBRARY_PATH": "$LD_LIBRARY_PATH:/home/areiter/fuzz_test_suite/cases/ytnef+1.9.2/ytnef-1.9.2/install/lib"
+    },
+    "source": "https://github.com/Yeraze/ytnef/tree/master/ytnef",
+    "version": "1.9.2"
+}

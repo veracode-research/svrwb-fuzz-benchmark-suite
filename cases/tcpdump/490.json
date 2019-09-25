@@ -1,0 +1,1935 @@
+{
+    "application": "tcpdump",
+    "apppath": "tcpdump-4.9.0/install/sbin/tcpdump",
+    "bugs": {
+        "CVE-2017-11108": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140733594181608, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6bc8 tcpdump`__asan::__asan_report_load2(addr=<unavailable>) at asan_rtl.cc:118",
+                            "frame #5: 0x000000000071df11 tcpdump`EXTRACT_16BITS + 81",
+                            "frame #6: 0x000000000071ddc8 tcpdump`stp_print + 2888",
+                            "frame #7: 0x000000000062e713 tcpdump`llc_print + 2339",
+                            "frame #8: 0x000000000059dd06 tcpdump`ether_print + 1286",
+                            "frame #9: 0x000000000059f0d5 tcpdump`ether_if_print + 245",
+                            "frame #10: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #11: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #12: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #13: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #14: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #15: 0x00007f966371cb97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007fff17e3ca48, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007fff17e3ca38) at libc-start.c:310",
+                            "frame #16: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-11108",
+            "testcase": "CVE-2017-11108.pcap"
+        },
+        "CVE-2017-11541": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140726584438216, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6b38 tcpdump`__asan::__asan_report_load1(addr=<unavailable>) at asan_rtl.cc:117",
+                            "frame #5: 0x000000000074c559 tcpdump`safeputs + 89",
+                            "frame #6: 0x000000000063135b tcpdump`lldp_print + 3291",
+                            "frame #7: 0x000000000059eebf tcpdump`ethertype_print + 1551",
+                            "frame #8: 0x000000000059e2ee tcpdump`ether_print + 2798",
+                            "frame #9: 0x000000000059f0d5 tcpdump`ether_if_print + 245",
+                            "frame #10: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #11: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #12: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #13: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #14: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #15: 0x00007f0468c9bb97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffd76139658, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffd76139648) at libc-start.c:310",
+                            "frame #16: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-11541",
+            "testcase": "CVE-2017-11541.pcap"
+        },
+        "CVE-2017-11542": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140724897874488, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6b38 tcpdump`__asan::__asan_report_load1(addr=<unavailable>) at asan_rtl.cc:117",
+                            "frame #5: 0x000000000069b955 tcpdump`pimv1_print + 5077",
+                            "frame #6: 0x00000000005cf75d tcpdump`igmp_print + 4237",
+                            "frame #7: 0x00000000005d55a8 tcpdump`ip_print_demux + 6440",
+                            "frame #8: 0x00000000005d888a tcpdump`ip_print + 8586",
+                            "frame #9: 0x000000000059eb5b tcpdump`ethertype_print + 683",
+                            "frame #10: 0x000000000059e2ee tcpdump`ether_print + 2798",
+                            "frame #11: 0x000000000059f0d5 tcpdump`ether_if_print + 245",
+                            "frame #12: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #13: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #14: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #15: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #16: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #17: 0x00007fe5fed72b97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffd118cbdf8, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffd118cbde8) at libc-start.c:310",
+                            "frame #18: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-11542",
+            "testcase": "CVE-2017-11542.pcap"
+        },
+        "CVE-2017-11543": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-11543",
+            "testcase": "CVE-2017-11543.pcap"
+        },
+        "CVE-2017-12893": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12893",
+            "testcase": "CVE-2017-12893.pcap"
+        },
+        "CVE-2017-12894": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140721349055936, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=false) at asan_report.cc:466",
+                            "frame #4: 0x0000000000488019 tcpdump`MemcmpInterceptorCommon(ctx=<unavailable>, real_fn=(libc.so.6`__memcmp_sse4_1), a1=0x0000631000000828, a2=0x00006020000005f0, size=14)(void const*, void const*, unsigned long), void const*, void const*, unsigned long) at sanitizer_common_interceptors.inc:835",
+                            "frame #5: 0x0000000000488869 tcpdump`::__interceptor_memcmp(a1=<unavailable>, a2=<unavailable>, size=<unavailable>) at sanitizer_common_interceptors.inc:866",
+                            "frame #6: 0x00000000004fb277 tcpdump`lookup_bytestring + 1559",
+                            "frame #7: 0x00000000004fb728 tcpdump`linkaddr_string + 168",
+                            "frame #8: 0x000000000053236f tcpdump`arp_print + 4047",
+                            "frame #9: 0x000000000059eb96 tcpdump`ethertype_print + 742",
+                            "frame #10: 0x000000000059e2ee tcpdump`ether_print + 2798",
+                            "frame #11: 0x000000000059f0d5 tcpdump`ether_if_print + 245",
+                            "frame #12: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #13: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #14: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #15: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #16: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #17: 0x00007f95ae40db97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffc3e060cd8, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffc3e060cc8) at libc-start.c:310",
+                            "frame #18: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12894",
+            "testcase": "CVE-2017-12894.pcap"
+        },
+        "CVE-2017-12895+0": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12895",
+            "testcase": "CVE-2017-12895+0.pcap"
+        },
+        "CVE-2017-12895+1": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12895",
+            "testcase": "CVE-2017-12895+1.pcap"
+        },
+        "CVE-2017-12896": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140734510434664, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6b38 tcpdump`__asan::__asan_report_load1(addr=<unavailable>) at asan_rtl.cc:117",
+                            "frame #5: 0x00000000005e3d6a tcpdump`isakmp_rfc3948_print + 634",
+                            "frame #6: 0x000000000073475e tcpdump`udp_print + 5854",
+                            "frame #7: 0x00000000005d4eb3 tcpdump`ip_print_demux + 4659",
+                            "frame #8: 0x00000000005d888a tcpdump`ip_print + 8586",
+                            "frame #9: 0x000000000059eb5b tcpdump`ethertype_print + 683",
+                            "frame #10: 0x000000000059e2ee tcpdump`ether_print + 2798",
+                            "frame #11: 0x000000000059f0d5 tcpdump`ether_if_print + 245",
+                            "frame #12: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #13: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #14: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #15: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #16: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #17: 0x00007f2915642b97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007fff4e80c338, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007fff4e80c328) at libc-start.c:310",
+                            "frame #18: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12896",
+            "testcase": "CVE-2017-12896.pcap"
+        },
+        "CVE-2017-12897": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140728915619624, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6b38 tcpdump`__asan::__asan_report_load1(addr=<unavailable>) at asan_rtl.cc:117",
+                            "frame #5: 0x00000000005fdc6b tcpdump`isoclns_print + 523",
+                            "frame #6: 0x00000000006a6240 tcpdump`handle_ppp + 672",
+                            "frame #7: 0x00000000006a5eb4 tcpdump`ppp_print + 1844",
+                            "frame #8: 0x00000000005fdf16 tcpdump`isoclns_print + 1206",
+                            "frame #9: 0x000000000059ed86 tcpdump`ethertype_print + 1238",
+                            "frame #10: 0x000000000059e2ee tcpdump`ether_print + 2798",
+                            "frame #11: 0x000000000059f0d5 tcpdump`ether_if_print + 245",
+                            "frame #12: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #13: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #14: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #15: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #16: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #17: 0x00007f752a683b97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffe01069878, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffe01069868) at libc-start.c:310",
+                            "frame #18: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12897",
+            "testcase": "CVE-2017-12897.pcap"
+        },
+        "CVE-2017-12898": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140730023872152, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6c58 tcpdump`__asan::__asan_report_load4(addr=<unavailable>) at asan_rtl.cc:119",
+                            "frame #5: 0x0000000000654c61 tcpdump`EXTRACT_32BITS + 81",
+                            "frame #6: 0x0000000000657006 tcpdump`interp_reply + 3270",
+                            "frame #7: 0x0000000000655550 tcpdump`nfsreply_print_noaddr + 1088",
+                            "frame #8: 0x0000000000733cc2 tcpdump`udp_print + 3138",
+                            "frame #9: 0x00000000005d4eb3 tcpdump`ip_print_demux + 4659",
+                            "frame #10: 0x00000000005d888a tcpdump`ip_print + 8586",
+                            "frame #11: 0x000000000059eb5b tcpdump`ethertype_print + 683",
+                            "frame #12: 0x000000000059e2ee tcpdump`ether_print + 2798",
+                            "frame #13: 0x000000000059f0d5 tcpdump`ether_if_print + 245",
+                            "frame #14: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #15: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #16: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #17: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #18: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #19: 0x00007faec17a0b97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffe431546f8, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffe431546e8) at libc-start.c:310",
+                            "frame #20: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12898",
+            "testcase": "CVE-2017-12898.pcap"
+        },
+        "CVE-2017-12899": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140731362136392, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6b38 tcpdump`__asan::__asan_report_load1(addr=<unavailable>) at asan_rtl.cc:117",
+                            "frame #5: 0x00000000005793da tcpdump`decnet_print + 1882",
+                            "frame #6: 0x000000000059ebb5 tcpdump`ethertype_print + 773",
+                            "frame #7: 0x000000000064940b tcpdump`medsa_print + 1515",
+                            "frame #8: 0x000000000059efb2 tcpdump`ethertype_print + 1794",
+                            "frame #9: 0x000000000059e2ee tcpdump`ether_print + 2798",
+                            "frame #10: 0x000000000059f0d5 tcpdump`ether_if_print + 245",
+                            "frame #11: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #12: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #13: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #14: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #15: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #16: 0x00007f8d19d9cb97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffe92d97b98, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffe92d97b88) at libc-start.c:310",
+                            "frame #17: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12899",
+            "testcase": "CVE-2017-12899.pcap"
+        },
+        "CVE-2017-12900+0": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12900",
+            "testcase": "CVE-2017-12900+0.pcap"
+        },
+        "CVE-2017-12900+1": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12900",
+            "testcase": "CVE-2017-12900+1.pcap"
+        },
+        "CVE-2017-12901": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12901",
+            "testcase": "CVE-2017-12901.pcap"
+        },
+        "CVE-2017-12902": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140725944244072, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6b38 tcpdump`__asan::__asan_report_load1(addr=<unavailable>) at asan_rtl.cc:117",
+                            "frame #5: 0x0000000000743c12 tcpdump`parse_field + 722",
+                            "frame #6: 0x0000000000740bb2 tcpdump`zephyr_print + 1074",
+                            "frame #7: 0x00000000007349dd tcpdump`udp_print + 6493",
+                            "frame #8: 0x00000000005d4eb3 tcpdump`ip_print_demux + 4659",
+                            "frame #9: 0x00000000005d888a tcpdump`ip_print + 8586",
+                            "frame #10: 0x000000000059eb5b tcpdump`ethertype_print + 683",
+                            "frame #11: 0x000000000059e2ee tcpdump`ether_print + 2798",
+                            "frame #12: 0x000000000059f0d5 tcpdump`ether_if_print + 245",
+                            "frame #13: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #14: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #15: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #16: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #17: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #18: 0x00007f3399583b97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffd4feb17e8, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffd4feb17d8) at libc-start.c:310",
+                            "frame #19: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12902",
+            "testcase": "CVE-2017-12902.pcap"
+        },
+        "CVE-2017-12985+0": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140724539216600, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6b38 tcpdump`__asan::__asan_report_load1(addr=<unavailable>) at asan_rtl.cc:117",
+                            "frame #5: 0x00000000006d2e67 tcpdump`rt6_print + 103",
+                            "frame #6: 0x00000000005dc30c tcpdump`ip6_print + 3868",
+                            "frame #7: 0x00000000005d992f tcpdump`ipN_print + 463",
+                            "frame #8: 0x00000000006bfbb1 tcpdump`raw_if_print + 289",
+                            "frame #9: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #10: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #11: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #12: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #13: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #14: 0x00007f491cb03b97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffcfc2bfb08, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffcfc2bfaf8) at libc-start.c:310",
+                            "frame #15: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12985",
+            "testcase": "CVE-2017-12985+0.pcap"
+        },
+        "CVE-2017-12985+1": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140731412055112, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6b38 tcpdump`__asan::__asan_report_load1(addr=<unavailable>) at asan_rtl.cc:117",
+                            "frame #5: 0x00000000005dc4d6 tcpdump`ip6_print + 4326",
+                            "frame #6: 0x00000000005d992f tcpdump`ipN_print + 463",
+                            "frame #7: 0x00000000006bfbb1 tcpdump`raw_if_print + 289",
+                            "frame #8: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #9: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #10: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #11: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #12: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #13: 0x00007f32fdcdcb97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffe95d32a98, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffe95d32a88) at libc-start.c:310",
+                            "frame #14: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12985",
+            "testcase": "CVE-2017-12985+1.pcap"
+        },
+        "CVE-2017-12986": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140727229928776, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6c58 tcpdump`__asan::__asan_report_load4(addr=<unavailable>) at asan_rtl.cc:119",
+                            "frame #5: 0x00000000006d3751 tcpdump`EXTRACT_32BITS + 81",
+                            "frame #6: 0x00000000006d349c tcpdump`rt6_print + 1692",
+                            "frame #7: 0x00000000005dc30c tcpdump`ip6_print + 3868",
+                            "frame #8: 0x00000000005d992f tcpdump`ipN_print + 463",
+                            "frame #9: 0x00000000006bfbb1 tcpdump`raw_if_print + 289",
+                            "frame #10: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #11: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #12: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #13: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #14: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #15: 0x00007f1b4a905b97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffd9c8cfd98, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffd9c8cfd88) at libc-start.c:310",
+                            "frame #16: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12986",
+            "testcase": "CVE-2017-12986.pcap"
+        },
+        "CVE-2017-12987": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140733123664480, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=false) at asan_report.cc:466",
+                            "frame #4: 0x00000000004a8021 tcpdump`::__asan_memcpy(to=0x00007ffefbd824e5, from=0x000060b000000135, size=45) at asan_interceptors_memintrinsics.cc:22",
+                            "frame #5: 0x000000000051e214 tcpdump`parse_elements + 11028",
+                            "frame #6: 0x00000000005148a5 tcpdump`handle_assoc_response + 1941",
+                            "frame #7: 0x0000000000515473 tcpdump`handle_reassoc_response + 35",
+                            "frame #8: 0x0000000000510ee3 tcpdump`mgmt_body_print + 323",
+                            "frame #9: 0x000000000050e3f1 tcpdump`ieee802_11_print + 2129",
+                            "frame #10: 0x000000000050db96 tcpdump`ieee802_11_if_print + 246",
+                            "frame #11: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #12: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #13: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #14: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #15: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #16: 0x00007f2614803b97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffefbd85758, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffefbd85748) at libc-start.c:310",
+                            "frame #17: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12987",
+            "testcase": "CVE-2017-12987.pcap"
+        },
+        "CVE-2017-12988": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140723238744056, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6b38 tcpdump`__asan::__asan_report_load1(addr=<unavailable>) at asan_rtl.cc:117",
+                            "frame #5: 0x000000000072c66d tcpdump`telnet_parse + 2413",
+                            "frame #6: 0x000000000072b73e tcpdump`telnet_print + 382",
+                            "frame #7: 0x000000000072945f tcpdump`tcp_print + 24735",
+                            "frame #8: 0x00000000005d4d09 tcpdump`ip_print_demux + 4233",
+                            "frame #9: 0x00000000005d888a tcpdump`ip_print + 8586",
+                            "frame #10: 0x000000000059eb5b tcpdump`ethertype_print + 683",
+                            "frame #11: 0x000000000059e2ee tcpdump`ether_print + 2798",
+                            "frame #12: 0x000000000059f0d5 tcpdump`ether_if_print + 245",
+                            "frame #13: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #14: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #15: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #16: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #17: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #18: 0x00007ff63ea26b97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffcaea87838, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffcaea87828) at libc-start.c:310",
+                            "frame #19: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12988",
+            "testcase": "CVE-2017-12988.pcap"
+        },
+        "CVE-2017-12991": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12991",
+            "testcase": "CVE-2017-12991.pcap"
+        },
+        "CVE-2017-12992": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140735482627416, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6b38 tcpdump`__asan::__asan_report_load1(addr=<unavailable>) at asan_rtl.cc:117",
+                            "frame #5: 0x00000000006c3979 tcpdump`ripng_print + 457",
+                            "frame #6: 0x0000000000734a8e tcpdump`udp_print + 6670",
+                            "frame #7: 0x00000000005d4eb3 tcpdump`ip_print_demux + 4659",
+                            "frame #8: 0x00000000005d888a tcpdump`ip_print + 8586",
+                            "frame #9: 0x000000000059eb5b tcpdump`ethertype_print + 683",
+                            "frame #10: 0x000000000059e2ee tcpdump`ether_print + 2798",
+                            "frame #11: 0x000000000059f0d5 tcpdump`ether_if_print + 245",
+                            "frame #12: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #13: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #14: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #15: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #16: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #17: 0x00007f64c0ab0b97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007fff88733f68, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007fff88733f58) at libc-start.c:310",
+                            "frame #18: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12992",
+            "testcase": "CVE-2017-12992.pcap"
+        },
+        "CVE-2017-12993+0": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140736498396632, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6b38 tcpdump`__asan::__asan_report_load1(addr=<unavailable>) at asan_rtl.cc:117",
+                            "frame #5: 0x0000000000618a3c tcpdump`juniper_parse_header + 7116",
+                            "frame #6: 0x0000000000620b24 tcpdump`juniper_atm1_print + 452",
+                            "frame #7: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #8: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #9: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #10: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #11: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #12: 0x00007fb844a6eb97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007fffc4fe9d08, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007fffc4fe9cf8) at libc-start.c:310",
+                            "frame #13: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12993",
+            "testcase": "CVE-2017-12993+0.pcap"
+        },
+        "CVE-2017-12993+1": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140728621361960, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6b38 tcpdump`__asan::__asan_report_load1(addr=<unavailable>) at asan_rtl.cc:117",
+                            "frame #5: 0x0000000000620ebe tcpdump`juniper_atm1_print + 1374",
+                            "frame #6: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #7: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #8: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #9: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #10: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #11: 0x00007f7edf673b97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffdef7c8ff8, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffdef7c8fe8) at libc-start.c:310",
+                            "frame #12: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12993",
+            "testcase": "CVE-2017-12993+1.pcap"
+        },
+        "CVE-2017-12993+2": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140737239323272, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6b38 tcpdump`__asan::__asan_report_load1(addr=<unavailable>) at asan_rtl.cc:117",
+                            "frame #5: 0x000000000061b4c9 tcpdump`juniper_es_print + 809",
+                            "frame #6: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #7: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #8: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #9: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #10: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #11: 0x00007fe8fb9dbb97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffff1283778, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffff1283768) at libc-start.c:310",
+                            "frame #12: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12993",
+            "testcase": "CVE-2017-12993+2.pcap"
+        },
+        "CVE-2017-12994": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12994",
+            "testcase": "CVE-2017-12994.pcap"
+        },
+        "CVE-2017-12995+0": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140729685763856, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=false) at asan_report.cc:466",
+                            "frame #4: 0x00000000004884fb tcpdump`MemcmpInterceptorCommon(ctx=0x00007ffe2eedef78, real_fn=(libc.so.6`__memcmp_sse4_1), a1=0x000060400000002e, a2=0x0000602000000151, size=7)(void const*, void const*, unsigned long), void const*, void const*, unsigned long) at sanitizer_common_interceptors.inc:834",
+                            "frame #5: 0x0000000000488869 tcpdump`::__interceptor_memcmp(a1=<unavailable>, a2=<unavailable>, size=<unavailable>) at sanitizer_common_interceptors.inc:866",
+                            "frame #6: 0x00000000004fe065 tcpdump`lookup_nsap + 1317",
+                            "frame #7: 0x00000000004fd674 tcpdump`isonsap_string + 84",
+                            "frame #8: 0x00000000005ff05e tcpdump`clnp_print + 3806",
+                            "frame #9: 0x00000000005fdd15 tcpdump`isoclns_print + 693",
+                            "frame #10: 0x000000000059ed86 tcpdump`ethertype_print + 1238",
+                            "frame #11: 0x000000000059e2ee tcpdump`ether_print + 2798",
+                            "frame #12: 0x000000000059f0d5 tcpdump`ether_if_print + 245",
+                            "frame #13: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #14: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #15: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #16: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #17: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #18: 0x00007fd6e0625b97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffe2eee2058, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffe2eee2048) at libc-start.c:310",
+                            "frame #19: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12995",
+            "testcase": "CVE-2017-12995+0.pcap"
+        },
+        "CVE-2017-12995+1": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12995",
+            "testcase": "CVE-2017-12995+1.pcap"
+        },
+        "CVE-2017-12995+2": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12995",
+            "testcase": "CVE-2017-12995+2.pcap"
+        },
+        "CVE-2017-12995+3": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12995",
+            "testcase": "CVE-2017-12995+3.pcap"
+        },
+        "CVE-2017-12995+4": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12995",
+            "testcase": "CVE-2017-12995+4.pcap"
+        },
+        "CVE-2017-12996+0": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12996",
+            "testcase": "CVE-2017-12996+0.pcap"
+        },
+        "CVE-2017-12996+1": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12996",
+            "testcase": "CVE-2017-12996+1.pcap"
+        },
+        "CVE-2017-12996+2": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12996",
+            "testcase": "CVE-2017-12996+2.pcap"
+        },
+        "CVE-2017-12996+3": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12996",
+            "testcase": "CVE-2017-12996+3.pcap"
+        },
+        "CVE-2017-12997+0": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12997",
+            "testcase": "CVE-2017-12997+0.pcap"
+        },
+        "CVE-2017-12997+1": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12997",
+            "testcase": "CVE-2017-12997+1.pcap"
+        },
+        "CVE-2017-12998": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12998",
+            "testcase": "CVE-2017-12998.pcap"
+        },
+        "CVE-2017-12999+0": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12999",
+            "testcase": "CVE-2017-12999+0.pcap"
+        },
+        "CVE-2017-12999+1": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-12999",
+            "testcase": "CVE-2017-12999+1.pcap"
+        },
+        "CVE-2017-13000": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13000",
+            "testcase": "CVE-2017-13000.pcap"
+        },
+        "CVE-2017-13000+0": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13000",
+            "testcase": "CVE-2017-13000+0.pcap"
+        },
+        "CVE-2017-13000+1": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13000",
+            "testcase": "CVE-2017-13000+1.pcap"
+        },
+        "CVE-2017-13001": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140727218257472, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=false) at asan_report.cc:466",
+                            "frame #4: 0x000000000044aad8 tcpdump`::__interceptor_strncpy(to=\"\", from=\"00000000000000000000000000000000000000000000000000000000000\", size=64) at asan_interceptors.cc:476",
+                            "frame #5: 0x000000000065e7a8 tcpdump`nfs_printfh + 1256",
+                            "frame #6: 0x000000000065c00a tcpdump`parsefh + 554",
+                            "frame #7: 0x0000000000658ef4 tcpdump`nfsreq_print_noaddr + 1012",
+                            "frame #8: 0x0000000000729d6e tcpdump`tcp_print + 27054",
+                            "frame #9: 0x00000000005d4d09 tcpdump`ip_print_demux + 4233",
+                            "frame #10: 0x00000000005d888a tcpdump`ip_print + 8586",
+                            "frame #11: 0x000000000059eb5b tcpdump`ethertype_print + 683",
+                            "frame #12: 0x000000000059e2ee tcpdump`ether_print + 2798",
+                            "frame #13: 0x000000000059f0d5 tcpdump`ether_if_print + 245",
+                            "frame #14: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #15: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #16: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #17: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #18: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #19: 0x00007fba21718b97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffd9bdb1348, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffd9bdb1338) at libc-start.c:310",
+                            "frame #20: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13001",
+            "testcase": "CVE-2017-13001.pcap"
+        },
+        "CVE-2017-13002": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140732968238760, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6b38 tcpdump`__asan::__asan_report_load1(addr=<unavailable>) at asan_rtl.cc:117",
+                            "frame #5: 0x000000000052ab88 tcpdump`aodv_extension + 88",
+                            "frame #6: 0x0000000000529063 tcpdump`aodv_rrep + 1059",
+                            "frame #7: 0x00000000005279bf tcpdump`aodv_print + 511",
+                            "frame #8: 0x00000000007346de tcpdump`udp_print + 5726",
+                            "frame #9: 0x00000000005d4eb3 tcpdump`ip_print_demux + 4659",
+                            "frame #10: 0x00000000005d888a tcpdump`ip_print + 8586",
+                            "frame #11: 0x000000000059eb5b tcpdump`ethertype_print + 683",
+                            "frame #12: 0x000000000059e2ee tcpdump`ether_print + 2798",
+                            "frame #13: 0x000000000059f0d5 tcpdump`ether_if_print + 245",
+                            "frame #14: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #15: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #16: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #17: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #18: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #19: 0x00007fa4b4f35b97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffef294b958, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffef294b948) at libc-start.c:310",
+                            "frame #20: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13002",
+            "testcase": "CVE-2017-13002.pcap"
+        },
+        "CVE-2017-13003": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13003",
+            "testcase": "CVE-2017-13003.pcap"
+        },
+        "CVE-2017-13004": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140726153094376, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6bc8 tcpdump`__asan::__asan_report_load2(addr=<unavailable>) at asan_rtl.cc:118",
+                            "frame #5: 0x000000000061b181 tcpdump`EXTRACT_16BITS + 81",
+                            "frame #6: 0x000000000061999d tcpdump`juniper_parse_header + 11053",
+                            "frame #7: 0x0000000000620b24 tcpdump`juniper_atm1_print + 452",
+                            "frame #8: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #9: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #10: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #11: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #12: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #13: 0x00007f3d8b889b97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffd5c5dd448, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffd5c5dd438) at libc-start.c:310",
+                            "frame #14: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13004",
+            "testcase": "CVE-2017-13004.pcap"
+        },
+        "CVE-2017-13005": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140726770937208, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6c58 tcpdump`__asan::__asan_report_load4(addr=<unavailable>) at asan_rtl.cc:119",
+                            "frame #5: 0x0000000000654c61 tcpdump`EXTRACT_32BITS + 81",
+                            "frame #6: 0x000000000065b929 tcpdump`xid_map_enter + 937",
+                            "frame #7: 0x0000000000658cf9 tcpdump`nfsreq_print_noaddr + 505",
+                            "frame #8: 0x0000000000733bfb tcpdump`udp_print + 2939",
+                            "frame #9: 0x00000000005d4eb3 tcpdump`ip_print_demux + 4659",
+                            "frame #10: 0x00000000005d888a tcpdump`ip_print + 8586",
+                            "frame #11: 0x000000000059eb5b tcpdump`ethertype_print + 683",
+                            "frame #12: 0x000000000059e2ee tcpdump`ether_print + 2798",
+                            "frame #13: 0x000000000059f0d5 tcpdump`ether_if_print + 245",
+                            "frame #14: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #15: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #16: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #17: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #18: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #19: 0x00007f5bca260b97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffd81316d48, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffd81316d38) at libc-start.c:310",
+                            "frame #20: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13005",
+            "testcase": "CVE-2017-13005.pcap"
+        },
+        "CVE-2017-13006": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140727800348440, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6bc8 tcpdump`__asan::__asan_report_load2(addr=<unavailable>) at asan_rtl.cc:118",
+                            "frame #5: 0x0000000000625781 tcpdump`EXTRACT_16BITS + 81",
+                            "frame #6: 0x0000000000627112 tcpdump`l2tp_accm_print + 50",
+                            "frame #7: 0x000000000062601c tcpdump`l2tp_avp_print + 2172",
+                            "frame #8: 0x00000000006255fe tcpdump`l2tp_print + 3934",
+                            "frame #9: 0x00000000007348dd tcpdump`udp_print + 6237",
+                            "frame #10: 0x00000000005d4eb3 tcpdump`ip_print_demux + 4659",
+                            "frame #11: 0x00000000005d888a tcpdump`ip_print + 8586",
+                            "frame #12: 0x000000000059eb5b tcpdump`ethertype_print + 683",
+                            "frame #13: 0x000000000059e2ee tcpdump`ether_print + 2798",
+                            "frame #14: 0x000000000059f0d5 tcpdump`ether_if_print + 245",
+                            "frame #15: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #16: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #17: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #18: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #19: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #20: 0x00007f9290655b97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffdbe8cfb48, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffdbe8cfb38) at libc-start.c:310",
+                            "frame #21: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13006",
+            "testcase": "CVE-2017-13006.pcap"
+        },
+        "CVE-2017-13007": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140727878645912, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6b38 tcpdump`__asan::__asan_report_load1(addr=<unavailable>) at asan_rtl.cc:117",
+                            "frame #5: 0x00000000006a65fc tcpdump`ppp_hdlc_if_print + 364",
+                            "frame #6: 0x00000000006a4071 tcpdump`pktap_if_print + 2241",
+                            "frame #7: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #8: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #9: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #10: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #11: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #12: 0x00007f1204e78b97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffdc3379dc8, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffdc3379db8) at libc-start.c:310",
+                            "frame #13: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13007",
+            "testcase": "CVE-2017-13007.pcap"
+        },
+        "CVE-2017-13008": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13008",
+            "testcase": "CVE-2017-13008.pcap"
+        },
+        "CVE-2017-13009": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140724218450120, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6b38 tcpdump`__asan::__asan_report_load1(addr=<unavailable>) at asan_rtl.cc:117",
+                            "frame #5: 0x000000000064cb32 tcpdump`mobility_print + 6130",
+                            "frame #6: 0x00000000005dc288 tcpdump`ip6_print + 3736",
+                            "frame #7: 0x00000000005d992f tcpdump`ipN_print + 463",
+                            "frame #8: 0x00000000006bfbb1 tcpdump`raw_if_print + 289",
+                            "frame #9: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #10: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #11: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #12: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #13: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #14: 0x00007f1e963a2b97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffce90d7c88, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffce90d7c78) at libc-start.c:310",
+                            "frame #15: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13009",
+            "testcase": "CVE-2017-13009.pcap"
+        },
+        "CVE-2017-13010": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140731533969136, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=false) at asan_report.cc:466",
+                            "frame #4: 0x0000000000486a6a tcpdump`::__interceptor_strncmp(s1=\"MSG\", s2=\"\", size=4) at sanitizer_common_interceptors.inc:472",
+                            "frame #5: 0x00000000005459d0 tcpdump`l_strnstart + 64",
+                            "frame #6: 0x000000000054563e tcpdump`beep_print + 46",
+                            "frame #7: 0x000000000072967c tcpdump`tcp_print + 25276",
+                            "frame #8: 0x00000000005dc3f7 tcpdump`ip6_print + 4103",
+                            "frame #9: 0x00000000005d992f tcpdump`ipN_print + 463",
+                            "frame #10: 0x00000000006bfbb1 tcpdump`raw_if_print + 289",
+                            "frame #11: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #12: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #13: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #14: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #15: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #16: 0x00007f387f46db97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffe9d1784d8, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffe9d1784c8) at libc-start.c:310",
+                            "frame #17: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13010",
+            "testcase": "CVE-2017-13010.pcap"
+        },
+        "CVE-2017-13011": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13011",
+            "testcase": "CVE-2017-13011.pcap"
+        },
+        "CVE-2017-13012": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13012",
+            "testcase": "CVE-2017-13012.pcap"
+        },
+        "CVE-2017-13013": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13013",
+            "testcase": "CVE-2017-13013.pcap"
+        },
+        "CVE-2017-13014": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140730713224472, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6c58 tcpdump`__asan::__asan_report_load4(addr=<unavailable>) at asan_rtl.cc:119",
+                            "frame #5: 0x0000000000740191 tcpdump`EXTRACT_32BITS + 81",
+                            "frame #6: 0x000000000073fc2f tcpdump`wb_prep + 191",
+                            "frame #7: 0x000000000073e630 tcpdump`wb_print + 992",
+                            "frame #8: 0x0000000000734be7 tcpdump`udp_print + 7015",
+                            "frame #9: 0x00000000005d4eb3 tcpdump`ip_print_demux + 4659",
+                            "frame #10: 0x00000000005d888a tcpdump`ip_print + 8586",
+                            "frame #11: 0x00000000006a61fe tcpdump`handle_ppp + 606",
+                            "frame #12: 0x00000000006a5eb4 tcpdump`ppp_print + 1844",
+                            "frame #13: 0x00000000006a6473 tcpdump`ppp_if_print + 307",
+                            "frame #14: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #15: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #16: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #17: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #18: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #19: 0x00007f9815e16b97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffe6c2bee48, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffe6c2bee38) at libc-start.c:310",
+                            "frame #20: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13014",
+            "testcase": "CVE-2017-13014.pcap"
+        },
+        "CVE-2017-13015": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13015",
+            "testcase": "CVE-2017-13015.pcap"
+        },
+        "CVE-2017-13016+0": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13016",
+            "testcase": "CVE-2017-13016+0.pcap"
+        },
+        "CVE-2017-13016+1": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13016",
+            "testcase": "CVE-2017-13016+1.pcap"
+        },
+        "CVE-2017-13016+2": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13016",
+            "testcase": "CVE-2017-13016+2.pcap"
+        },
+        "CVE-2017-13016+3": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13016",
+            "testcase": "CVE-2017-13016+3.pcap"
+        },
+        "CVE-2017-13016+4": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13016",
+            "testcase": "CVE-2017-13016+4.pcap"
+        },
+        "CVE-2017-13017": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13017",
+            "testcase": "CVE-2017-13017.pcap"
+        },
+        "CVE-2017-13018": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13018",
+            "testcase": "CVE-2017-13018.pcap"
+        },
+        "CVE-2017-13019": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13019",
+            "testcase": "CVE-2017-13019.pcap"
+        },
+        "CVE-2017-13020": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13020",
+            "testcase": "CVE-2017-13020.pcap"
+        },
+        "CVE-2017-13021": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13021",
+            "testcase": "CVE-2017-13021.pcap"
+        },
+        "CVE-2017-13022": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13022",
+            "testcase": "CVE-2017-13022.pcap"
+        },
+        "CVE-2017-13023": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13023",
+            "testcase": "CVE-2017-13023.pcap"
+        },
+        "CVE-2017-13024": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13024",
+            "testcase": "CVE-2017-13024.pcap"
+        },
+        "CVE-2017-13025": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13025",
+            "testcase": "CVE-2017-13025.pcap"
+        },
+        "CVE-2017-13026+0": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13026",
+            "testcase": "CVE-2017-13026+0.pcap"
+        },
+        "CVE-2017-13026+1": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13026",
+            "testcase": "CVE-2017-13026+1.pcap"
+        },
+        "CVE-2017-13026+2": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13026",
+            "testcase": "CVE-2017-13026+2.pcap"
+        },
+        "CVE-2017-13026+3": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13026",
+            "testcase": "CVE-2017-13026+3.pcap"
+        },
+        "CVE-2017-13027": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13027",
+            "testcase": "CVE-2017-13027.pcap"
+        },
+        "CVE-2017-13028": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13028",
+            "testcase": "CVE-2017-13028.pcap"
+        },
+        "CVE-2017-13029": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13029",
+            "testcase": "CVE-2017-13029.pcap"
+        },
+        "CVE-2017-13030": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13030",
+            "testcase": "CVE-2017-13030.pcap"
+        },
+        "CVE-2017-13031": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13031",
+            "testcase": "CVE-2017-13031.pcap"
+        },
+        "CVE-2017-13032": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13032",
+            "testcase": "CVE-2017-13032.pcap"
+        },
+        "CVE-2017-13033": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13033",
+            "testcase": "CVE-2017-13033.pcap"
+        },
+        "CVE-2017-13034": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13034",
+            "testcase": "CVE-2017-13034.pcap"
+        },
+        "CVE-2017-13035": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13035",
+            "testcase": "CVE-2017-13035.pcap"
+        },
+        "CVE-2017-13036": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13036",
+            "testcase": "CVE-2017-13036.pcap"
+        },
+        "CVE-2017-13037": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13037",
+            "testcase": "CVE-2017-13037.pcap"
+        },
+        "CVE-2017-13038": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140721568340200, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6bc8 tcpdump`__asan::__asan_report_load2(addr=<unavailable>) at asan_rtl.cc:118",
+                            "frame #5: 0x00000000006a5f81 tcpdump`EXTRACT_16BITS + 81",
+                            "frame #6: 0x00000000006a8dac tcpdump`handle_mlppp + 252",
+                            "frame #7: 0x00000000006a61aa tcpdump`handle_ppp + 522",
+                            "frame #8: 0x00000000006a5eb4 tcpdump`ppp_print + 1844",
+                            "frame #9: 0x00000000006a6473 tcpdump`ppp_if_print + 307",
+                            "frame #10: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #11: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #12: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #13: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #14: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #15: 0x00007f3544077b97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffc4b17fda8, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffc4b17fd98) at libc-start.c:310",
+                            "frame #16: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13038",
+            "testcase": "CVE-2017-13038.pcap"
+        },
+        "CVE-2017-13039": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13039",
+            "testcase": "CVE-2017-13039.pcap"
+        },
+        "CVE-2017-13040": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140724066244792, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6b38 tcpdump`__asan::__asan_report_load1(addr=<unavailable>) at asan_rtl.cc:117",
+                            "frame #5: 0x000000000065268b tcpdump`mp_dss_len + 91",
+                            "frame #6: 0x00000000006514f5 tcpdump`mp_dss_print + 53",
+                            "frame #7: 0x0000000000650c49 tcpdump`mptcp_print + 505",
+                            "frame #8: 0x000000000072884d tcpdump`tcp_print + 21645",
+                            "frame #9: 0x00000000005d4d09 tcpdump`ip_print_demux + 4233",
+                            "frame #10: 0x00000000005d888a tcpdump`ip_print + 8586",
+                            "frame #11: 0x000000000059eb5b tcpdump`ethertype_print + 683",
+                            "frame #12: 0x000000000059e2ee tcpdump`ether_print + 2798",
+                            "frame #13: 0x000000000059f0d5 tcpdump`ether_if_print + 245",
+                            "frame #14: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #15: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #16: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #17: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #18: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #19: 0x00007f894253fb97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffcdffb1df8, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffcdffb1de8) at libc-start.c:310",
+                            "frame #20: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13040",
+            "testcase": "CVE-2017-13040.pcap"
+        },
+        "CVE-2017-13041": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140734428185400, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6bc8 tcpdump`__asan::__asan_report_load2(addr=<unavailable>) at asan_rtl.cc:118",
+                            "frame #5: 0x00000000005c2f61 tcpdump`EXTRACT_16BITS + 81",
+                            "frame #6: 0x00000000005ca950 tcpdump`icmp6_nodeinfo_print + 6320",
+                            "frame #7: 0x00000000005c2207 tcpdump`icmp6_print + 11623",
+                            "frame #8: 0x00000000005dc469 tcpdump`ip6_print + 4217",
+                            "frame #9: 0x00000000007097fb tcpdump`sl_if_print + 747",
+                            "frame #10: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #11: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #12: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #13: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #14: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #15: 0x00007fb4cc5a0b97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007fff4999b868, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007fff4999b858) at libc-start.c:310",
+                            "frame #16: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13041",
+            "testcase": "CVE-2017-13041.pcap"
+        },
+        "CVE-2017-13042": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13042",
+            "testcase": "CVE-2017-13042.pcap"
+        },
+        "CVE-2017-13044": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13044",
+            "testcase": "CVE-2017-13044.pcap"
+        },
+        "CVE-2017-13045": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13045",
+            "testcase": "CVE-2017-13045.pcap"
+        },
+        "CVE-2017-13046": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13046",
+            "testcase": "CVE-2017-13046.pcap"
+        },
+        "CVE-2017-13047": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13047",
+            "testcase": "CVE-2017-13047.pcap"
+        },
+        "CVE-2017-13048": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13048",
+            "testcase": "CVE-2017-13048.pcap"
+        },
+        "CVE-2017-13049": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140721055070584, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6c58 tcpdump`__asan::__asan_report_load4(addr=<unavailable>) at asan_rtl.cc:119",
+                            "frame #5: 0x00000000006d4d01 tcpdump`EXTRACT_32BITS + 81",
+                            "frame #6: 0x0000000000700ada tcpdump`ubik_print + 6602",
+                            "frame #7: 0x00000000006deae6 tcpdump`prot_print + 630",
+                            "frame #8: 0x00000000006d4541 tcpdump`rx_print + 3297",
+                            "frame #9: 0x0000000000734a52 tcpdump`udp_print + 6610",
+                            "frame #10: 0x00000000005d4eb3 tcpdump`ip_print_demux + 4659",
+                            "frame #11: 0x00000000005d888a tcpdump`ip_print + 8586",
+                            "frame #12: 0x000000000059eb5b tcpdump`ethertype_print + 683",
+                            "frame #13: 0x000000000059e2ee tcpdump`ether_print + 2798",
+                            "frame #14: 0x000000000059f0d5 tcpdump`ether_if_print + 245",
+                            "frame #15: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #16: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #17: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #18: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #19: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #20: 0x00007f76c5e14b97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffc2c8047c8, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffc2c8047b8) at libc-start.c:310",
+                            "frame #21: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13049",
+            "testcase": "CVE-2017-13049.pcap"
+        },
+        "CVE-2017-13051+0": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13051",
+            "testcase": "CVE-2017-13051+0.pcap"
+        },
+        "CVE-2017-13051+1": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13051",
+            "testcase": "CVE-2017-13051+1.pcap"
+        },
+        "CVE-2017-13051+2": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13051",
+            "testcase": "CVE-2017-13051+2.pcap"
+        },
+        "CVE-2017-13052": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13052",
+            "testcase": "CVE-2017-13052.pcap"
+        },
+        "CVE-2017-13053": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13053",
+            "testcase": "CVE-2017-13053.pcap"
+        },
+        "CVE-2017-13054": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13054",
+            "testcase": "CVE-2017-13054.pcap"
+        },
+        "CVE-2017-13055": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13055",
+            "testcase": "CVE-2017-13055.pcap"
+        },
+        "CVE-2017-13687": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140724559721928, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6b38 tcpdump`__asan::__asan_report_load1(addr=<unavailable>) at asan_rtl.cc:117",
+                            "frame #5: 0x000000000056f416 tcpdump`chdlc_print + 646",
+                            "frame #6: 0x000000000056f173 tcpdump`chdlc_if_print + 307",
+                            "frame #7: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #8: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #9: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #10: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #11: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #12: 0x00007f5ad5a1cb97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007ffcfd64d938, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffcfd64d928) at libc-start.c:310",
+                            "frame #13: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13687",
+            "testcase": "CVE-2017-13687.pcap"
+        },
+        "CVE-2017-13688+0": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13688",
+            "testcase": "CVE-2017-13688+0.pcap"
+        },
+        "CVE-2017-13688+1": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13688",
+            "testcase": "CVE-2017-13688+1.pcap"
+        },
+        "CVE-2017-13689": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13689",
+            "testcase": "CVE-2017-13689.pcap"
+        },
+        "CVE-2017-13690": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13690",
+            "testcase": "CVE-2017-13690.pcap"
+        },
+        "CVE-2017-13725": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6a40 tcpdump`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4c8a tcpdump`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b632e tcpdump`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b61e1 tcpdump`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140734674044728, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6b38 tcpdump`__asan::__asan_report_load1(addr=<unavailable>) at asan_rtl.cc:117",
+                            "frame #5: 0x00000000006d2e67 tcpdump`rt6_print + 103",
+                            "frame #6: 0x00000000005dc30c tcpdump`ip6_print + 3868",
+                            "frame #7: 0x00000000005d992f tcpdump`ipN_print + 463",
+                            "frame #8: 0x00000000006bfbb1 tcpdump`raw_if_print + 289",
+                            "frame #9: 0x000000000050c3cb tcpdump`pretty_print_packet + 427",
+                            "frame #10: 0x00000000004f6813 tcpdump`print_packet + 83",
+                            "frame #11: 0x00000000007ab920 tcpdump`pcap_offline_read + 1248",
+                            "frame #12: 0x0000000000763f34 tcpdump`pcap_loop + 100",
+                            "frame #13: 0x00000000004f1ddf tcpdump`main + 18783",
+                            "frame #14: 0x00007f1927d7ab97 libc.so.6`__libc_start_main(main=(tcpdump`main), argc=4, argv=0x00007fff58412f58, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007fff58412f48) at libc-start.c:310",
+                            "frame #15: 0x000000000041c34a tcpdump`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13725",
+            "testcase": "CVE-2017-13725.pcap"
+        },
+        "CVE-2017-5204": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-5204",
+            "testcase": "CVE-2017-5204.pcap"
+        },
+        "CVE-2017-5341": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-5341",
+            "testcase": "CVE-2017-5341.pcap"
+        },
+        "CVE-2017-5342": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-5342",
+            "testcase": "CVE-2017-5342.pcap"
+        },
+        "CVE-2017-5482": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-5482",
+            "testcase": "CVE-2017-5482.pcap"
+        },
+        "CVE-2017-5483+0": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-5483",
+            "testcase": "CVE-2017-5483+0.pcap"
+        },
+        "CVE-2017-5483+1": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-5483",
+            "testcase": "CVE-2017-5483+1.pcap"
+        },
+        "CVE-2017-5484": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-5484",
+            "testcase": "CVE-2017-5484.pcap"
+        },
+        "CVE-2017-5485": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-5485",
+            "testcase": "CVE-2017-5485.pcap"
+        },
+        "CVE-2017-5486": {
+            "args": "-n -r @@",
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-5486",
+            "testcase": "CVE-2017-5486.pcap"
+        }
+    },
+    "cve": "",
+    "evars": {
+        "ASAN_OPTIONS": "detect_leaks=0"
+    },
+    "known_vuln_count": 0,
+    "source": "https://github.com/the-tcpdump-group/tcpdump",
+    "version": "4.9.1"
+}

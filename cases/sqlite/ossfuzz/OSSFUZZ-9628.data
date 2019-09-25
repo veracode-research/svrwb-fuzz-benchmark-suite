@@ -1,0 +1,2 @@
+
+      WITH RECURSIVE c AS (VALUES(0) ) SELECT#i0 FROM c  JOIN  (SELECT"E"in( SELECT#i0 FROM c ex_infoÿ LEFT JOIN  (SELECT"E"in( 241)""FROM(SELECT"n"""E))WHERE""AND random()&""""""+""&"""+"&""+"'&"+242)""FROM(SELECT"s"""E))WHERE""+""&""OR""&"+"+""&""IS+""&""""&""""+""&"Õ""+"""+""&""""/""&""&""OR""+""&""+""

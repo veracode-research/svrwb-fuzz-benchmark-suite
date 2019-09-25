@@ -1,0 +1,1 @@
+PRAGMA reverse_unordered_selects(2);CREATE TABLE t1(a,b);INSERT INTO t1 VALUES(2,(2));CREATE INDEX ÿ ON t1(b);SELECT a FROM t1 WHERE b=' 'OR''<b

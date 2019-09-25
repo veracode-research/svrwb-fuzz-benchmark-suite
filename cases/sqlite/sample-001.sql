@@ -1,0 +1,1 @@
+SELECT n()AND+#00;

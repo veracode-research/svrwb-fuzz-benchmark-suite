@@ -1,0 +1,384 @@
+  CREATE TEMP taBLE t1(ÿÿ   , b); CREATE TRIGGER      ÿÿÿ  INSERT ON t1 BEGIN       INSERT INTO ÿ  VALUES(  ÿ.               ÿ | ' ');     END;CREATE TABLE ÿ (                 ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ  ÿ       );     --                                   ÿÿÿÿÿÿÿÿ                   ÿ                                                                                                                                                                                                                                                                                                                                                                                                         ÿÿÿÿÿÿ                   
+    ALTER TABLE t1 ADD        ÿ    ÿÿ  /*         ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ                  '                                                                                                                                                                                                                                                                                                                                                                           '      '                   '                             '    '       '    ''    '      '    '                             '    '       '    ''    '      '    '                             '    '       '    ''    '      '    '                             '    '       '    ''    '      '    '                             '    '       '    ''    '      '    '                             '    '       '    ''    '      '    '                             '    '       '    ''    '      '    '                             '    '       '    ''    '      '    '                             '    '       '    ''    '      '    '                             '    '       '    ''    '      '    '                             '    '       '    ''    '      '    '          ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ                   '                                          ÿÿ             ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ                 ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ                   '    '       '    ''    '      '    '                       ÿÿ             ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ                                                                                                                                                                                                                                                                                                                                                                                                                            ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ                                                                                                                                                                                                                                                                                                                                                                                                                                     ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ        '                                               ' '' '                        '    '       '                                                                                                                                                                                                                                                                    ' '' '                                                            '                                                                                                     '      '   '                                                                                                                                                                                                                                              '                                                                                                      '      '   '                                                                                                                                                                                                      '                                                                                                     '      '   '                                                                                 '      '   '                                              '                                                        '      '   '                                                                                                                                                 '                                          7yy721b561e0b0658bda26bd2c0b0658bda26bd2c1350afd5fb5af6f72' OR a='xbb' OR a=+(++499));
+  --ðÀÀÀëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1tr7yy721b5e610b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, Rb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1	tr7yy721b561e0b0658bda27bd2c1350afd5fb5af)6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROUID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1 :1tr7yy721b561e0b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHO  busy_timeout	=0;afd5fb5af6f72' OR a='xbb' OR a=+(++499));
+  --ðÀÀÀëëëëëëëëëëëëëëëëëëëëë'ëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëë7yy721b561e0b0658bda26bd2c1350afd5fb5af6f72' OR a='xbb' OR a=+(++499));
+  --ðÀÀÀëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëa='x1 :1tr7yy721b561e0b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHO  busy_timeout	=0;afd5fb5af6f72' OR a='xbb' OR a=+(++499));
+  --ðÀÀÀëëëëëëëëëëëëëëëëëëëëë'ëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëë7yy721b561e0b0658bda26bd2c1350afd5fb5af6f72' OR a='xbb' OR a=+(++499));
+  --ðÀÀÀëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1tr1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, Rb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1	tr7yy721b561e0b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ASDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1tr7yySELECT*, *,*,*FROM(SELECT 0)M,( SELECT.0)M(R a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHO  busy_timeout	=0;	PRAGMA busy_tim[[[eot	[u5=[OWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x17yy721b561e0b0658bda26bd2c0b0658bda26bd2c1350afd5fb5af6f72' OR a='xbb' OR a=+(++499));
+  --ðÀÀÀëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1tr7yy721b5e610b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, Rb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1	tr7yy721b561e0b0658bda27bd2c1350afd5fb5af)6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b* (1) AND(a='x1 :1tr7yy721b561e0b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHO  busy_timeout	=0;afd5fb5af6f72' OR a='xbb' OR a=+(++499));
+  --ðÀÀÀëëëëëëëëëëëëëëëëëëëëë'ëëëëëëëëëëëëëëëëëëëëëëëëëë0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHO  busy_timeout	=0;	PRAGMA busy_tim[[[eot	[u5=[OWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x17yy721b561e0b0658bda26bd2c0b0658bda26bd2c1350afd5fb5af6f72' OR a='xbb' OR a=+(++499));
+  --ðÀÀÀëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1tr7yy721b5e610b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, Rb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1	tr7yy721b561e0b0658bda27bd2c1350afd5fb5af)6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1 :1tr7yy721b561e0b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHO  busy_timeout	=0;afd5fb5af6f72' OR a='xbb' OR a=+(++499));
+  --ðÀÀÀëëëëëëëëëëëëëëëëëëëëë'ëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëë7yy721b561e0b0658bda26bd2c1350afd5fb5af6f72' OR a='xbb' OR a=+(++499));
+  --ðÀÀÀëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1tr1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, Rb z c) WITHO ND(aƒƒ£ƒƒ CREATE TABLƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1	tr7yy721b561e0b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1tr7yy7ëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëë7yy721b561e0b0658bda26bd2c1350afd5fb5af6f72' OR a='xbb' OR a=+(++499));
+  --ðÀÀÀëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1tr1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, Rb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1	tr7yy721b561e0b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ASDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1tr7yy721b561e0b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHO  busy_timeout	=0;	PRAGMA busy_tim[[[eot	[u5=[OWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x17yy721b561e0b0658bda26bd2c0b0658bda26bd2c1350afd5fb5af6f72' OR a='xbb' OR a=+(++499));
+  --ðÀÀÀëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1tr7yy721b5e610b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, Rb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1	tr7yy721b561e0b0658bda27bd2c1350afd5fb5af)6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b* (1) AND(a='x1 :1tr7yy721b561e0b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHO  busy_timeout	=0;afd5fb5af6f72' OR a='xbb' OR a=+(++499));
+  --ðÀÀÀëëëëëëëëëëëëëëëëëëëëë'ëëëëëëëëëëëëëëëëëëëëëëëëëë0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHO  busy_timeout	=0;	PRAGMA busy_tim[[[eot	[u5=[OWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x17yy721b561e0b0658bda26bd2c0b0658bda26bd2c1350afd5fb5af6f72' OR a='xbb' OR a=+(++499));
+  --ðÀÀÀëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1tr7yy721b5e610b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, Rb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1	tr7yy721b561e0b0658bda27bd2c1350afd5fb5af)6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1 :1tr7yy721b561e0b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHO  busy_timeout	=0;afd5fb5af6f72' OR a='xbb' OR a=+(++499));
+  --ðÀÀÀëëëëëëëëëëëëëëëëëëëëë'ëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëë7yy721b561e0b0658bda26bd2c1350afd5fb5af6f72' OR a='xbb' OR a=+(++499));
+  --ðÀÀÀëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1tr1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, Rb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1	tr7yy721b561e0b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1tr7yy721b561e0b0658bda27bd2c1350afd5fb5af6f72' ORm[[[eot	[u5=[OWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x17yy721b561e0b0658bda26bd2c0b0658bda26bd2c1350afd5fb5af6f72' OR a='xbb' OR a=+(++499));
+  --ðÀÀÀëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1tr7yy721b5e610b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, Rb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1	tr7yy721b561e0b0658bda27bd2c1350afd5fb5af)6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b* (1) AND(a='x1 :1tr7yy721b561e0b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHO  busy_timeout	=0;afd5fb5af6f72' OR a='xbb' OR a=+(++499));
+  --ðÀÀÀëëëëëëëëëëëëëëëëëëëëë'ëëëëëëëëëëëëëëëëëëëëëëëëëë0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHO  busy_timeout	=0;	PRAGMA busy_tim[[[eot	[u5=[OWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x17yy721b561e0b0658bda26bd2c0b0658bda26bd2c1350afd5fb5af6f72' OR a='xbb' OR a=+(++499));
+  --ðÀÀÀëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1tr7yy721b5e610b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, Rb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1	tr7yy721b561e0b0658bda27SELECT*, *,*,*FROM(SELECT 0)M,( SELECT.0)M(+499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROUID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1 :1tr7yy721b561e0b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHO  busy_timeout	=0;afd5fb5af6f72' OR a='xbb' OR a=+(++499));
+  --ðÀÀÀëëëëëëëëëëëëëëëëëëëëë'ëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëë7yy721b561e0b0658bda26bd2c1350afd5fb5af6f72' OR a='xbb' OR a=+(++499));
+  --ðÀÀÀëëëëëëëëëëëëëëëëëëëëëëëëLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)6"ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLA mmap_sizeATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""COLLATE  "ÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ032)666064)0"UNION	SELECT "66666"UNION	SELECT ""ORDER BY ""COLLATE  ""tr7yy721b561e0b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WI7yy721b561e0b0658bda26bd2c0b0658bda26bd2c1350afd5fb5af6f72' OR a='xbb' OR a=+(++499));
+  --ðÀÀÀëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1tr7yy721b5e610b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, Rb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1	tr7yy721b561e0b0658bda27bd2c1350afd5fb5af)6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b* (1) AND(a='x1 :1tr7yy721b561e0b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHO  busy_timeout	=0;afd5fb5af6f72' OR a='xbb' OR a=+(++499));
+  --ðÀÀÀëëëëëëëëëëëëëëëëëëëëë'ëëëëëëëëëëëëëëëëëëëëëëëëëë0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHO  busy_timeout	=0;	PRAGMA busy_tim[[[eot	[u5=[OWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x17yy721b561e0b0658bda26bd2c0b0658bda26bd2c1350afd5fb5af6f72' OR a='xbb' OR a=+(++499));
+  --ðÀÀÀëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1tr7yy721b5e610b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, Rb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1	tr7yy721b561e0b0658bda27bd2c1350afd5fb5af)6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1 :1tr7yy721b561e0b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHO  busy_timeout	=0;afd5fb5af6f72' OR a='xbb' OR a=+(++499));
+  --ðÀÀÀëëëëëëëëëëëëëëëëëëëëë'ëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëCREATE TABLE t1(a REFELENCES''''); ANALYZE;PRAGMA foreign_key_check;PRAGMA foreign_key_check;PRAGMA n_key_check;PRAGMA foreign_key_check;PRAGMA foreign_key_check;PRAGMA foreign_key_check;PRAGMA foreign_key_check;PRAGMA foreign_key_check;PRAGMA foreign_key_check;PRAGMA foreign_keyforeign_keyyforeign_key_check;PRAGMA foreign_key_check;PRAGMA foreign_key_check;PRAGMA foreign_key_check;PRAGMA(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, Rb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1	tr7yy721b561e0b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1tr7yy721b561e0b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHO  busy_timeout	=0;	PRAGMA busy_tim[[[eot	[u5=[OWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x17yy721b561e0b0658bda26bd2c1350afd5fb5af6f72' OR a='xbb' OR a=+(++499));
+  --ðÀÀÀëëëëëëëëëëëëëùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùù  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1	tr7yy721b561e0b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++499));
+  --ðÀÀÀÀÀ KEY, ORDERb  c) WITHOëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëëÀÀ KEY, ORDERb z c) WITHO ND(aƒƒ£ƒƒƒƒƒƒƒƒƒƒƒƒY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b< (1) AND(a='x1tr7yy721b561e0b0658bda27bd2c1350afd5fb5af6f72' OR a<'xbb' OR a=+(++ATE TABLE t1(a PRIMARY KEY, b  c) WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b= (1) AND(a='x17yy' OR a<'x¥b' OR a=+(++500));
+  --ðÀ+KEY, b  c) WIT WITHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b= (1) AND(a='x17yy' OR a<'x¥b' OR a=+(++500));
+  --ðÀ+KEY, b  c) WITHOUTHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b= (1) AND(a='x17yy' OR a<'x¥b' OR a=+(++500));
+PRIMARY  --ðÀ++499));;b(471 t1 VALUES(2, rand  ROLLBACK		TO	 O	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOISELECT strftime("%Y%Y%Y%%Y%Y%Y%Y%SY%Y%Y%Y%Y%Y%Y%Y%Y%Y%YYY%Y%%Y%YY%Y%SY%Y%Y%Y%Y%Y%Y%Y%Y%Y%Y%YY'Y%Y%Y%Y%Y%Y%Y%Y%Y%Y%Y%Y%%%%%%%%%%%%%%%%%%%%%Y%Y%Y%Y%Y5YY%Y%Y%Y%Y%YSY%Y%Y%Y%Y%Y%Y%Y%Y%Y%Y%YY%Y%Y%YY%Y%SY%Y%Y%Y%Y%Y%Y%Y%Y%Y%Y%Y%Y database_listY%Y%Y%Y%Y%Y%YY%Y%Y%YY%Y%SY%Y%Y%Y%Y%Y%Y%Y%Y%Y%Y%YY'Y%Y%Y%Y%Y%Y%Y%Y%Y%Y%Y%Y%%%%%%%%%%%%%%%%%%%%%Y%Y%Y%Y%Y%YY%Y%Y%Y%Y%Y%Y%Y%Y%Y%Y%Y%Y%%%%%%%%%%%%%%%%%%%%%Y%Y%Y%Y%Y",0)e17yy' OR a<'x¥b' OR a=+(++500));
+  --ðÀ+KEY, b  c) WITHOUTHOUT ROWID;
+  ;
+  SELECT * FROM t1 WHERE b= (1) AND(a='x CREATE TABLE t0(a,b);
+    CREATE INDEX t ON t0(a);
+    PRAGMA writable_schema=ON;
+    UPDATE sqlite_master SET sql='CREATE [ABLE a0 2ullfsyncb@(a UNIQUE';
+    BEGIN;
+    CREATE TABLE t65534(x);
+    ROLLBACK;
+    ;
+    PRAGMA writable_schema=ON;
+
+SAVEPOINT	Vi;
+
+SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+
+SAVEPOINT	Ve; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+
+SAVEPOINT	Ve; 		ANALYZE TEMP	 	; 		ANALYZE ;  ROLLBACK		TO	 Va;
+
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;   	; 		ANALYZE ; ;   ; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+
+SAVEPOINT	Ve; 		ANALYZE TEMP	 	; 		ANALYZE ;  ROLLBACK		TO	 Va;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		WITH c(i)AS(VALUES(2)UNION SELECT~I*~I-i-i f FROM c)SELECT-i fROM cE INDEX t ON t0(a);
+    PRAGMA writable_schema=ON;
+    UPDATE sqlite_master SET sql='EARCTE TABLEážûÏß™Š“lfsyncb@(a UNIQUE';
+    BEGIN;
+   ;
+	CREATE TABLE t1(a, b); CREATE INDEX t0b ON t0(00,340-82,00/0-1,255,0, 'a',0,0, 8);
+SAVEPOINT	Va; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+
+SAVEPOINT	Ve; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+
+SAVEPOINT	Ve; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+
+SAVEPOINT	Ve; 		ANALYZE TEMP	 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+
+SAVEPOINT	Ve; 		ANALYZE TEMP	 	; 		ANALYZE ;  ROLLBACK		TO	 Va;
+
+SAVEPOINT	Ve; 	; 		ANALYZE REINDEX; 	vacuum;vac	ANALYZE TE 		ANALYZE TEble_schemUMa=ON;
+
+SAVEPOINT	Vi;Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+SAVEPOINT	Ve; 	; 		ANALYZE ; ;  ROLLBACK		TO	 Va;
+
+ANALYZE ;  CREATE TABLE t1(a PREUNIQUE,RERa PREUNIQUE,REREUNIQUE,REUNIQUE,UNUNIQUE) ; DROP TABLE IF EXISTS t1;CREATE TABLE t1(a PREUNIQUE,REREUNIQSAVEPOINTQUE,UNUNIQUE) ; DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a PREUNIQUE,REREUNIQUE,REUNIQUE,EUNIQSAVEPOINTQUE,UNUNIQUE) ; DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a PREUNIQUE,REREUNIQUE,REUNIQUE,UNUNIQUE) ; DROP TABLE IF EXISTS t1;CREATE TABLE t1(a PREUNIQUE,REREUNIQSAVEPOINTQUE,UNUNIQUE) ; DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a PREUNIQUE,REREUNIQUE,REUNIQUE,UNUNIQUE) ; DROP TABLE IF EXISTS t1;CREATE TABLE t1(a PREUNIQUE,REREUNIQSAVEPOINTQUE,UNUNIQUE) ; DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a PREUNIQUE,REREUNIQUE,REUNIQUE,UNUNIQUE) ; DROP TABLE IF EXISTS t1;CREATE TABLE t1(a PREUNIQUE,REREUNIATTACH?ASÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;VaCUUMÔÔ;QUE,REREUNIQSAVEPOINTQUE,UNUNIQUE) ; DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a PREUNIQUE,REREUNIQUE,REUNIQUE,UNUNIQUE) ; DROP TABLE IF EXISTS t1;CREATE TABLE t1(a PREUNIQUE,REREUNIQSAVEPOINTQUE,UNUNIQUE) ; DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a PREUNIQUE,REREUNIQUE,REUNIQUE,UNUNIQUE) ; DROP TABLE IF EXISTS t1;CREATE TABLE t1(a PREUNIQUE,REREUNIQSAVEPOINTQUE,UNUNIQUE) ; DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a PREUNIQUE,REREUNIQUE,REUNAQUE,UNUNIQUE) ; DROP TABLE IF EXISTS t1;CREATE TABLE t1(a PREUNIQUE,REREUNIQSAVEPOINTQUE,UNUNIQUE) ; DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a PRET(0,1)<=(0,1)Ë WHERE-Ë*Ë*Ë*Ë*Ë*Ë*Ë;SELECT(0,1)<=(0,1)Ë WHERE-Ë*Ë*Ë*Ë*Ë*Ë*Ë;SELECT(0,1)<=(0,1)Ë WHERE-Ë*Ë*Ë*Ë*Ë*Ë*Ë;SELECT(0,1)<=(0,1)Ë WHERE-Ë*Ë*Ë*Ë*Ë*Ë*Ë;SELECT(0,1)<=(0,1)Ë WHERE-Ë*Ë*Ë*Ë*Ë*Ë*Ë;SELECT(0,1)<=(0,1)Ë WHERE-Ë*Ë*Ë*Ë*Ë*Ë*Ë;SELECT(0,1)<=(0,1)Ë WHERE-Ë*Ë*Ë*Ë*Ë*~Ë*Ë;SELECT(0,1)<=(0,1)Ë WHERE-Ë*Ë*Ë*Ë*Ë*Ë*Ë;SELECT(0,1)<=(0,1)Ë WHERELECT*Ë*Ë*Ë*Ë*Ë;SELECT(0,1)<=(0,1)Ë WHERE-Ë*Ë*Ë*Ë*Ë*Ë*Ë;ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿË*Ë;SELECT(0,1)<=)(0,1)Ë WHERE-Ë*Ë*Ë*Ë*Ë*Ë*Ë;SELECT(0,1)<=(0,1)Ë WHERE-Ë*ËË**Ë*Ë*Ë*Ë;SELECT(0,1)<=(0,1)Ë LETE FROM t1 WHERE b='x3?y'  OR b<'x2Åy''x3?y' OR b<'x08y';
+ DELETE FROM t1 WHERE b='x3 DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a sqlipeíÿt;-1                                                                                                                 NTO t1  SELECT ")-20,"""YZE ; ;  ROLLBACK		TO	 VFROM(SELECT"")tm;
+  INSERT INTO t1  SELECT ")-65t1  SELECT ")-20,"""FROM(SELECT"")tm;
+  INSERT INTO t1  SELECT ")-20,"""FROM(SELECT"")tm;
+  INSERT INTO t1  SELECT ")-20a;
+SAV,"""FROM(SELECT"")tm;
+  INSERT INTO t1  LECT *SELECT ")-20,"""FROM(SELECT"")tm;
+  INS

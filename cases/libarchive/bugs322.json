@@ -1,0 +1,481 @@
+{
+    "application": "libarchive",
+    "apppath": "libarchive-3.2.2/install/bin/bsdtar",
+    "args": "tvf @@",
+    "bugs": {
+        "CVE-2018-1000877": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2018-1000877",
+            "testcase": "crash_samples/CVE-2018-1000877.rar"
+        },
+        "CVE-2018-1000878": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2018-1000878",
+            "testcase": "crash_samples/CVE-2018-1000878.rar"
+        },
+        "CVE-2018-1000879": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2018-1000879",
+            "testcase": "crash_samples/CVE-2018-1000879.rar"
+        },
+        "CVE-2018-1000880": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2018-1000880",
+            "testcase": "crash_samples/CVE-2018-1000880.rar"
+        },
+        "CVE-2019-1000019": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2019-1000019",
+            "testcase": "crash_samples/CVE-2019-1000019.7z"
+        },
+        "LIBARCHIVE-1016": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=LIBARCHIVE-1016",
+            "testcase": "crash_samples/LIBARCHIVE-1016.zip"
+        },
+        "LIBARCHIVE-508": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=LIBARCHIVE-508",
+            "testcase": "crash_samples/LIBARCHIVE-508.tar"
+        },
+        "LIBARCHIVE-705-1": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=LIBARCHIVE-705-1",
+            "testcase": "crash_samples/LIBARCHIVE-705-1.cpio"
+        },
+        "LIBARCHIVE-705-2": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=LIBARCHIVE-705-2",
+            "testcase": "crash_samples/LIBARCHIVE-705-2.cpio"
+        },
+        "LIBARCHIVE-705-3": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=LIBARCHIVE-705-3",
+            "testcase": "crash_samples/LIBARCHIVE-705-3.cpio"
+        },
+        "LIBARCHIVE-866": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=LIBARCHIVE-866",
+            "testcase": "crash_samples/LIBARCHIVE-866.zip"
+        },
+        "OSSFUZZ-10071": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-10071",
+            "testcase": "crash_samples/OSSFUZZ-10071.data.rar"
+        },
+        "OSSFUZZ-10843": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-10843",
+            "testcase": "crash_samples/OSSFUZZ-10843.data.rar"
+        },
+        "OSSFUZZ-1097": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-1097",
+            "testcase": "crash_samples/OSSFUZZ-1097.data.rar"
+        },
+        "OSSFUZZ-11011": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-11011",
+            "testcase": "crash_samples/OSSFUZZ-11011.data.rar"
+        },
+        "OSSFUZZ-11058": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-11058",
+            "testcase": "crash_samples/OSSFUZZ-11058.data.rar"
+        },
+        "OSSFUZZ-11196": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-11196",
+            "testcase": "crash_samples/OSSFUZZ-11196.data.rar"
+        },
+        "OSSFUZZ-12466": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-12466",
+            "testcase": "crash_samples/OSSFUZZ-12466.data.rar"
+        },
+        "OSSFUZZ-12593": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-12593",
+            "testcase": "crash_samples/OSSFUZZ-12593.data.rar"
+        },
+        "OSSFUZZ-12600": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-12600",
+            "testcase": "crash_samples/OSSFUZZ-12600.data.rar"
+        },
+        "OSSFUZZ-12601": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-12601",
+            "testcase": "crash_samples/OSSFUZZ-12601.data.rar"
+        },
+        "OSSFUZZ-12817": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-12817",
+            "testcase": "crash_samples/OSSFUZZ-12817.data.rar"
+        },
+        "OSSFUZZ-12999": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-12999",
+            "testcase": "crash_samples/OSSFUZZ-12999.data.rar"
+        },
+        "OSSFUZZ-13029": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-13029",
+            "testcase": "crash_samples/OSSFUZZ-13029.data.rar"
+        },
+        "OSSFUZZ-13144": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-13144",
+            "testcase": "crash_samples/OSSFUZZ-13144.data.rar"
+        },
+        "OSSFUZZ-13435": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-13435",
+            "testcase": "crash_samples/OSSFUZZ-13435.data.rar"
+        },
+        "OSSFUZZ-13478": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-13478",
+            "testcase": "crash_samples/OSSFUZZ-13478.data.rar"
+        },
+        "OSSFUZZ-13490": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-13490",
+            "testcase": "crash_samples/OSSFUZZ-13490.data.rar"
+        },
+        "OSSFUZZ-139": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-139",
+            "testcase": "crash_samples/OSSFUZZ-139.data.rar"
+        },
+        "OSSFUZZ-13965": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-13965",
+            "testcase": "crash_samples/OSSFUZZ-13965.data.rar"
+        },
+        "OSSFUZZ-14": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-14",
+            "testcase": "crash_samples/OSSFUZZ-14.data.rar"
+        },
+        "OSSFUZZ-14331": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-14331",
+            "testcase": "crash_samples/OSSFUZZ-14331.data.rar"
+        },
+        "OSSFUZZ-14373": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-14373",
+            "testcase": "crash_samples/OSSFUZZ-14373.data.rar"
+        },
+        "OSSFUZZ-14393": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-14393",
+            "testcase": "crash_samples/OSSFUZZ-14393.data.rar"
+        },
+        "OSSFUZZ-14416": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-14416",
+            "testcase": "crash_samples/OSSFUZZ-14416.data.rar"
+        },
+        "OSSFUZZ-14470": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-14470",
+            "testcase": "crash_samples/OSSFUZZ-14470.data.rar"
+        },
+        "OSSFUZZ-14490": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-14490",
+            "testcase": "crash_samples/OSSFUZZ-14490.data.rar"
+        },
+        "OSSFUZZ-14491": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-14491",
+            "testcase": "crash_samples/OSSFUZZ-14491.data.rar"
+        },
+        "OSSFUZZ-145": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-145",
+            "testcase": "crash_samples/OSSFUZZ-145.data.rar"
+        },
+        "OSSFUZZ-14537": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-14537",
+            "testcase": "crash_samples/OSSFUZZ-14537.data.rar"
+        },
+        "OSSFUZZ-14555": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-14555",
+            "testcase": "crash_samples/OSSFUZZ-14555.data.rar"
+        },
+        "OSSFUZZ-14574": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-14574",
+            "testcase": "crash_samples/OSSFUZZ-14574.data.rar"
+        },
+        "OSSFUZZ-14677": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-14677",
+            "testcase": "crash_samples/OSSFUZZ-14677.data.rar"
+        },
+        "OSSFUZZ-14689": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-14689",
+            "testcase": "crash_samples/OSSFUZZ-14689.data.rar"
+        },
+        "OSSFUZZ-15": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-15",
+            "testcase": "crash_samples/OSSFUZZ-15.data.rar"
+        },
+        "OSSFUZZ-15120": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-15120",
+            "testcase": "crash_samples/OSSFUZZ-15120.data.rar"
+        },
+        "OSSFUZZ-152": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-152",
+            "testcase": "crash_samples/OSSFUZZ-152.data.rar"
+        },
+        "OSSFUZZ-15278": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-15278",
+            "testcase": "crash_samples/OSSFUZZ-15278.data.rar"
+        },
+        "OSSFUZZ-15431": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-15431",
+            "testcase": "crash_samples/OSSFUZZ-15431.data.rar"
+        },
+        "OSSFUZZ-1627": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-1627",
+            "testcase": "crash_samples/OSSFUZZ-1627.data.rar"
+        },
+        "OSSFUZZ-190": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-190",
+            "testcase": "crash_samples/OSSFUZZ-190.data.rar"
+        },
+        "OSSFUZZ-191": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-191",
+            "testcase": "crash_samples/OSSFUZZ-191.data.rar"
+        },
+        "OSSFUZZ-220": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-220",
+            "testcase": "crash_samples/OSSFUZZ-220.data.rar"
+        },
+        "OSSFUZZ-227": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-227",
+            "testcase": "crash_samples/OSSFUZZ-227.data.rar"
+        },
+        "OSSFUZZ-230": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-230",
+            "testcase": "crash_samples/OSSFUZZ-230.data.rar"
+        },
+        "OSSFUZZ-232": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-232",
+            "testcase": "crash_samples/OSSFUZZ-232.data.rar"
+        },
+        "OSSFUZZ-234": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-234",
+            "testcase": "crash_samples/OSSFUZZ-234.data.rar"
+        },
+        "OSSFUZZ-235": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-235",
+            "testcase": "crash_samples/OSSFUZZ-235.data.rar"
+        },
+        "OSSFUZZ-237": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-237",
+            "testcase": "crash_samples/OSSFUZZ-237.data.rar"
+        },
+        "OSSFUZZ-239": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-239",
+            "testcase": "crash_samples/OSSFUZZ-239.data.rar"
+        },
+        "OSSFUZZ-2394": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-2394",
+            "testcase": "crash_samples/OSSFUZZ-2394.data.rar"
+        },
+        "OSSFUZZ-2582": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-2582",
+            "testcase": "crash_samples/OSSFUZZ-2582.data.rar"
+        },
+        "OSSFUZZ-286": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-286",
+            "testcase": "crash_samples/OSSFUZZ-286.data.rar"
+        },
+        "OSSFUZZ-335": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-335",
+            "testcase": "crash_samples/OSSFUZZ-335.data.rar"
+        },
+        "OSSFUZZ-359": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-359",
+            "testcase": "crash_samples/OSSFUZZ-359.data.rar"
+        },
+        "OSSFUZZ-421": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-421",
+            "testcase": "crash_samples/OSSFUZZ-421.data.rar"
+        },
+        "OSSFUZZ-422": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-422",
+            "testcase": "crash_samples/OSSFUZZ-422.data.rar"
+        },
+        "OSSFUZZ-443": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-443",
+            "testcase": "crash_samples/OSSFUZZ-443.data.rar"
+        },
+        "OSSFUZZ-451": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-451",
+            "testcase": "crash_samples/OSSFUZZ-451.data.rar"
+        },
+        "OSSFUZZ-453": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-453",
+            "testcase": "crash_samples/OSSFUZZ-453.data.rar"
+        },
+        "OSSFUZZ-458": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-458",
+            "testcase": "crash_samples/OSSFUZZ-458.data.rar"
+        },
+        "OSSFUZZ-485": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-485",
+            "testcase": "crash_samples/OSSFUZZ-485.data.rar"
+        },
+        "OSSFUZZ-4969": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-4969",
+            "testcase": "crash_samples/OSSFUZZ-4969.data.rar"
+        },
+        "OSSFUZZ-497": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-497",
+            "testcase": "crash_samples/OSSFUZZ-497.data.rar"
+        },
+        "OSSFUZZ-504": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-504",
+            "testcase": "crash_samples/OSSFUZZ-504.data.rar"
+        },
+        "OSSFUZZ-511": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-511",
+            "testcase": "crash_samples/OSSFUZZ-511.data.rar"
+        },
+        "OSSFUZZ-526": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-526",
+            "testcase": "crash_samples/OSSFUZZ-526.data.rar"
+        },
+        "OSSFUZZ-527": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-527",
+            "testcase": "crash_samples/OSSFUZZ-527.data.rar"
+        },
+        "OSSFUZZ-528": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-528",
+            "testcase": "crash_samples/OSSFUZZ-528.data.rar"
+        },
+        "OSSFUZZ-532": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-532",
+            "testcase": "crash_samples/OSSFUZZ-532.data.rar"
+        },
+        "OSSFUZZ-538": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-538",
+            "testcase": "crash_samples/OSSFUZZ-538.data.rar"
+        },
+        "OSSFUZZ-551": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-551",
+            "testcase": "crash_samples/OSSFUZZ-551.data.rar"
+        },
+        "OSSFUZZ-552": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-552",
+            "testcase": "crash_samples/OSSFUZZ-552.data.rar"
+        },
+        "OSSFUZZ-556": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-556",
+            "testcase": "crash_samples/OSSFUZZ-556.data.rar"
+        },
+        "OSSFUZZ-573": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-573",
+            "testcase": "crash_samples/OSSFUZZ-573.data.rar"
+        },
+        "OSSFUZZ-577": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-577",
+            "testcase": "crash_samples/OSSFUZZ-577.data.rar"
+        },
+        "OSSFUZZ-745": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-745",
+            "testcase": "crash_samples/OSSFUZZ-745.data.rar"
+        },
+        "OSSFUZZ-7837": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-7837",
+            "testcase": "crash_samples/OSSFUZZ-7837.data.rar"
+        },
+        "OSSFUZZ-806": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-806",
+            "testcase": "crash_samples/OSSFUZZ-806.data.rar"
+        },
+        "OSSFUZZ-862": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-862",
+            "testcase": "crash_samples/OSSFUZZ-862.data.rar"
+        },
+        "OSSFUZZ-9521": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=OSSFUZZ-9521",
+            "testcase": "crash_samples/OSSFUZZ-9521.data.rar"
+        },
+        "hang1": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2018-1000877",
+            "run": 1,
+            "testcase": "hang-LIBARCHIVE-502.tar"
+        },
+        "hang2": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2018-1000877",
+            "run": 1,
+            "testcase": "hang-CVE-2019-1000020.iso"
+        }
+    },
+    "cve": "",
+    "evars": {
+        "ASAN_OPTIONS": "detect_leaks=0"
+    },
+    "known_vuln_count": 0,
+    "source": "https://github.com/Yeraze/ytnef/tree/master/ytnef",
+    "version": "1.9.2"
+}

@@ -1,0 +1,1 @@
+WITH c(i)AS(VAlUES(6)UNION SELECT~i*i||ifnull(I,1)FROM c)SELECT i fROM c

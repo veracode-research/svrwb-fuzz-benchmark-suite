@@ -1,0 +1,147 @@
+{
+    "application": "wavpack",
+    "apppath": "wavpack-5.0.0/install/bin/wavpack",
+    "args": "-y @@",
+    "bugs": {
+        "CVE-2018-10536": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6b90 wavpack`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4dda wavpack`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b647e wavpack`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b6331 wavpack`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140733300034712, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6feb wavpack`__asan::__asan_report_store2(addr=<unavailable>) at asan_rtl.cc:123",
+                            "frame #5: 0x00007f9f3cd46066 libwavpack.so.1`flush_word + 14054",
+                            "frame #6: 0x00007f9f3cd479fd libwavpack.so.1`send_words_lossless + 5197",
+                            "frame #7: 0x00007f9f3cce5021 libwavpack.so.1`pack_samples + 8049",
+                            "frame #8: 0x00007f9f3cce0307 libwavpack.so.1`pack_block + 8135",
+                            "frame #9: 0x00007f9f3cd091ae libwavpack.so.1`pack_streams + 2942",
+                            "frame #10: 0x00007f9f3cd06b71 libwavpack.so.1`WavpackPackSamples + 6657",
+                            "frame #11: 0x0000000000502fe1 wavpack`pack_audio + 2641",
+                            "frame #12: 0x00000000004fee9d wavpack`pack_file + 13533",
+                            "frame #13: 0x00000000004f64b1 wavpack`main + 37505",
+                            "frame #14: 0x00007f9f3bceab97 libc.so.6`__libc_start_main(main=(wavpack`main), argc=3, argv=0x00007fff065bd478, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007fff065bd468) at libc-start.c:310",
+                            "frame #15: 0x000000000041c49a wavpack`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2018-10536",
+            "testcase": "CVE-2018-10536.wav",
+            "testcase_url": ""
+        },
+        "CVE-2018-10537": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6b90 wavpack`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4dda wavpack`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b647e wavpack`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b6331 wavpack`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140722244501992, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6feb wavpack`__asan::__asan_report_store2(addr=<unavailable>) at asan_rtl.cc:123",
+                            "frame #5: 0x00007ff27e426525 libwavpack.so.1`send_float_data + 2165",
+                            "frame #6: 0x00007ff27e40baa4 libwavpack.so.1`pack_block + 10084",
+                            "frame #7: 0x00007ff27e4341ae libwavpack.so.1`pack_streams + 2942",
+                            "frame #8: 0x00007ff27e434cd5 libwavpack.so.1`WavpackFlushSamples + 469",
+                            "frame #9: 0x0000000000503304 wavpack`pack_audio + 3444",
+                            "frame #10: 0x00000000004fee9d wavpack`pack_file + 13533",
+                            "frame #11: 0x00000000004f64b1 wavpack`main + 37505",
+                            "frame #12: 0x00007ff27d415b97 libc.so.6`__libc_start_main(main=(wavpack`main), argc=3, argv=0x00007ffc73659ed8, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffc73659ec8) at libc-start.c:310",
+                            "frame #13: 0x000000000041c49a wavpack`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2018-10537",
+            "testcase": "CVE-2018-10537.wav",
+            "testcase_url": ""
+        },
+        "CVE-2018-10538": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6b90 wavpack`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4dda wavpack`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b647e wavpack`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b6331 wavpack`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140732570618008, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6feb wavpack`__asan::__asan_report_store2(addr=<unavailable>) at asan_rtl.cc:123",
+                            "frame #5: 0x00007f0f58f34066 libwavpack.so.1`flush_word + 14054",
+                            "frame #6: 0x00007f0f58f359fd libwavpack.so.1`send_words_lossless + 5197",
+                            "frame #7: 0x00007f0f58ed3021 libwavpack.so.1`pack_samples + 8049",
+                            "frame #8: 0x00007f0f58ece307 libwavpack.so.1`pack_block + 8135",
+                            "frame #9: 0x00007f0f58ef71ae libwavpack.so.1`pack_streams + 2942",
+                            "frame #10: 0x00007f0f58ef7cd5 libwavpack.so.1`WavpackFlushSamples + 469",
+                            "frame #11: 0x0000000000503304 wavpack`pack_audio + 3444",
+                            "frame #12: 0x00000000004fee9d wavpack`pack_file + 13533",
+                            "frame #13: 0x00000000004f64b1 wavpack`main + 37505",
+                            "frame #14: 0x00007f0f57ed8b97 libc.so.6`__libc_start_main(main=(wavpack`main), argc=3, argv=0x00007ffedae1cc58, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffedae1cc48) at libc-start.c:310",
+                            "frame #15: 0x000000000041c49a wavpack`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2018-10538",
+            "testcase": "CVE-2018-10538.wav",
+            "testcase_url": ""
+        },
+        "CVE-2018-10539": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6b90 wavpack`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4dda wavpack`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b366a wavpack`__asan::ReportAllocationSizeTooBig(unsigned long, unsigned long, unsigned long, __sanitizer::BufferedStackTrace*) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b3620 wavpack`__asan::ReportAllocationSizeTooBig(user_size=18446744073350226846, total_size=<unavailable>, max_size=<unavailable>, stack=0x0000000000812518) at asan_report.cc:305",
+                            "frame #4: 0x00000000004276b6 wavpack`__asan::Allocator::Allocate(this=0x000000000076f180, size=<unavailable>, alignment=<unavailable>, stack=0x00007ffdd17d55d0, alloc_type=FROM_MALLOC, can_fill=<unavailable>) at asan_allocator.cc:444",
+                            "frame #5: 0x0000000000421487 wavpack`__asan::asan_malloc(size=<unavailable>, stack=<unavailable>) at asan_allocator.cc:875",
+                            "frame #6: 0x00000000004a8ff4 wavpack`::__interceptor_malloc(size=18446744073350226846) at asan_malloc_linux.cc:146",
+                            "frame #7: 0x000000000050d78c wavpack`ParseRiffHeaderConfig + 16556",
+                            "frame #8: 0x00000000004fdb47 wavpack`pack_file + 8583",
+                            "frame #9: 0x00000000004f64b1 wavpack`main + 37505",
+                            "frame #10: 0x00007f2a179c0b97 libc.so.6`__libc_start_main(main=(wavpack`main), argc=3, argv=0x00007ffdd17dae48, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffdd17dae38) at libc-start.c:310",
+                            "frame #11: 0x000000000041c49a wavpack`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2018-10539",
+            "testcase": "CVE-2018-10539.wav",
+            "testcase_url": ""
+        },
+        "CVE-2018-6767": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6b90 wavpack`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d4dda wavpack`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b647e wavpack`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b6331 wavpack`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140736342465424, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=false) at asan_report.cc:466",
+                            "frame #4: 0x000000000043b01a wavpack`::__interceptor_fread(ptr=<unavailable>, size=<unavailable>, nmemb=<unavailable>, file=<unavailable>) at sanitizer_common_interceptors.inc:1020",
+                            "frame #5: 0x0000000000524dc8 wavpack`DoReadFile + 232",
+                            "frame #6: 0x0000000000509f43 wavpack`ParseRiffHeaderConfig + 2147",
+                            "frame #7: 0x00000000004fdb47 wavpack`pack_file + 8583",
+                            "frame #8: 0x00000000004f64b1 wavpack`main + 37505",
+                            "frame #9: 0x00007fa39cbfcb97 libc.so.6`__libc_start_main(main=(wavpack`main), argc=3, argv=0x00007fffbbb37488, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007fffbbb37478) at libc-start.c:310",
+                            "frame #10: 0x000000000041c49a wavpack`_start + 42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2018-6767",
+            "testcase": "CVE-2018-6767.wav"
+        }
+    },
+    "cve": "https://github.com/dbry/WavPack/commit/4bc05fc490b66ef2d45b1de26abf1455b486b0dc",
+    "evars": {
+        "ASAN_OPTIONS": "detect_leaks=0"
+    },
+    "known_vuln_count": 0,
+    "source": "https://github.com/dbry/WavPack",
+    "version": "5.0.0"
+}

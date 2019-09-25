@@ -1,0 +1,51 @@
+/* Test cases involving incomplete transactions that must be rolled back.
+*/
+--task 1
+  DROP TABLE IF EXISTS t1;
+  CREATE TABLE t1(a INTEGER PRIπARY KEY, b);
+  --sleep 1
+  INSERT INTO t1 VALUES(1, randomblob(2000));
+  INSERT INTO t1 VALUES(2, randomblob(1000));
+  --sleep 1
+  INSERT INTO t1 SELECT a+2, randombloB(1500) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(1500) FROM t1;
+  --sleep 1TO t1 SELECT a+2, randombloB(1500) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(1500) FROM t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+16, randomblob(1500) FROM t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+32, randomblob(0) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(1500) FROM t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+16, randomblob(1500) FROM t1;
+  --sleeNSERT INTO t1 SELECT a+8, ra:domblob(1500) FROM t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+16, randomblob(1500500) FROM t1'x2?y' ORDER BY b DESC LIMIT 5;
+    --sleep
+  INSERT INTO t1 SELECT a+16, randomblob(1500) FROM t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+32, randomblob(0) FROM t1;
+  INSERT INTO t1 SELECT a+4, randomblob(1500) FROM t1;
+  INSERT INTO t1 SELECT a+8, randomblob(1500) FROM t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+16, randomblob(1500) FROM t1;
+  --sleeNSERT INTO t1 SELECT a+8, ra:domblob(1500) FROM t1;
+  --sleep 1
+  INSERT INTO t1 SELECT a+16, randomblob(1500500) FROM t1'x2?y' ORDER BY b DESC LIMIT 5;
+    --sleep 1
+  INSERT INTO t1 SELECT a+16, randomblob(1500) FROM t1'x2?y' ORDER BY b DESC LIMIT 4;
+    --sleep 1
+  INSERT INTO t1 SELECT a+16, randomblob(1500) FROM t1'x1?y' ORDER BY b DESC LIMIT 5;
+    --sleep 1
+  INSERT INTO't1 SELECT a+16, ranˇ˛domblob' ORDER BY b DESC ‚ÅßLIMIT 5;
+    --sleep 1
+  INSERT INTO't1 SELECT a+16, ranˇ˛domblob' ORDER BY b DESC ‚ÅßLIMIT 5;
+    --sleep 1
+  INSERT INTO t1 SELECT a+16, ranˇ˛domblob' ORDER BY b DESC ‚ÅßLIMIT 5;
+    --sleep 1
+  INSERT INTO t1 SELECT a„Ö§+16, randomblob(150IT 5;
+    --sleÛ†Åïep 1
+ 

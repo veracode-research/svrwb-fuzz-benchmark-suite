@@ -1,0 +1,1 @@
+ CREATE TABLE t1(a PRIMARY KEY,b  )WITHOUT ROWID;CREATE INDEX ÿ ON t1(b);SELECT*FROM t1 WHERE b=''AND b=''AND b=''AND a>''AND a<'T?y'AND a>''AND a<'T'AND a<'T?y' AND a<'  'AND a>''AND a<'T?y'AND a>''AND a<'T?y'AND a<'  'OR b='' AND a>''AND a<'T?y' AND a>''AND a<'T?y'AND a>''AND a<'T?y'  AND a>''AND a<'T'AND a<'T?y' AND a>''AND a>''AND a<'T'

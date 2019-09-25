@@ -1,0 +1,841 @@
+{
+    "application": "jasper",
+    "apppath": "jasper-1.701.0/install/bin/jasper",
+    "args": "--input @@ --output-format mif",
+    "bugs": {
+        "CVE-2016-2116": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x00007f0180007ed7|libc.so.6`gsignal|199",
+                            "1|0x00007f017ffe9535|libc.so.6`abort|289",
+                            "2|0x00007f017ffe940f|libc.so.6`___lldb_unnamed_symbol7$$libc.so.6|15",
+                            "3|0x00007f017fff9012|libc.so.6`__assert_fail|66",
+                            "4|0x0000000000542ae8|jasper`jpc_dec_tiledecode|3432",
+                            "5|0x000000000053001e|jasper`jpc_dec_process_sod|4382",
+                            "6|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "7|0x00000000005346cb|jasper`jpc_decode|379",
+                            "8|0x00000000004ff3de|jasper`jp2_decode|2462",
+                            "9|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "10|0x00000000004c3255|jasper`main|2181",
+                            "11|0x00007f017ffeab6b|libc.so.6`__libc_start_main|235",
+                            "12|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2016-2116",
+            "testcase": "CVE-2016-2116.jp2"
+        },
+        "CVE-2016-8880": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004af76c|jasper`__sanitizer::Die()|172",
+                            "2|0x0000000000498fd9|jasper`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049856f|jasper`::ReportGenericError()|367",
+                            "4|0x000000000049947b|jasper`__asan_report_store1|43",
+                            "5|0x00000000005466fc|jasper`jpc_dec_cp_setfromcox|1836",
+                            "6|0x0000000000545f46|jasper`jpc_dec_cp_setfromcod|1190",
+                            "7|0x0000000000532e8e|jasper`jpc_dec_process_cod|206",
+                            "8|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "9|0x00000000005346cb|jasper`jpc_decode|379",
+                            "10|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "11|0x00000000004c3255|jasper`main|2181",
+                            "12|0x00007f20c9c91b6b|libc.so.6`__libc_start_main|235",
+                            "13|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2016-8880",
+            "testcase": "CVE-2016-8880.jp2"
+        },
+        "CVE-2016-8881": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004af76c|jasper`__sanitizer::Die()|172",
+                            "2|0x0000000000498fd9|jasper`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049856f|jasper`::ReportGenericError()|367",
+                            "4|0x00000000004996bb|jasper`__asan_report_store8|43",
+                            "5|0x00000000005a77c3|jasper`jpc_getuint16|1779",
+                            "6|0x00000000005b210c|jasper`jpc_crg_getparms|492",
+                            "7|0x00000000005a6c1d|jasper`jpc_getms|1245",
+                            "8|0x0000000000535b38|jasper`jpc_dec_decode|264",
+                            "9|0x00000000005346cb|jasper`jpc_decode|379",
+                            "10|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "11|0x00000000004c3255|jasper`main|2181",
+                            "12|0x00007fde9eceab6b|libc.so.6`__libc_start_main|235",
+                            "13|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2016-8881",
+            "testcase": "CVE-2016-8881.jp2"
+        },
+        "CVE-2016-9262": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2016-9262",
+            "testcase": "CVE-2016-9262.jp2"
+        },
+        "CVE-2016-9387": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x00007fb75d66fed7|libc.so.6`gsignal|199",
+                            "1|0x00007fb75d651535|libc.so.6`abort|289",
+                            "2|0x00007fb75d65140f|libc.so.6`___lldb_unnamed_symbol7$$libc.so.6|15",
+                            "3|0x00007fb75d661012|libc.so.6`__assert_fail|66",
+                            "4|0x00000000004ec5de|jasper`jas_seq2d_create|94",
+                            "5|0x000000000053ad8d|jasper`jpc_dec_tileinit|2765",
+                            "6|0x000000000052f060|jasper`jpc_dec_process_sod|352",
+                            "7|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "8|0x00000000005346cb|jasper`jpc_decode|379",
+                            "9|0x00000000004ff3de|jasper`jp2_decode|2462",
+                            "10|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "11|0x00000000004c3255|jasper`main|2181",
+                            "12|0x00007fb75d652b6b|libc.so.6`__libc_start_main|235",
+                            "13|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2016-9387",
+            "testcase": "CVE-2016-9387.jp2"
+        },
+        "CVE-2016-9557": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2016-9557",
+            "testcase": "CVE-2016-9557.jpg"
+        },
+        "CVE-2017-13747": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13747",
+            "testcase": "CVE-2017-13747.jp2"
+        },
+        "CVE-2017-13750": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004af76c|jasper`__sanitizer::Die()|172",
+                            "2|0x0000000000498fd9|jasper`::~ScopedInErrorReport()|441",
+                            "3|0x0000000000497bd9|jasper`::ReportAllocationSizeTooBig()|233",
+                            "4|0x000000000041d7ff|jasper`::Allocate()|559",
+                            "5|0x000000000041bb64|jasper`::asan_malloc()|36",
+                            "6|0x000000000049334c|jasper`::__interceptor_malloc()|252",
+                            "7|0x00000000004df075|jasper`jas_malloc|21",
+                            "8|0x0000000000531832|jasper`jpc_dec_process_siz|5346",
+                            "9|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "10|0x00000000005346cb|jasper`jpc_decode|379",
+                            "11|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "12|0x00000000004c3255|jasper`main|2181",
+                            "13|0x00007f3a11e35b6b|libc.so.6`__libc_start_main|235",
+                            "14|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13750",
+            "testcase": "CVE-2017-13750.jp2"
+        },
+        "CVE-2017-13751": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004af76c|jasper`__sanitizer::Die()|172",
+                            "2|0x0000000000498fd9|jasper`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049856f|jasper`::ReportGenericError()|367",
+                            "4|0x00000000004996bb|jasper`__asan_report_store8|43",
+                            "5|0x00000000005a77c3|jasper`jpc_getuint16|1779",
+                            "6|0x00000000005b20ed|jasper`jpc_crg_getparms|461",
+                            "7|0x00000000005a6c1d|jasper`jpc_getms|1245",
+                            "8|0x0000000000535b38|jasper`jpc_dec_decode|264",
+                            "9|0x00000000005346cb|jasper`jpc_decode|379",
+                            "10|0x00000000004ff3de|jasper`jp2_decode|2462",
+                            "11|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "12|0x00000000004c3255|jasper`main|2181",
+                            "13|0x00007f956bddcb6b|libc.so.6`__libc_start_main|235",
+                            "14|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13751",
+            "testcase": "CVE-2017-13751.jp2"
+        },
+        "CVE-2017-13752": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x00007fd49d2b1ed7|libc.so.6`gsignal|199",
+                            "1|0x00007fd49d293535|libc.so.6`abort|289",
+                            "2|0x00007fd49d29340f|libc.so.6`___lldb_unnamed_symbol7$$libc.so.6|15",
+                            "3|0x00007fd49d2a3012|libc.so.6`__assert_fail|66",
+                            "4|0x0000000000545740|jasper`jpc_dequantize|80",
+                            "5|0x000000000054248e|jasper`jpc_dec_tiledecode|1806",
+                            "6|0x000000000053001e|jasper`jpc_dec_process_sod|4382",
+                            "7|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "8|0x00000000005346cb|jasper`jpc_decode|379",
+                            "9|0x00000000004ff3de|jasper`jp2_decode|2462",
+                            "10|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "11|0x00000000004c3255|jasper`main|2181",
+                            "12|0x00007fd49d294b6b|libc.so.6`__libc_start_main|235",
+                            "13|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-13752",
+            "testcase": "CVE-2017-13752.jp2"
+        },
+        "CVE-2017-5498": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x00007facf2ad7ed7|libc.so.6`gsignal|199",
+                            "1|0x00007facf2ab9535|libc.so.6`abort|289",
+                            "2|0x00007facf2ab940f|libc.so.6`___lldb_unnamed_symbol7$$libc.so.6|15",
+                            "3|0x00007facf2ac9012|libc.so.6`__assert_fail|66",
+                            "4|0x0000000000545740|jasper`jpc_dequantize|80",
+                            "5|0x000000000054248e|jasper`jpc_dec_tiledecode|1806",
+                            "6|0x000000000053001e|jasper`jpc_dec_process_sod|4382",
+                            "7|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "8|0x00000000005346cb|jasper`jpc_decode|379",
+                            "9|0x00000000004ff3de|jasper`jp2_decode|2462",
+                            "10|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "11|0x00000000004c3255|jasper`main|2181",
+                            "12|0x00007facf2abab6b|libc.so.6`__libc_start_main|235",
+                            "13|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-5498",
+            "testcase": "CVE-2017-5498.jp2"
+        },
+        "CVE-2017-5499": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x00007f636390ced7|libc.so.6`gsignal|199",
+                            "1|0x00007f63638ee535|libc.so.6`abort|289",
+                            "2|0x00007f63638ee40f|libc.so.6`___lldb_unnamed_symbol7$$libc.so.6|15",
+                            "3|0x00007f63638fe012|libc.so.6`__assert_fail|66",
+                            "4|0x0000000000545740|jasper`jpc_dequantize|80",
+                            "5|0x000000000054248e|jasper`jpc_dec_tiledecode|1806",
+                            "6|0x000000000053001e|jasper`jpc_dec_process_sod|4382",
+                            "7|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "8|0x00000000005346cb|jasper`jpc_decode|379",
+                            "9|0x00000000004ff3de|jasper`jp2_decode|2462",
+                            "10|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "11|0x00000000004c3255|jasper`main|2181",
+                            "12|0x00007f63638efb6b|libc.so.6`__libc_start_main|235",
+                            "13|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-5499",
+            "testcase": "CVE-2017-5499.jp2"
+        },
+        "CVE-2017-5500": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x00007fa981414ed7|libc.so.6`gsignal|199",
+                            "1|0x00007fa9813f6535|libc.so.6`abort|289",
+                            "2|0x00007fa9813f640f|libc.so.6`___lldb_unnamed_symbol7$$libc.so.6|15",
+                            "3|0x00007fa981406012|libc.so.6`__assert_fail|66",
+                            "4|0x000000000054c037|jasper`jpc_cod_gettsfb|119",
+                            "5|0x000000000053aedf|jasper`jpc_dec_tileinit|3103",
+                            "6|0x000000000052f060|jasper`jpc_dec_process_sod|352",
+                            "7|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "8|0x00000000005346cb|jasper`jpc_decode|379",
+                            "9|0x00000000004ff3de|jasper`jp2_decode|2462",
+                            "10|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "11|0x00000000004c3255|jasper`main|2181",
+                            "12|0x00007fa9813f7b6b|libc.so.6`__libc_start_main|235",
+                            "13|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-5500",
+            "testcase": "CVE-2017-5500.jp2"
+        },
+        "CVE-2017-5501": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x00007f1a6c3fbed7|libc.so.6`gsignal|199",
+                            "1|0x00007f1a6c3dd535|libc.so.6`abort|289",
+                            "2|0x00007f1a6c3dd40f|libc.so.6`___lldb_unnamed_symbol7$$libc.so.6|15",
+                            "3|0x00007f1a6c3ed012|libc.so.6`__assert_fail|66",
+                            "4|0x000000000054c037|jasper`jpc_cod_gettsfb|119",
+                            "5|0x000000000053aedf|jasper`jpc_dec_tileinit|3103",
+                            "6|0x000000000052f060|jasper`jpc_dec_process_sod|352",
+                            "7|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "8|0x00000000005346cb|jasper`jpc_decode|379",
+                            "9|0x00000000004ff3de|jasper`jp2_decode|2462",
+                            "10|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "11|0x00000000004c3255|jasper`main|2181",
+                            "12|0x00007f1a6c3deb6b|libc.so.6`__libc_start_main|235",
+                            "13|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-5501",
+            "testcase": "CVE-2017-5501.jp2"
+        },
+        "CVE-2017-5502": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x00007f6c1a295ed7|libc.so.6`gsignal|199",
+                            "1|0x00007f6c1a277535|libc.so.6`abort|289",
+                            "2|0x000000000052e270|jasper`jpc_dec_process_sot|1984",
+                            "3|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "4|0x00000000005346cb|jasper`jpc_decode|379",
+                            "5|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "6|0x00000000004c3255|jasper`main|2181",
+                            "7|0x00007f6c1a278b6b|libc.so.6`__libc_start_main|235",
+                            "8|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-5502",
+            "testcase": "CVE-2017-5502.jp2"
+        },
+        "CVE-2017-5503": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x00007fce33f6ded7|libc.so.6`gsignal|199",
+                            "1|0x00007fce33f4f535|libc.so.6`abort|289",
+                            "2|0x00007fce33f4f40f|libc.so.6`___lldb_unnamed_symbol7$$libc.so.6|15",
+                            "3|0x00007fce33f5f012|libc.so.6`__assert_fail|66",
+                            "4|0x00000000004ec5de|jasper`jas_seq2d_create|94",
+                            "5|0x000000000053ad8d|jasper`jpc_dec_tileinit|2765",
+                            "6|0x000000000052f060|jasper`jpc_dec_process_sod|352",
+                            "7|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "8|0x00000000005346cb|jasper`jpc_decode|379",
+                            "9|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "10|0x00000000004c3255|jasper`main|2181",
+                            "11|0x00007fce33f50b6b|libc.so.6`__libc_start_main|235",
+                            "12|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-5503",
+            "testcase": "CVE-2017-5503.jp2"
+        },
+        "CVE-2017-5504": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x00007f52d70bded7|libc.so.6`gsignal|199",
+                            "1|0x00007f52d709f535|libc.so.6`abort|289",
+                            "2|0x00007f52d709f40f|libc.so.6`___lldb_unnamed_symbol7$$libc.so.6|15",
+                            "3|0x00007f52d70af012|libc.so.6`__assert_fail|66",
+                            "4|0x00000000005f5532|jasper`jpc_qmfb1d_getbands|2002",
+                            "5|0x000000000054c381|jasper`qmfb2d_getbands|657",
+                            "6|0x000000000054a7e2|jasper`jpc_tsfbnode_getbandstree|786",
+                            "7|0x000000000054a418|jasper`jpc_tsfb_getbands|1736",
+                            "8|0x000000000053b1ae|jasper`jpc_dec_tileinit|3822",
+                            "9|0x000000000052f060|jasper`jpc_dec_process_sod|352",
+                            "10|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "11|0x00000000005346cb|jasper`jpc_decode|379",
+                            "12|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "13|0x00000000004c3255|jasper`main|2181",
+                            "14|0x00007f52d70a0b6b|libc.so.6`__libc_start_main|235",
+                            "15|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-5504",
+            "testcase": "CVE-2017-5504.jp2"
+        },
+        "CVE-2017-5505": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-5505",
+            "testcase": "CVE-2017-5505.jp2"
+        },
+        "CVE-2017-6850": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x000000000041d464|jasper`::Deallocate() [inlined] atomic_compare_exchange_strong<__sanitizer::atomic_uint8_t>|2",
+                            "2|0x000000000041d462|jasper`::Deallocate()|66",
+                            "3|0x00000000004930f2|jasper`::__interceptor_free()|258",
+                            "4|0x00000000004df095|jasper`jas_free|21",
+                            "5|0x000000000050669d|jasper`jp2_cdef_destroy|141",
+                            "6|0x000000000050706f|jasper`jp2_box_destroy|207",
+                            "7|0x000000000050779e|jasper`jp2_box_get|1806",
+                            "8|0x00000000004feda4|jasper`jp2_decode|868",
+                            "9|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "10|0x00000000004c3255|jasper`main|2181",
+                            "11|0x00007f7af5440b6b|libc.so.6`__libc_start_main|235",
+                            "12|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-6850",
+            "testcase": "CVE-2017-6850.jp2"
+        },
+        "CVE-2017-6851": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-6851",
+            "testcase": "CVE-2017-6851.jp2"
+        },
+        "CVE-2017-6852": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x00007f679a976ed7|libc.so.6`gsignal|199",
+                            "1|0x00007f679a958535|libc.so.6`abort|289",
+                            "2|0x00007f679a95840f|libc.so.6`___lldb_unnamed_symbol7$$libc.so.6|15",
+                            "3|0x00007f679a968012|libc.so.6`__assert_fail|66",
+                            "4|0x0000000000555726|jasper`jpc_pi_nextrpcl|10630",
+                            "5|0x0000000000550551|jasper`jpc_pi_next|1681",
+                            "6|0x000000000056a33e|jasper`jpc_dec_decodepkts|766",
+                            "7|0x000000000052f5d8|jasper`jpc_dec_process_sod|1752",
+                            "8|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "9|0x00000000005346cb|jasper`jpc_decode|379",
+                            "10|0x00000000004ff3de|jasper`jp2_decode|2462",
+                            "11|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "12|0x00000000004c3255|jasper`main|2181",
+                            "13|0x00007f679a959b6b|libc.so.6`__libc_start_main|235",
+                            "14|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-6852",
+            "testcase": "CVE-2017-6852.jp2"
+        },
+        "CVE-2018-18873": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x000000000055cecd|jasper`jpc_pi_destroy|29",
+                            "1|0x0000000000544d26|jasper`jpc_dec_tilefini|3702",
+                            "2|0x00000000005302c6|jasper`jpc_dec_process_eoc|326",
+                            "3|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "4|0x00000000005346cb|jasper`jpc_decode|379",
+                            "5|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "6|0x00000000004c3255|jasper`main|2181",
+                            "7|0x00007fc5bad35b6b|libc.so.6`__libc_start_main|235",
+                            "8|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2018-18873",
+            "testcase": "CVE-2018-18873.jp2"
+        },
+        "CVE-2018-19139": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2018-19139",
+            "testcase": "CVE-2018-19139.jp2"
+        },
+        "CVE-2018-19539": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2018-19539",
+            "testcase": "CVE-2018-19539.jp2"
+        },
+        "CVE-2018-19540": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x000000000055cecd|jasper`jpc_pi_destroy|29",
+                            "1|0x0000000000544d26|jasper`jpc_dec_tilefini|3702",
+                            "2|0x00000000005302c6|jasper`jpc_dec_process_eoc|326",
+                            "3|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "4|0x00000000005346cb|jasper`jpc_decode|379",
+                            "5|0x00000000004ff3de|jasper`jp2_decode|2462",
+                            "6|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "7|0x00000000004c3255|jasper`main|2181",
+                            "8|0x00007fb57ea6db6b|libc.so.6`__libc_start_main|235",
+                            "9|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2018-19540",
+            "testcase": "CVE-2018-19540.jp2"
+        },
+        "CVE-2018-19541": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004af76c|jasper`__sanitizer::Die()|172",
+                            "2|0x0000000000498fd9|jasper`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049856f|jasper`::ReportGenericError()|367",
+                            "4|0x0000000000499338|jasper`__asan_report_load8|40",
+                            "5|0x00000000004cdba2|jasper`jas_image_depalettize|2178",
+                            "6|0x0000000000501f26|jasper`jp2_decode|13542",
+                            "7|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "8|0x00000000004c3255|jasper`main|2181",
+                            "9|0x00007fbac153eb6b|libc.so.6`__libc_start_main|235",
+                            "10|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2018-19541",
+            "testcase": "CVE-2018-19541.jp2"
+        },
+        "CVE-2018-19542": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x000000000055cecd|jasper`jpc_pi_destroy|29",
+                            "1|0x0000000000544d26|jasper`jpc_dec_tilefini|3702",
+                            "2|0x00000000005302c6|jasper`jpc_dec_process_eoc|326",
+                            "3|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "4|0x00000000005346cb|jasper`jpc_decode|379",
+                            "5|0x00000000004ff3de|jasper`jp2_decode|2462",
+                            "6|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "7|0x00000000004c3255|jasper`main|2181",
+                            "8|0x00007f06756dab6b|libc.so.6`__libc_start_main|235",
+                            "9|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2018-19542",
+            "testcase": "CVE-2018-19542.jp2"
+        },
+        "CVE-2018-19543": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x000000000055cecd|jasper`jpc_pi_destroy|29",
+                            "1|0x0000000000544d26|jasper`jpc_dec_tilefini|3702",
+                            "2|0x00000000005302c6|jasper`jpc_dec_process_eoc|326",
+                            "3|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "4|0x00000000005346cb|jasper`jpc_decode|379",
+                            "5|0x00000000004ff3de|jasper`jp2_decode|2462",
+                            "6|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "7|0x00000000004c3255|jasper`main|2181",
+                            "8|0x00007fc48efe8b6b|libc.so.6`__libc_start_main|235",
+                            "9|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2018-19543",
+            "testcase": "CVE-2018-19543.jp2"
+        },
+        "CVE-2018-20570": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2018-20570",
+            "testcase": "CVE-2018-20570.jp2"
+        },
+        "CVE-2018-9055": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x000000000055cecd|jasper`jpc_pi_destroy|29",
+                            "1|0x0000000000544d26|jasper`jpc_dec_tilefini|3702",
+                            "2|0x00000000005302c6|jasper`jpc_dec_process_eoc|326",
+                            "3|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "4|0x00000000005346cb|jasper`jpc_decode|379",
+                            "5|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "6|0x00000000004c3255|jasper`main|2181",
+                            "7|0x00007fbbc45aeb6b|libc.so.6`__libc_start_main|235",
+                            "8|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2018-9055",
+            "testcase": "CVE-2018-9055.jp2"
+        },
+        "CVE-2018-9154": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x00007f298b7d6ed7|libc.so.6`gsignal|199",
+                            "1|0x00007f298b7b8535|libc.so.6`abort|289",
+                            "2|0x000000000052e270|jasper`jpc_dec_process_sot|1984",
+                            "3|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "4|0x00000000005346cb|jasper`jpc_decode|379",
+                            "5|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "6|0x00000000004c3255|jasper`main|2181",
+                            "7|0x00007f298b7b9b6b|libc.so.6`__libc_start_main|235",
+                            "8|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2018-9154",
+            "testcase": "CVE-2018-9154.jp2"
+        },
+        "CVE-2018-9252": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x000000000055cecd|jasper`jpc_pi_destroy|29",
+                            "1|0x0000000000544d26|jasper`jpc_dec_tilefini|3702",
+                            "2|0x00000000005302c6|jasper`jpc_dec_process_eoc|326",
+                            "3|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "4|0x00000000005346cb|jasper`jpc_decode|379",
+                            "5|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "6|0x00000000004c3255|jasper`main|2181",
+                            "7|0x00007f8999972b6b|libc.so.6`__libc_start_main|235",
+                            "8|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2018-9252",
+            "testcase": "CVE-2018-9252.jp2"
+        },
+        "GITJASPER-182-10": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x00007fbf7dd18ed7|libc.so.6`gsignal|199",
+                            "1|0x00007fbf7dcfa535|libc.so.6`abort|289",
+                            "2|0x00007fbf7dcfa40f|libc.so.6`___lldb_unnamed_symbol7$$libc.so.6|15",
+                            "3|0x00007fbf7dd0a012|libc.so.6`__assert_fail|66",
+                            "4|0x0000000000545740|jasper`jpc_dequantize|80",
+                            "5|0x000000000054248e|jasper`jpc_dec_tiledecode|1806",
+                            "6|0x000000000053001e|jasper`jpc_dec_process_sod|4382",
+                            "7|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "8|0x00000000005346cb|jasper`jpc_decode|379",
+                            "9|0x00000000004ff3de|jasper`jp2_decode|2462",
+                            "10|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "11|0x00000000004c3255|jasper`main|2181",
+                            "12|0x00007fbf7dcfbb6b|libc.so.6`__libc_start_main|235",
+                            "13|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://github.com/mdadams/jasper/issues/182",
+            "testcase": "GITJASPER-182-10.jp2"
+        },
+        "GITJASPER-182-6": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x00007f6cb977fed7|libc.so.6`gsignal|199",
+                            "1|0x00007f6cb9761535|libc.so.6`abort|289",
+                            "2|0x00007f6cb976140f|libc.so.6`___lldb_unnamed_symbol7$$libc.so.6|15",
+                            "3|0x00007f6cb9771012|libc.so.6`__assert_fail|66",
+                            "4|0x000000000052d927|jasper`jpc_floorlog2|71",
+                            "5|0x000000000056ca5e|jasper`jpc_dec_decodepkt|6014",
+                            "6|0x000000000056af7e|jasper`jpc_dec_decodepkts|3902",
+                            "7|0x000000000052f5d8|jasper`jpc_dec_process_sod|1752",
+                            "8|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "9|0x00000000005346cb|jasper`jpc_decode|379",
+                            "10|0x00000000004ff3de|jasper`jp2_decode|2462",
+                            "11|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "12|0x00000000004c3255|jasper`main|2181",
+                            "13|0x00007f6cb9762b6b|libc.so.6`__libc_start_main|235",
+                            "14|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://github.com/mdadams/jasper/issues/182",
+            "testcase": "GITJASPER-182-6.jp2"
+        },
+        "GITJASPER-182-7": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x00007f21f37faed7|libc.so.6`gsignal|199",
+                            "1|0x00007f21f37dc535|libc.so.6`abort|289",
+                            "2|0x000000000052e270|jasper`jpc_dec_process_sot|1984",
+                            "3|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "4|0x00000000005346cb|jasper`jpc_decode|379",
+                            "5|0x00000000004ff3de|jasper`jp2_decode|2462",
+                            "6|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "7|0x00000000004c3255|jasper`main|2181",
+                            "8|0x00007f21f37ddb6b|libc.so.6`__libc_start_main|235",
+                            "9|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://github.com/mdadams/jasper/issues/182",
+            "testcase": "GITJASPER-182-7.jp2"
+        },
+        "GITJASPER-182-8": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x000000000055cecd|jasper`jpc_pi_destroy|29",
+                            "1|0x0000000000544d26|jasper`jpc_dec_tilefini|3702",
+                            "2|0x00000000005302c6|jasper`jpc_dec_process_eoc|326",
+                            "3|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "4|0x00000000005346cb|jasper`jpc_decode|379",
+                            "5|0x00000000004ff3de|jasper`jp2_decode|2462",
+                            "6|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "7|0x00000000004c3255|jasper`main|2181",
+                            "8|0x00007f445b4cab6b|libc.so.6`__libc_start_main|235",
+                            "9|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://github.com/mdadams/jasper/issues/182",
+            "testcase": "GITJASPER-182-8.jp2"
+        },
+        "GITJASPER-182-9": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x00007fd6ff809ed7|libc.so.6`gsignal|199",
+                            "1|0x00007fd6ff7eb535|libc.so.6`abort|289",
+                            "2|0x00007fd6ff7eb40f|libc.so.6`___lldb_unnamed_symbol7$$libc.so.6|15",
+                            "3|0x00007fd6ff7fb012|libc.so.6`__assert_fail|66",
+                            "4|0x000000000054509a|jasper`calcstepsizes|314",
+                            "5|0x000000000053a290|jasper`jpc_dec_cp_prepare|736",
+                            "6|0x000000000052f050|jasper`jpc_dec_process_sod|336",
+                            "7|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "8|0x00000000005346cb|jasper`jpc_decode|379",
+                            "9|0x00000000004ff3de|jasper`jp2_decode|2462",
+                            "10|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "11|0x00000000004c3255|jasper`main|2181",
+                            "12|0x00007fd6ff7ecb6b|libc.so.6`__libc_start_main|235",
+                            "13|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://github.com/mdadams/jasper/issues/182",
+            "testcase": "GITJASPER-182-9.jp2"
+        },
+        "GITJASPER-30": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x000000000055cecd|jasper`jpc_pi_destroy|29",
+                            "1|0x0000000000544d26|jasper`jpc_dec_tilefini|3702",
+                            "2|0x00000000005302c6|jasper`jpc_dec_process_eoc|326",
+                            "3|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "4|0x00000000005346cb|jasper`jpc_decode|379",
+                            "5|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "6|0x00000000004c3255|jasper`main|2181",
+                            "7|0x00007f5ebec58b6b|libc.so.6`__libc_start_main|235",
+                            "8|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://github.com/mdadams/jasper/issues/30",
+            "testcase": "GITJASPER-30.jp2"
+        },
+        "GITJASPER-31": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://github.com/mdadams/jasper/issues/31",
+            "testcase": "GITJASPER-31.jpg"
+        },
+        "GITJASPER-32": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x00007f3a5b302ed7|libc.so.6`gsignal|199",
+                            "1|0x00007f3a5b2e4535|libc.so.6`abort|289",
+                            "2|0x00007f3a5b2e440f|libc.so.6`___lldb_unnamed_symbol7$$libc.so.6|15",
+                            "3|0x00007f3a5b2f4012|libc.so.6`__assert_fail|66",
+                            "4|0x00000000005428bd|jasper`jpc_dec_tiledecode|2877",
+                            "5|0x000000000053001e|jasper`jpc_dec_process_sod|4382",
+                            "6|0x0000000000535db5|jasper`jpc_dec_decode|901",
+                            "7|0x00000000005346cb|jasper`jpc_decode|379",
+                            "8|0x00000000004c84dc|jasper`jas_image_decode|220",
+                            "9|0x00000000004c3255|jasper`main|2181",
+                            "10|0x00007f3a5b2e5b6b|libc.so.6`__libc_start_main|235",
+                            "11|0x000000000041b3ea|jasper`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://github.com/mdadams/jasper/issues/32",
+            "testcase": "GITJASPER-32.jp2"
+        }
+    },
+    "evars": {
+        "ASAN_OPTIONS": "detect_leaks=0"
+    },
+    "source": "https://github.com/mdadams/jasper",
+    "version": "1.701.0"
+}

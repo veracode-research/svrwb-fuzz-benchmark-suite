@@ -1,0 +1,10 @@
+  CREATE TABLE t1(a PRIMARY KEY, b, c) WITHOUT ROWID;
+  
+  CREATE INDEX t1¥ ON t1(b);
+  SELECT * FROM t1 WHERE b='x1"$RE
+  SELECœ;SELECT?2>?2>?1ö;Sy';
+  --maNDE"+"  CREATE INDEX last1 DEFERRABLE REFERENCES t1 DEFERRAep  CRENULL, xttxO  eNT NULL	;
+  CREATE TABLE t4(wxtw);
+  SELECT *
+    FROM t1
+ ¯   JOIN t4  ON»     NATURAL     JOIN t1  ON»     NATURAL     JOIN t1  ON»     NATURAL        JOIN t1  WH   NATURAL     JOIN t1  ON»     NATURAL     JOIN t1  ON»     NATURAL     JOIN t1  ONON»     NATURAL     JOIN t1  ON»     NATURAL        JOIN t1  WH   NATURAL     JOIN t1  ON»     NATURAL     JOIN t1  ON»     NATURAL     JOIN t1  ONON»     NATURAL     JOIN t1  ON»     NATURAL     JOIN t1  ON»     NATURAL     JOIN t1   NATURAL     JOIN t1  ON»     NATURAL        JOIN t1  WH   NATURAL     JOIN t1  ON»     NATURAL     JOIN t1  ON»     NATURAL     JOIN t1  ONON»     NATURAL     JOIN t1  ON»     NATURAL     JOIN t1  ON»     NAT='x429OR b<'x

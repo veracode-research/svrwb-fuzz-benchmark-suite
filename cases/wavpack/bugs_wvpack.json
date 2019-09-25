@@ -1,0 +1,38 @@
+{
+    "application": "wvunpack",
+    "apppath": "wavpack-5.0.0/install/bin/wavpack",
+    "args": "-y @@",
+    "bugs": {
+        "CVE-2016-10169": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2016-10169",
+            "testcase": "wavpack_crash1.wav",
+            "testcase_url": ""
+        },
+        "CVE-2016-10170": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2016-10170",
+            "testcase": "wavpack_crash3.wav",
+            "testcase_url": ""
+        },
+        "CVE-2016-10171": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2016-10171",
+            "testcase": "wavpack_crash4.wav",
+            "testcase_url": ""
+        },
+        "CVE-2016-10172": {
+            "crash": {},
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2016-10172",
+            "testcase": "wavpack_crash5.wav",
+            "testcase_url": ""
+        }
+    },
+    "cve": "https://github.com/dbry/WavPack/commit/4bc05fc490b66ef2d45b1de26abf1455b486b0dc",
+    "evars": {
+        "ASAN_OPTIONS": "detect_leaks=0"
+    },
+    "known_vuln_count": 0,
+    "source": "https://github.com/dbry/WavPack",
+    "version": "5.0.0"
+}
