@@ -9,7 +9,10 @@ like a not-great path to go down. There are a few ways of analyzing fuzzers
 (see some twitter discussions with S. Heelan and B. Falk around 9/24/19, for
 example) and this can be one of them. As for this suite, there is no notion
 of the types of bugs one should (?) find with this, just that they are bugs
-from some popular and some less than popular OSS... I digress.
+from some popular and some less than popular OSS... I digress. This was 
+pushed out a bit prematurely mostly in part due to the timing of the 
+discussions (mentioned above). There are apps still being added and perhaps
+will be that way forever? Comments, criticisms, and help are all welcomed.
 
 ...
 
