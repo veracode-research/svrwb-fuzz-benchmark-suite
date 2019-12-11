@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SRCDIR=audiofile-0.3.6
+SRCDIR=audiofile
 
 . ../config.sh
 
