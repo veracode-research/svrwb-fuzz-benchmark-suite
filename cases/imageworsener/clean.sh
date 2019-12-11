@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pushd imageworsener
+pushd imageworsener-1.3.0
 make clean 
 make distclean 
 rm -rf install 
