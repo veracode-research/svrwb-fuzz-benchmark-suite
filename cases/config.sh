@@ -7,7 +7,7 @@
 
 # TODO: Should include gcc as well.
 
-LLVM_HOME=/home/arr/llvm-root
+LLVM_HOME=/usr
 
 #
 # Set to non-zero for AFL compilation mode
