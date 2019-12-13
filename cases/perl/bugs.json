@@ -1,1 +1,1044 @@
-bugs-perl-5.21.7.json
+{
+    "application": "perl5.21.7",
+    "apppath": "perl-5.21.7/install/usr/local/bin/perl5.21.7",
+    "args": "@@",
+    "bugs": {
+        "RTP-123539": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00007f4dfee76e97 libc.so.6`__GI_raise(sig=2) at raise.c:51",
+                            "frame #1: 0x00007f4dfee78801 libc.so.6`__GI_abort at abort.c:79",
+                            "frame #2: 0x00007f4dfeec1897 libc.so.6`__libc_message(action=do_abort, fmt=\"\ufffd\ufffd}\") at libc_fatal.c:181",
+                            "frame #3: 0x00007f4dfeec890a libc.so.6`malloc_printerr(str=<unavailable>) at malloc.c:5350",
+                            "frame #4: 0x00007f4dfeed015f libc.so.6`__GI___libc_free at malloc.c:4295",
+                            "frame #5: 0x00007f4dfeecfed0 libc.so.6`__GI___libc_free at malloc.c:3124",
+                            "frame #6: 0x00007f4dfeecfc30 libc.so.6`__GI___libc_free(mem=<unavailable>)",
+                            "frame #7: 0x00000000004c4327 perl5.21.7`Perl_sv_clear + 1527",
+                            "frame #8: 0x00000000004c4aff perl5.21.7`Perl_sv_free2 + 95",
+                            "frame #9: 0x000000000041f583 perl5.21.7`Perl_op_clear + 787",
+                            "frame #10: 0x000000000041ee88 perl5.21.7`Perl_op_free + 504",
+                            "frame #11: 0x000000000041ec46 perl5.21.7`Perl_opslab_force_free + 102",
+                            "frame #12: 0x000000000046fc2e perl5.21.7`Perl_cv_undef_flags + 270",
+                            "frame #13: 0x00000000004c3e71 perl5.21.7`Perl_sv_clear + 321",
+                            "frame #14: 0x00000000004c4aff perl5.21.7`Perl_sv_free2 + 95",
+                            "frame #15: 0x0000000000439ca2 perl5.21.7`perl_destruct + 466",
+                            "frame #16: 0x000000000041e83c perl5.21.7`main + 220",
+                            "frame #17: 0x00007f4dfee59b97 libc.so.6`__libc_start_main(main=(perl5.21.7`main), argc=2, argv=0x00007ffe5fc31e38, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffe5fc31e28) at libc-start.c:310",
+                            "frame #18: 0x000000000041e69a perl5.21.7`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004caf1c|perl5.21.7`__sanitizer::Die()|172",
+                            "2|0x00000000004b4789|perl5.21.7`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004b3d1f|perl5.21.7`::ReportGenericError()|367",
+                            "4|0x00000000004b4c2b|perl5.21.7`__asan_report_store1|43",
+                            "5|0x000000000062a33f|perl5.21.7`S_regatom|29967",
+                            "6|0x00000000006189db|perl5.21.7`S_regbranch|1275",
+                            "7|0x00000000005e5105|perl5.21.7`S_reg|15061",
+                            "8|0x00000000005d6d43|perl5.21.7`Perl_re_op_compile|18771",
+                            "9|0x00000000004f06e2|perl5.21.7`Perl_pmruntime|5138",
+                            "10|0x00000000005bfb3b|perl5.21.7`Perl_yyparse|15195",
+                            "11|0x0000000000542a53|perl5.21.7`perl_parse|16179",
+                            "12|0x00000000004de34d|perl5.21.7`main|461",
+                            "13|0x00007fc40bf24b6b|libc.so.6`__libc_start_main|235",
+                            "14|0x0000000000436b9a|perl5.21.7`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123539",
+            "testcase": "rtp_123539"
+        },
+        "RTP-123542": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x0000000000423fd3 perl5.21.7`Perl_pmruntime + 99",
+                            "frame #1: 0x000000000046e5e6 perl5.21.7`Perl_yyparse + 3702",
+                            "frame #2: 0x000000000043cef6 perl5.21.7`perl_parse + 6838",
+                            "frame #3: 0x000000000041e7e0 perl5.21.7`main + 128",
+                            "frame #4: 0x00007f34e7e4eb97 libc.so.6`__libc_start_main(main=(perl5.21.7`main), argc=2, argv=0x00007ffd3aa440d8, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffd3aa440c8) at libc-start.c:310",
+                            "frame #5: 0x000000000041e69a perl5.21.7`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123542",
+            "testcase": "rtp_123542"
+        },
+        "RTP-123554": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00007f1e90748564 libc.so.6`__memcpy_sse2_unaligned_erms at memmove-vec-unaligned-erms.S:249",
+                            "frame #1: 0x000000000049a595 perl5.21.7`Perl_repeatcpy + 517",
+                            "frame #2: 0x00000000004d3da1 perl5.21.7`Perl_pp_repeat + 913",
+                            "frame #3: 0x00000000004b1893 perl5.21.7`Perl_runops_standard + 19",
+                            "frame #4: 0x0000000000427616 perl5.21.7`S_fold_constants + 822",
+                            "frame #5: 0x000000000046f343 perl5.21.7`Perl_yyparse + 7123",
+                            "frame #6: 0x000000000043cef6 perl5.21.7`perl_parse + 6838",
+                            "frame #7: 0x000000000041e7e0 perl5.21.7`main + 128",
+                            "frame #8: 0x00007f1e906aeb97 libc.so.6`__libc_start_main(main=(perl5.21.7`main), argc=2, argv=0x00007ffda3f84be8, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffda3f84bd8) at libc-start.c:310",
+                            "frame #9: 0x000000000041e69a perl5.21.7`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004caf1c|perl5.21.7`__sanitizer::Die()|172",
+                            "2|0x00000000004b4789|perl5.21.7`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004b3d1f|perl5.21.7`::ReportGenericError()|367",
+                            "4|0x00000000004adfb2|perl5.21.7`::__asan_memcpy()|658",
+                            "5|0x0000000000655d75|perl5.21.7`Perl_repeatcpy|2533",
+                            "6|0x000000000071998d|perl5.21.7`Perl_pp_repeat|2477",
+                            "7|0x00000000006a406a|perl5.21.7`Perl_runops_standard|58",
+                            "8|0x00000000004f9e61|perl5.21.7`S_fold_constants|2593",
+                            "9|0x00000000005c0bf1|perl5.21.7`Perl_yyparse|19473",
+                            "10|0x0000000000542a53|perl5.21.7`perl_parse|16179",
+                            "11|0x00000000004de34d|perl5.21.7`main|461",
+                            "12|0x00007f22b99ccb6b|libc.so.6`__libc_start_main|235",
+                            "13|0x0000000000436b9a|perl5.21.7`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123554",
+            "testcase": "rtp_123554"
+        },
+        "RTP-123617": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123617",
+            "testcase": "rtp_123617"
+        },
+        "RTP-123652": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x0000000000f5a570",
+                            "frame #1: 0x00000000004b1893 perl5.21.7`Perl_runops_standard + 19",
+                            "frame #2: 0x000000000043d780 perl5.21.7`S_run_body + 128",
+                            "frame #3: 0x000000000043d65b perl5.21.7`perl_run + 459",
+                            "frame #4: 0x000000000041e7f0 perl5.21.7`main + 144",
+                            "frame #5: 0x00007fe94b1e1b97 libc.so.6`__libc_start_main(main=(perl5.21.7`main), argc=2, argv=0x00007fff3bfde738, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007fff3bfde728) at libc-start.c:310",
+                            "frame #6: 0x000000000041e69a perl5.21.7`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004caf1c|perl5.21.7`__sanitizer::Die()|172",
+                            "2|0x00000000004b4789|perl5.21.7`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004b3d1f|perl5.21.7`::ReportGenericError()|367",
+                            "4|0x00000000004b49a8|perl5.21.7`__asan_report_load2|40",
+                            "5|0x0000000000533582|perl5.21.7`Perl_rpeep|30626",
+                            "6|0x0000000000532756|perl5.21.7`Perl_rpeep|26998",
+                            "7|0x00000000004f7875|perl5.21.7`Perl_newPROG|757",
+                            "8|0x00000000005bd135|perl5.21.7`Perl_yyparse|4437",
+                            "9|0x0000000000542a53|perl5.21.7`perl_parse|16179",
+                            "10|0x00000000004de34d|perl5.21.7`main|461",
+                            "11|0x00007f3dd7e2fb6b|libc.so.6`__libc_start_main|235",
+                            "12|0x0000000000436b9a|perl5.21.7`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123652",
+            "testcase": "rtp_123652"
+        },
+        "RTP-123677": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004caf1c|perl5.21.7`__sanitizer::Die()|172",
+                            "2|0x00000000004b4789|perl5.21.7`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004b3d1f|perl5.21.7`::ReportGenericError()|367",
+                            "4|0x00000000004b5546|perl5.21.7`__asan_load8|86",
+                            "5|0x000000000056d45c|perl5.21.7`Perl_yylex|700",
+                            "6|0x00000000005775c4|perl5.21.7`Perl_yylex|42020",
+                            "7|0x00000000005775c4|perl5.21.7`Perl_yylex|42020",
+                            "8|0x00000000005bc428|perl5.21.7`Perl_yyparse|1096",
+                            "9|0x0000000000542a53|perl5.21.7`perl_parse|16179",
+                            "10|0x00000000004de34d|perl5.21.7`main|461",
+                            "11|0x00007fe46054bb6b|libc.so.6`__libc_start_main|235",
+                            "12|0x0000000000436b9a|perl5.21.7`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123677",
+            "testcase": "rtp_123677"
+        },
+        "RTP-123710": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004be687 perl5.21.7`Perl_sv_setpvn + 135",
+                            "frame #1: 0x0000000000501fce perl5.21.7`Perl_do_vop + 142",
+                            "frame #2: 0x00000000004d4fe5 perl5.21.7`Perl_pp_bit_or + 277",
+                            "frame #3: 0x00000000004b1893 perl5.21.7`Perl_runops_standard + 19",
+                            "frame #4: 0x000000000043d780 perl5.21.7`S_run_body + 128",
+                            "frame #5: 0x000000000043d65b perl5.21.7`perl_run + 459",
+                            "frame #6: 0x000000000041e7f0 perl5.21.7`main + 144",
+                            "frame #7: 0x00007f1ee36f8b97 libc.so.6`__libc_start_main(main=(perl5.21.7`main), argc=2, argv=0x00007ffc42e86768, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffc42e86758) at libc-start.c:310",
+                            "frame #8: 0x000000000041e69a perl5.21.7`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x00000000006cf746|perl5.21.7`Perl_sv_setpvn|262",
+                            "1|0x00000000007bab25|perl5.21.7`Perl_do_vop|469",
+                            "2|0x000000000071dfe7|perl5.21.7`Perl_pp_bit_or|935",
+                            "3|0x00000000006a406a|perl5.21.7`Perl_runops_standard|58",
+                            "4|0x0000000000545bec|perl5.21.7`S_run_body|1196",
+                            "5|0x00000000005450a2|perl5.21.7`perl_run|1234",
+                            "6|0x00000000004de35d|perl5.21.7`main|477",
+                            "7|0x00007f821f1d8b6b|libc.so.6`__libc_start_main|235",
+                            "8|0x0000000000436b9a|perl5.21.7`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123710",
+            "testcase": "rtp_123710"
+        },
+        "RTP-123711": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004d3f44 perl5.21.7`Perl_pp_subtract + 68",
+                            "frame #1: 0x00000000004b1893 perl5.21.7`Perl_runops_standard + 19",
+                            "frame #2: 0x000000000043d780 perl5.21.7`S_run_body + 128",
+                            "frame #3: 0x000000000043d65b perl5.21.7`perl_run + 459",
+                            "frame #4: 0x000000000041e7f0 perl5.21.7`main + 144",
+                            "frame #5: 0x00007ffa9acdeb97 libc.so.6`__libc_start_main(main=(perl5.21.7`main), argc=2, argv=0x00007fffa3a54118, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007fffa3a54108) at libc-start.c:310",
+                            "frame #6: 0x000000000041e69a perl5.21.7`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004caf1c|perl5.21.7`__sanitizer::Die()|172",
+                            "2|0x00000000004b4789|perl5.21.7`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004b3d1f|perl5.21.7`::ReportGenericError()|367",
+                            "4|0x00000000004b4ae8|perl5.21.7`__asan_report_load8|40",
+                            "5|0x000000000071a9ac|perl5.21.7`Perl_pp_subtract|2252",
+                            "6|0x00000000006a406a|perl5.21.7`Perl_runops_standard|58",
+                            "7|0x0000000000545bec|perl5.21.7`S_run_body|1196",
+                            "8|0x00000000005450a2|perl5.21.7`perl_run|1234",
+                            "9|0x00000000004de35d|perl5.21.7`main|477",
+                            "10|0x00007f24d065ab6b|libc.so.6`__libc_start_main|235",
+                            "11|0x0000000000436b9a|perl5.21.7`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123711",
+            "testcase": "rtp_123711"
+        },
+        "RTP-123712": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123712",
+            "testcase": "rtp_123712"
+        },
+        "RTP-123735": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123735",
+            "testcase": "rtp_123735"
+        },
+        "RTP-123736": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123736",
+            "testcase": "rtp_123736"
+        },
+        "RTP-123737": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123737",
+            "testcase": "rtp_123737"
+        },
+        "RTP-123753": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123753",
+            "testcase": "rtp_123753"
+        },
+        "RTP-123755": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123755",
+            "testcase": "rtp_123755"
+        },
+        "RTP-123759": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x0000000000500df1 perl5.21.7`Perl_do_trans + 3489",
+                            "frame #1: 0x00000000004d1eeb perl5.21.7`Perl_pp_trans + 187",
+                            "frame #2: 0x00000000004b1893 perl5.21.7`Perl_runops_standard + 19",
+                            "frame #3: 0x000000000043d780 perl5.21.7`S_run_body + 128",
+                            "frame #4: 0x000000000043d65b perl5.21.7`perl_run + 459",
+                            "frame #5: 0x000000000041e7f0 perl5.21.7`main + 144",
+                            "frame #6: 0x00007fde1aa49b97 libc.so.6`__libc_start_main(main=(perl5.21.7`main), argc=2, argv=0x00007ffe591ba258, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffe591ba248) at libc-start.c:310",
+                            "frame #7: 0x000000000041e69a perl5.21.7`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x00000000007b5cef|perl5.21.7`Perl_do_trans|4415",
+                            "1|0x0000000000713d16|perl5.21.7`Perl_pp_trans|806",
+                            "2|0x00000000006a406a|perl5.21.7`Perl_runops_standard|58",
+                            "3|0x0000000000545bec|perl5.21.7`S_run_body|1196",
+                            "4|0x00000000005450a2|perl5.21.7`perl_run|1234",
+                            "5|0x00000000004de35d|perl5.21.7`main|477",
+                            "6|0x00007f24d7968b6b|libc.so.6`__libc_start_main|235",
+                            "7|0x0000000000436b9a|perl5.21.7`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123759",
+            "testcase": "rtp_123759"
+        },
+        "RTP-123763": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004afe7e perl5.21.7`Perl_av_extend_guts + 14",
+                            "frame #1: 0x00000000004de0b0 perl5.21.7`Perl_pp_split + 448",
+                            "frame #2: 0x00000000004b1893 perl5.21.7`Perl_runops_standard + 19",
+                            "frame #3: 0x000000000043d780 perl5.21.7`S_run_body + 128",
+                            "frame #4: 0x000000000043d65b perl5.21.7`perl_run + 459",
+                            "frame #5: 0x000000000041e7f0 perl5.21.7`main + 144",
+                            "frame #6: 0x00007ff30954ab97 libc.so.6`__libc_start_main(main=(perl5.21.7`main), argc=2, argv=0x00007ffc57e1b0b8, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffc57e1b0a8) at libc-start.c:310",
+                            "frame #7: 0x000000000041e69a perl5.21.7`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x000000000069ee75|perl5.21.7`Perl_av_extend_guts|37",
+                            "1|0x000000000073cc88|perl5.21.7`Perl_pp_split|1384",
+                            "2|0x00000000006a406a|perl5.21.7`Perl_runops_standard|58",
+                            "3|0x0000000000545bec|perl5.21.7`S_run_body|1196",
+                            "4|0x00000000005450a2|perl5.21.7`perl_run|1234",
+                            "5|0x00000000004de35d|perl5.21.7`main|477",
+                            "6|0x00007ff6fb9c4b6b|libc.so.6`__libc_start_main|235",
+                            "7|0x0000000000436b9a|perl5.21.7`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123763",
+            "testcase": "rtp_123763"
+        },
+        "RTP-123765": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": null
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123765",
+            "testcase": "rtp_123765"
+        },
+        "RTP-123782": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x000000000047c228 perl5.21.7`S_study_chunk + 6632",
+                            "frame #1: 0x00000000004752b3 perl5.21.7`Perl_re_op_compile + 7955",
+                            "frame #2: 0x000000000042471d perl5.21.7`Perl_pmruntime + 1965",
+                            "frame #3: 0x0000000000423a8b perl5.21.7`Perl_bind_match + 59",
+                            "frame #4: 0x000000000046eb2d perl5.21.7`Perl_yyparse + 5053",
+                            "frame #5: 0x000000000043cef6 perl5.21.7`perl_parse + 6838",
+                            "frame #6: 0x000000000041e7e0 perl5.21.7`main + 128",
+                            "frame #7: 0x00007ff86a395b97 libc.so.6`__libc_start_main(main=(perl5.21.7`main), argc=2, argv=0x00007ffd3afa4878, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffd3afa4868) at libc-start.c:310",
+                            "frame #8: 0x000000000041e69a perl5.21.7`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x00000000005f3183|perl5.21.7`S_study_chunk|20963",
+                            "1|0x00000000005d84ed|perl5.21.7`Perl_re_op_compile|24829",
+                            "2|0x00000000004f06e2|perl5.21.7`Perl_pmruntime|5138",
+                            "3|0x00000000004ee53b|perl5.21.7`Perl_bind_match|123",
+                            "4|0x00000000005c099d|perl5.21.7`Perl_yyparse|18877",
+                            "5|0x0000000000542a53|perl5.21.7`perl_parse|16179",
+                            "6|0x00000000004de34d|perl5.21.7`main|461",
+                            "7|0x00007fceef029b6b|libc.so.6`__libc_start_main|235",
+                            "8|0x0000000000436b9a|perl5.21.7`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123782",
+            "testcase": "rtp_123782"
+        },
+        "RTP-123790": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123790",
+            "testcase": "rtp_123790"
+        },
+        "RTP-123801": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123801",
+            "testcase": "rtp_123801"
+        },
+        "RTP-123802": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123802",
+            "testcase": "rtp_123802"
+        },
+        "RTP-123814": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123814",
+            "testcase": "rtp_123814"
+        },
+        "RTP-123816": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123816",
+            "testcase": "rtp_123816"
+        },
+        "RTP-123817": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123817",
+            "testcase": "rtp_123817"
+        },
+        "RTP-123821": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123821",
+            "testcase": "rtp_123821"
+        },
+        "RTP-123843": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x000000000047c272 perl5.21.7`S_study_chunk + 6706",
+                            "frame #1: 0x000000000047d717 perl5.21.7`S_study_chunk + 11991",
+                            "frame #2: 0x00000000004752b3 perl5.21.7`Perl_re_op_compile + 7955",
+                            "frame #3: 0x000000000042471d perl5.21.7`Perl_pmruntime + 1965",
+                            "frame #4: 0x000000000046e5e6 perl5.21.7`Perl_yyparse + 3702",
+                            "frame #5: 0x000000000043cef6 perl5.21.7`perl_parse + 6838",
+                            "frame #6: 0x000000000041e7e0 perl5.21.7`main + 128",
+                            "frame #7: 0x00007f52a24e4b97 libc.so.6`__libc_start_main(main=(perl5.21.7`main), argc=2, argv=0x00007ffe01a6c5c8, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffe01a6c5b8) at libc-start.c:310",
+                            "frame #8: 0x000000000041e69a perl5.21.7`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x00000000005f320d|perl5.21.7`S_study_chunk|21101",
+                            "1|0x00000000005f8306|perl5.21.7`S_study_chunk|41830",
+                            "2|0x00000000005d84ed|perl5.21.7`Perl_re_op_compile|24829",
+                            "3|0x00000000004f06e2|perl5.21.7`Perl_pmruntime|5138",
+                            "4|0x00000000005bfb3b|perl5.21.7`Perl_yyparse|15195",
+                            "5|0x0000000000542a53|perl5.21.7`perl_parse|16179",
+                            "6|0x00000000004de34d|perl5.21.7`main|461",
+                            "7|0x00007fe53121db6b|libc.so.6`__libc_start_main|235",
+                            "8|0x0000000000436b9a|perl5.21.7`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123843",
+            "testcase": "rtp_123843"
+        },
+        "RTP-123846": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004f94df perl5.21.7`Perl_pp_stat + 31",
+                            "frame #1: 0x00000000004b1893 perl5.21.7`Perl_runops_standard + 19",
+                            "frame #2: 0x000000000043d780 perl5.21.7`S_run_body + 128",
+                            "frame #3: 0x000000000043d65b perl5.21.7`perl_run + 459",
+                            "frame #4: 0x000000000041e7f0 perl5.21.7`main + 144",
+                            "frame #5: 0x00007f1174cf5b97 libc.so.6`__libc_start_main(main=(perl5.21.7`main), argc=2, argv=0x00007fff99d616d8, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007fff99d616c8) at libc-start.c:310",
+                            "frame #6: 0x000000000041e69a perl5.21.7`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004caf1c|perl5.21.7`__sanitizer::Die()|172",
+                            "2|0x00000000004b4789|perl5.21.7`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004b3d1f|perl5.21.7`::ReportGenericError()|367",
+                            "4|0x00000000004b4ae8|perl5.21.7`__asan_report_load8|40",
+                            "5|0x000000000079c4b0|perl5.21.7`Perl_pp_stat|4512",
+                            "6|0x00000000006a406a|perl5.21.7`Perl_runops_standard|58",
+                            "7|0x0000000000545bec|perl5.21.7`S_run_body|1196",
+                            "8|0x00000000005450a2|perl5.21.7`perl_run|1234",
+                            "9|0x00000000004de35d|perl5.21.7`main|477",
+                            "10|0x00007ff583bc6b6b|libc.so.6`__libc_start_main|235",
+                            "11|0x0000000000436b9a|perl5.21.7`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123846",
+            "testcase": "rtp_123846"
+        },
+        "RTP-123847": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004ae8cf perl5.21.7`Perl_hv_ename_add + 383",
+                            "frame #1: 0x00000000004a59b4 perl5.21.7`S_mro_gather_and_rename + 708",
+                            "frame #2: 0x00000000004a55a1 perl5.21.7`Perl_mro_package_moved + 737",
+                            "frame #3: 0x00000000004c1fe8 perl5.21.7`S_glob_assign_glob + 1624",
+                            "frame #4: 0x00000000004b1cd7 perl5.21.7`Perl_pp_sassign + 135",
+                            "frame #5: 0x00000000004b1893 perl5.21.7`Perl_runops_standard + 19",
+                            "frame #6: 0x000000000043d780 perl5.21.7`S_run_body + 128",
+                            "frame #7: 0x000000000043d65b perl5.21.7`perl_run + 459",
+                            "frame #8: 0x000000000041e7f0 perl5.21.7`main + 144",
+                            "frame #9: 0x00007fa621200b97 libc.so.6`__libc_start_main(main=(perl5.21.7`main), argc=2, argv=0x00007ffcd68f0d68, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffcd68f0d58) at libc-start.c:310",
+                            "frame #10: 0x000000000041e69a perl5.21.7`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x000000000069adc5|perl5.21.7`Perl_hv_ename_add|773",
+                            "1|0x0000000000679d55|perl5.21.7`S_mro_gather_and_rename|2229",
+                            "2|0x0000000000678ddf|perl5.21.7`Perl_mro_package_moved|1759",
+                            "3|0x00000000006dc8a7|perl5.21.7`S_glob_assign_glob|4599",
+                            "4|0x00000000006d7d4e|perl5.21.7`Perl_sv_setsv_flags|478",
+                            "5|0x00000000006a52ae|perl5.21.7`Perl_pp_sassign|366",
+                            "6|0x00000000006a406a|perl5.21.7`Perl_runops_standard|58",
+                            "7|0x0000000000545bec|perl5.21.7`S_run_body|1196",
+                            "8|0x00000000005450a2|perl5.21.7`perl_run|1234",
+                            "9|0x00000000004de35d|perl5.21.7`main|477",
+                            "10|0x00007f577b7c6b6b|libc.so.6`__libc_start_main|235",
+                            "11|0x0000000000436b9a|perl5.21.7`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123847",
+            "testcase": "rtp_123847"
+        },
+        "RTP-123848": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123848",
+            "testcase": "rtp_123848"
+        },
+        "RTP-123849": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123849",
+            "testcase": "rtp_123849"
+        },
+        "RTP-123852": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123852",
+            "testcase": "rtp_123852"
+        },
+        "RTP-123861": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123861",
+            "testcase": "rtp_123861"
+        },
+        "RTP-123870": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123870",
+            "testcase": "rtp_123870"
+        },
+        "RTP-123874": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00007f30c58ca8ba libc.so.6`__memset_erms at memset-vec-unaligned-erms.S:141",
+                            "frame #1: 0x00000000005381b4 perl5.21.7`S_pack_rec + 14692",
+                            "frame #2: 0x000000000053a0d2 perl5.21.7`Perl_pp_pack + 290",
+                            "frame #3: 0x00000000004b1893 perl5.21.7`Perl_runops_standard + 19",
+                            "frame #4: 0x000000000043d780 perl5.21.7`S_run_body + 128",
+                            "frame #5: 0x000000000043d65b perl5.21.7`perl_run + 459",
+                            "frame #6: 0x000000000041e7f0 perl5.21.7`main + 144",
+                            "frame #7: 0x00007f30c5830b97 libc.so.6`__libc_start_main(main=(perl5.21.7`main), argc=2, argv=0x00007ffe356e63b8, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffe356e63a8) at libc-start.c:310",
+                            "frame #8: 0x000000000041e69a perl5.21.7`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004caf1c|perl5.21.7`__sanitizer::Die()|172",
+                            "2|0x00000000004b4789|perl5.21.7`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004b3810|perl5.21.7`::ReportStringFunctionSizeOverflow()|240",
+                            "4|0x00000000004ae1c8|perl5.21.7`::__asan_memset()|216",
+                            "5|0x000000000086acc6|perl5.21.7`S_pack_rec|63606",
+                            "6|0x0000000000870358|perl5.21.7`Perl_pp_pack|1064",
+                            "7|0x00000000006a406a|perl5.21.7`Perl_runops_standard|58",
+                            "8|0x0000000000545bec|perl5.21.7`S_run_body|1196",
+                            "9|0x00000000005450a2|perl5.21.7`perl_run|1234",
+                            "10|0x00000000004de35d|perl5.21.7`main|477",
+                            "11|0x00007fd4a0ebdb6b|libc.so.6`__libc_start_main|235",
+                            "12|0x0000000000436b9a|perl5.21.7`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123874",
+            "testcase": "rtp_123874"
+        },
+        "RTP-123893": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123893",
+            "testcase": "rtp_123893"
+        },
+        "RTP-123946": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123946",
+            "testcase": "rtp_123946"
+        },
+        "RTP-123951": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004d3127 perl5.21.7`Perl_pp_multiply + 71",
+                            "frame #1: 0x00000000004b1893 perl5.21.7`Perl_runops_standard + 19",
+                            "frame #2: 0x000000000043d780 perl5.21.7`S_run_body + 128",
+                            "frame #3: 0x000000000043d65b perl5.21.7`perl_run + 459",
+                            "frame #4: 0x000000000041e7f0 perl5.21.7`main + 144",
+                            "frame #5: 0x00007f2280de0b97 libc.so.6`__libc_start_main(main=(perl5.21.7`main), argc=2, argv=0x00007ffea98a0f18, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffea98a0f08) at libc-start.c:310",
+                            "frame #6: 0x000000000041e69a perl5.21.7`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004caf1c|perl5.21.7`__sanitizer::Die()|172",
+                            "2|0x00000000004b4789|perl5.21.7`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004b3d1f|perl5.21.7`::ReportGenericError()|367",
+                            "4|0x00000000004b4ae8|perl5.21.7`__asan_report_load8|40",
+                            "5|0x0000000000717e29|perl5.21.7`Perl_pp_multiply|1977",
+                            "6|0x00000000006a406a|perl5.21.7`Perl_runops_standard|58",
+                            "7|0x0000000000545bec|perl5.21.7`S_run_body|1196",
+                            "8|0x00000000005450a2|perl5.21.7`perl_run|1234",
+                            "9|0x00000000004de35d|perl5.21.7`main|477",
+                            "10|0x00007f3bc8573b6b|libc.so.6`__libc_start_main|235",
+                            "11|0x0000000000436b9a|perl5.21.7`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123951",
+            "testcase": "rtp_123951"
+        },
+        "RTP-123954": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123954",
+            "testcase": "rtp_123954"
+        },
+        "RTP-123955": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123955",
+            "testcase": "rtp_123955"
+        },
+        "RTP-123963": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123963",
+            "testcase": "rtp_123963"
+        },
+        "RTP-123991": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x000000000049d3a3 perl5.21.7`Perl_parse_unicode_opts + 163",
+                            "frame #1: 0x000000000044ba6a perl5.21.7`Perl_yylex + 7994",
+                            "frame #2: 0x000000000046d8ff perl5.21.7`Perl_yyparse + 399",
+                            "frame #3: 0x000000000043cef6 perl5.21.7`perl_parse + 6838",
+                            "frame #4: 0x000000000041e7e0 perl5.21.7`main + 128",
+                            "frame #5: 0x00007f32fc640b97 libc.so.6`__libc_start_main(main=(perl5.21.7`main), argc=2, argv=0x00007ffe480a5638, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffe480a5628) at libc-start.c:310",
+                            "frame #6: 0x000000000041e69a perl5.21.7`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x000000000065cc25|perl5.21.7`Perl_parse_unicode_opts|533",
+                            "1|0x0000000000571403|perl5.21.7`Perl_yylex|16995",
+                            "2|0x00000000005bc428|perl5.21.7`Perl_yyparse|1096",
+                            "3|0x0000000000542a53|perl5.21.7`perl_parse|16179",
+                            "4|0x00000000004de34d|perl5.21.7`main|461",
+                            "5|0x00007f6a8185bb6b|libc.so.6`__libc_start_main|235",
+                            "6|0x0000000000436b9a|perl5.21.7`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123991",
+            "testcase": "rtp_123991"
+        },
+        "RTP-123994": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b6faa perl5.21.7`Perl_pp_iter + 234",
+                            "frame #1: 0x00000000004b1893 perl5.21.7`Perl_runops_standard + 19",
+                            "frame #2: 0x000000000043d780 perl5.21.7`S_run_body + 128",
+                            "frame #3: 0x000000000043d65b perl5.21.7`perl_run + 459",
+                            "frame #4: 0x000000000041e7f0 perl5.21.7`main + 144",
+                            "frame #5: 0x00007f5c3a039b97 libc.so.6`__libc_start_main(main=(perl5.21.7`main), argc=2, argv=0x00007ffe44c503c8, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffe44c503b8) at libc-start.c:310",
+                            "frame #6: 0x000000000041e69a perl5.21.7`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x00000000006b57fc|perl5.21.7`Perl_pp_iter|956",
+                            "1|0x00000000006a406a|perl5.21.7`Perl_runops_standard|58",
+                            "2|0x0000000000545bec|perl5.21.7`S_run_body|1196",
+                            "3|0x00000000005450a2|perl5.21.7`perl_run|1234",
+                            "4|0x00000000004de35d|perl5.21.7`main|477",
+                            "5|0x00007f1598c29b6b|libc.so.6`__libc_start_main|235",
+                            "6|0x0000000000436b9a|perl5.21.7`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123994",
+            "testcase": "rtp_123994"
+        },
+        "RTP-123995": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004536aa perl5.21.7`Perl_yylex + 39802",
+                            "frame #1: 0x000000000046d8ff perl5.21.7`Perl_yyparse + 399",
+                            "frame #2: 0x000000000043cef6 perl5.21.7`perl_parse + 6838",
+                            "frame #3: 0x000000000041e7e0 perl5.21.7`main + 128",
+                            "frame #4: 0x00007f7269993b97 libc.so.6`__libc_start_main(main=(perl5.21.7`main), argc=2, argv=0x00007ffc3299ec98, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffc3299ec88) at libc-start.c:310",
+                            "frame #5: 0x000000000041e69a perl5.21.7`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x0000000000584668|perl5.21.7`Perl_yylex|95432",
+                            "1|0x00000000005bc428|perl5.21.7`Perl_yyparse|1096",
+                            "2|0x0000000000542a53|perl5.21.7`perl_parse|16179",
+                            "3|0x00000000004de34d|perl5.21.7`main|461",
+                            "4|0x00007f7e48b3ab6b|libc.so.6`__libc_start_main|235",
+                            "5|0x0000000000436b9a|perl5.21.7`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=123995",
+            "testcase": "rtp_123995"
+        },
+        "RTP-124097": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004caf1c|perl5.21.7`__sanitizer::Die()|172",
+                            "2|0x00000000004b4789|perl5.21.7`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004b3d1f|perl5.21.7`::ReportGenericError()|367",
+                            "4|0x00000000004b4e6b|perl5.21.7`__asan_report_store8|43",
+                            "5|0x0000000000746d28|perl5.21.7`Perl_leave_scope|12680",
+                            "6|0x000000000087a68c|perl5.21.7`Perl_pp_sort|10732",
+                            "7|0x00000000006a406a|perl5.21.7`Perl_runops_standard|58",
+                            "8|0x0000000000545bec|perl5.21.7`S_run_body|1196",
+                            "9|0x00000000005450a2|perl5.21.7`perl_run|1234",
+                            "10|0x00000000004de35d|perl5.21.7`main|477",
+                            "11|0x00007f8fe112fb6b|libc.so.6`__libc_start_main|235",
+                            "12|0x0000000000436b9a|perl5.21.7`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=124097",
+            "testcase": "rtp_124097"
+        },
+        "RTP-124099": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x0000000000434437 perl5.21.7`Perl_find_lexical_cv + 71",
+                            "frame #1: 0x0000000000451b01 perl5.21.7`Perl_yylex + 32721",
+                            "frame #2: 0x000000000046d8ff perl5.21.7`Perl_yyparse + 399",
+                            "frame #3: 0x000000000043cef6 perl5.21.7`perl_parse + 6838",
+                            "frame #4: 0x000000000041e7e0 perl5.21.7`main + 128",
+                            "frame #5: 0x00007f2dafff9b97 libc.so.6`__libc_start_main(main=(perl5.21.7`main), argc=2, argv=0x00007ffc103de148, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffc103de138) at libc-start.c:310",
+                            "frame #6: 0x000000000041e69a perl5.21.7`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004caf1c|perl5.21.7`__sanitizer::Die()|172",
+                            "2|0x00000000004b4789|perl5.21.7`::~ScopedInErrorReport()|441",
+                            "3|0x00000000004b3d1f|perl5.21.7`::ReportGenericError()|367",
+                            "4|0x00000000004b4ae8|perl5.21.7`__asan_report_load8|40",
+                            "5|0x0000000000525b42|perl5.21.7`Perl_find_lexical_cv|674",
+                            "6|0x000000000057e8cf|perl5.21.7`Perl_yylex|71471",
+                            "7|0x00000000005bc428|perl5.21.7`Perl_yyparse|1096",
+                            "8|0x0000000000542a53|perl5.21.7`perl_parse|16179",
+                            "9|0x00000000004de34d|perl5.21.7`main|461",
+                            "10|0x00007fcd008deb6b|libc.so.6`__libc_start_main|235",
+                            "11|0x0000000000436b9a|perl5.21.7`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=124099",
+            "testcase": "rtp_124099"
+        },
+        "RTP-124187": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x0000000000470b6c perl5.21.7`S_pad_findlex + 44",
+                            "frame #1: 0x0000000000470a6c perl5.21.7`Perl_pad_findmy_pvn + 76",
+                            "frame #2: 0x000000000044ad8d perl5.21.7`Perl_yylex + 4701",
+                            "frame #3: 0x000000000046d8ff perl5.21.7`Perl_yyparse + 399",
+                            "frame #4: 0x000000000043cef6 perl5.21.7`perl_parse + 6838",
+                            "frame #5: 0x000000000041e7e0 perl5.21.7`main + 128",
+                            "frame #6: 0x00007f4e14761b97 libc.so.6`__libc_start_main(main=(perl5.21.7`main), argc=2, argv=0x00007ffc3febb558, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffc3febb548) at libc-start.c:310",
+                            "frame #7: 0x000000000041e69a perl5.21.7`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x00000000005c893b|perl5.21.7`S_pad_findlex|203",
+                            "1|0x00000000005c84f2|perl5.21.7`Perl_pad_findmy_pvn|274",
+                            "2|0x000000000056fbf9|perl5.21.7`Perl_yylex|10841",
+                            "3|0x00000000005bc428|perl5.21.7`Perl_yyparse|1096",
+                            "4|0x0000000000542a53|perl5.21.7`perl_parse|16179",
+                            "5|0x00000000004de34d|perl5.21.7`main|461",
+                            "6|0x00007efe49793b6b|libc.so.6`__libc_start_main|235",
+                            "7|0x0000000000436b9a|perl5.21.7`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://rt.perl.org/Public/Bug/Display.html?id=124187",
+            "testcase": "rtp_124187"
+        }
+    },
+    "evars": {
+        "ASAN_OPTIONS": "detect_leaks=0"
+    },
+    "source": "https://www.cpan.org/src/5.0/perl-5.21.7.tar.bz2",
+    "version": "5.21.7"
+}

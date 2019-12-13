@@ -5,8 +5,15 @@ PSRCDIR=libpcap
 
 . ../config.sh
 
+if [ -z "${IA32_TARGET}" ];
+then
+	HOSTARCH=""
+else
 
-PREFX="--prefix=`pwd`/${PSRCDIR}/install --target=x86 --host=x86"
+	HOSTARCH="--target=x86 --host=x86"
+fi
+
+PREFX="--prefix=`pwd`/${PSRCDIR}/install ${HOSTARCH}"
 
 mkdir ${PSRCDIR}/install
 

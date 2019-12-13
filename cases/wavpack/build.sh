@@ -4,8 +4,13 @@ SRCDIR=wavpack-5.0.0
 
 . ../config.sh
 
-
-PREFX="--prefix=`pwd`/${SRCDIR}/install --host=x86"
+if [ -z "${IA32_TARGET}" ];
+then
+	HOSTARCH=""
+else
+	HOSTARCH="--host=x86"
+fi
+PREFX="--prefix=`pwd`/${SRCDIR}/install ${HOSTARCH}"
 
 mkdir ${SRCDIR}/install
 

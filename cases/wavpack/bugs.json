@@ -1,1 +1,201 @@
-bugs-wavpack-5.0.0.json
+{
+    "application": "wvunpack",
+    "apppath": "wavpack-5.0.0/install/bin/wvunpack",
+    "args": "@@ -o /tmp/delete1",
+    "bugs": {
+        "CVE-2016-10169": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b67a0 wvunpack`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d49ea wvunpack`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b608e wvunpack`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b5f41 wvunpack`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140721594969912, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b69b8 wvunpack`__asan::__asan_report_load4(addr=<unavailable>) at asan_rtl.cc:119",
+                            "frame #5: 0x00007fb79331363e libwavpack.so.1`read_code + 1326",
+                            "frame #6: 0x00007fb7933122ea libwavpack.so.1`get_word + 13866",
+                            "frame #7: 0x00007fb79331f89e libwavpack.so.1`unpack_samples + 3598",
+                            "frame #8: 0x00007fb79333e9ca libwavpack.so.1`WavpackUnpackSamples + 17162",
+                            "frame #9: 0x00000000004f89b8 wvunpack`unpack_audio + 1256",
+                            "frame #10: 0x00000000004f2470 wvunpack`unpack_file + 6640",
+                            "frame #11: 0x00000000004efc1b wvunpack`main + 11739",
+                            "frame #12: 0x00007fb7922ecb97 libc.so.6`__libc_start_main(main=(wvunpack`main), argc=4, argv=0x00007ffc4cae9d08, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffc4cae9cf8) at libc-start.c:310",
+                            "frame #13: 0x000000000041c0aa wvunpack`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b0a4c|wvunpack`__sanitizer::Die()|172",
+                            "2|0x000000000049a2b9|wvunpack`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049984f|wvunpack`::ReportGenericError()|367",
+                            "4|0x000000000049a578|wvunpack`__asan_report_load4|40",
+                            "5|0x00007fdb2db3551e|libwavpack.so.1`read_code|1326",
+                            "6|0x00007fdb2db341ca|libwavpack.so.1`get_word|13866",
+                            "7|0x00007fdb2db4177e|libwavpack.so.1`unpack_samples|3598",
+                            "8|0x00007fdb2db608aa|libwavpack.so.1`WavpackUnpackSamples|17162",
+                            "9|0x00000000004cf828|wvunpack`unpack_audio|1256",
+                            "10|0x00000000004c92e0|wvunpack`unpack_file|6640",
+                            "11|0x00000000004c6a8b|wvunpack`main|11739",
+                            "12|0x00007fdb2d748b6b|libc.so.6`__libc_start_main|235",
+                            "13|0x000000000041c6ca|wvunpack`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2016-10169",
+            "testcase": "CVE-2016-10169.wv"
+        },
+        "CVE-2016-10170": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b67a0 wvunpack`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d49ea wvunpack`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b608e wvunpack`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b5f41 wvunpack`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140733986802952, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6898 wvunpack`__asan::__asan_report_load1(addr=<unavailable>) at asan_rtl.cc:117",
+                            "frame #5: 0x000000000050d516 wvunpack`WriteCaffHeader + 6214",
+                            "frame #6: 0x00000000004f22cd wvunpack`unpack_file + 6221",
+                            "frame #7: 0x00000000004efc1b wvunpack`main + 11739",
+                            "frame #8: 0x00007f213d1cfb97 libc.so.6`__libc_start_main(main=(wvunpack`main), argc=4, argv=0x00007fff2f4ad168, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007fff2f4ad158) at libc-start.c:310",
+                            "frame #9: 0x000000000041c0aa wvunpack`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b0a4c|wvunpack`__sanitizer::Die()|172",
+                            "2|0x000000000049a2b9|wvunpack`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049984f|wvunpack`::ReportGenericError()|367",
+                            "4|0x000000000049a438|wvunpack`__asan_report_load1|40",
+                            "5|0x00000000004e4386|wvunpack`WriteCaffHeader|6214",
+                            "6|0x00000000004c913d|wvunpack`unpack_file|6221",
+                            "7|0x00000000004c6a8b|wvunpack`main|11739",
+                            "8|0x00007f55598f2b6b|libc.so.6`__libc_start_main|235",
+                            "9|0x000000000041c6ca|wvunpack`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2016-10170",
+            "testcase": "CVE-2016-10170.wv"
+        },
+        "CVE-2016-10171": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b67a0 wvunpack`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d49ea wvunpack`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b608e wvunpack`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b5f41 wvunpack`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140726618842600, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b69b8 wvunpack`__asan::__asan_report_load4(addr=<unavailable>) at asan_rtl.cc:119",
+                            "frame #5: 0x00000000004fa0d6 wvunpack`unreorder_channels + 566",
+                            "frame #6: 0x00000000004f7bb4 wvunpack`unpack_dsd_audio + 1188",
+                            "frame #7: 0x00000000004f23e2 wvunpack`unpack_file + 6498",
+                            "frame #8: 0x00000000004efc1b wvunpack`main + 11739",
+                            "frame #9: 0x00007f7cda6ceb97 libc.so.6`__libc_start_main(main=(wvunpack`main), argc=4, argv=0x00007ffd7820a9c8, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007ffd7820a9b8) at libc-start.c:310",
+                            "frame #10: 0x000000000041c0aa wvunpack`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b0a4c|wvunpack`__sanitizer::Die()|172",
+                            "2|0x000000000049a2b9|wvunpack`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049984f|wvunpack`::ReportGenericError()|367",
+                            "4|0x000000000049a578|wvunpack`__asan_report_load4|40",
+                            "5|0x00000000004d0f46|wvunpack`unreorder_channels|566",
+                            "6|0x00000000004cea24|wvunpack`unpack_dsd_audio|1188",
+                            "7|0x00000000004c9252|wvunpack`unpack_file|6498",
+                            "8|0x00000000004c6a8b|wvunpack`main|11739",
+                            "9|0x00007f3ff51a7b6b|libc.so.6`__libc_start_main|235",
+                            "10|0x000000000041c6ca|wvunpack`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2016-10171",
+            "testcase": "CVE-2016-10171.wv"
+        },
+        "CVE-2016-10172": {
+            "crash": {
+                "x86_64-*-linux*": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004b67a0 wvunpack`__asan::AsanDie() at asan_rtl.cc:44",
+                            "frame #1: 0x00000000004d49ea wvunpack`__sanitizer::Die() at sanitizer_termination.cc:55",
+                            "frame #2: 0x00000000004b608e wvunpack`__asan::ReportGenericError(unsigned long, unsigned long, unsigned long, unsigned long, bool, unsigned long, unsigned int, bool) at asan_report.cc:186",
+                            "frame #3: 0x00000000004b5f41 wvunpack`__asan::ReportGenericError(pc=<unavailable>, bp=<unavailable>, sp=140733274644984, addr=<unavailable>, is_write=<unavailable>, access_size=<unavailable>, exp=0, fatal=true) at asan_report.cc:466",
+                            "frame #4: 0x00000000004b6898 wvunpack`__asan::__asan_report_load1(addr=<unavailable>) at asan_rtl.cc:117",
+                            "frame #5: 0x00007f7e31da4129 libwavpack.so.1`read_new_config_info + 1385",
+                            "frame #6: 0x00007f7e31da0da1 libwavpack.so.1`process_metadata + 673",
+                            "frame #7: 0x00007f7e31d9f2c4 libwavpack.so.1`unpack_init + 2628",
+                            "frame #8: 0x00007f7e31d999d0 libwavpack.so.1`WavpackOpenFileInputEx64 + 11600",
+                            "frame #9: 0x00007f7e31da5d7b libwavpack.so.1`WavpackOpenFileInput + 539",
+                            "frame #10: 0x00000000004f0fc1 wvunpack`unpack_file + 1345",
+                            "frame #11: 0x00000000004efc1b wvunpack`main + 11739",
+                            "frame #12: 0x00007f7e30db7b97 libc.so.6`__libc_start_main(main=(wvunpack`main), argc=4, argv=0x00007fff04d833c8, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007fff04d833b8) at libc-start.c:310",
+                            "frame #13: 0x000000000041c0aa wvunpack`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b0a4c|wvunpack`__sanitizer::Die()|172",
+                            "2|0x000000000049a2b9|wvunpack`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049984f|wvunpack`::ReportGenericError()|367",
+                            "4|0x000000000049a438|wvunpack`__asan_report_load1|40",
+                            "5|0x00007f28cbb98009|libwavpack.so.1`read_new_config_info|1385",
+                            "6|0x00007f28cbb94c81|libwavpack.so.1`process_metadata|673",
+                            "7|0x00007f28cbb931a4|libwavpack.so.1`unpack_init|2628",
+                            "8|0x00007f28cbb8d8b0|libwavpack.so.1`WavpackOpenFileInputEx64|11600",
+                            "9|0x00007f28cbb99c5b|libwavpack.so.1`WavpackOpenFileInput|539",
+                            "10|0x00000000004c7e31|wvunpack`unpack_file|1345",
+                            "11|0x00000000004c6a8b|wvunpack`main|11739",
+                            "12|0x00007f28cb7e5b6b|libc.so.6`__libc_start_main|235",
+                            "13|0x000000000041c6ca|wvunpack`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2016-10172",
+            "testcase": "CVE-2016-10172.wv"
+        },
+        "CVE-2018-19841": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b0a4c|wvunpack`__sanitizer::Die()|172",
+                            "2|0x000000000049a2b9|wvunpack`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049984f|wvunpack`::ReportGenericError()|367",
+                            "4|0x000000000049a438|wvunpack`__asan_report_load1|40",
+                            "5|0x00007f93d2bad55e|libwavpack.so.1`WavpackVerifySingleBlock|382",
+                            "6|0x00007f93d2baa033|libwavpack.so.1`WavpackOpenFileInputEx64|5331",
+                            "7|0x00007f93d2bb7c5b|libwavpack.so.1`WavpackOpenFileInput|539",
+                            "8|0x00000000004c7e31|wvunpack`unpack_file|1345",
+                            "9|0x00000000004c6a8b|wvunpack`main|11739",
+                            "10|0x00007f93d2803b6b|libc.so.6`__libc_start_main|235",
+                            "11|0x000000000041c6ca|wvunpack`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2018-19841",
+            "testcase": "CVE-2018-19841.wv"
+        }
+    },
+    "evars": {
+        "ASAN_OPTIONS": "detect_leaks=0"
+    },
+    "source": "https://github.com/dbry/WavPack",
+    "version": "5.0.0"
+}

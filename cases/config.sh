@@ -3,16 +3,21 @@
 #
 # You should want to set LLVM_HOME and adjust
 # the path for afl tools in LCC/LCXX variables
+# Also, depending on your goals, adjust IA32_TARGET
+# and/or ASAN_BUILD.
+#
 #
 
 # TODO: Should include gcc as well.
 
 LLVM_HOME=/usr
 
+AFL_HOME=/home/arr/AFLplusplus-git
+
 #
 # Set to non-zero for AFL compilation mode
 #
-AFL_ON=0
+AFL_ON=1
 
 #
 # These will be the value passed to AFL_CC and AFL_CXX
@@ -26,24 +31,37 @@ ACXX=${LLVM_HOME}/bin/clang++
 #
 #
 if [ "$AFL_ON" -eq "0" ]; then
- echo "AFL compilation disabled"
+ echo "AFL compilation: disabled"
+
  LCC=${LLVM_HOME}/bin/clang
  LCXX=${LLVM_HOME}/bin/clang++
 else
- echo "AFL compilation enabled"
- LCC=/home/arr/aflgit/AFL/afl-clang
- LCXX=/home/arr/aflgit/AFL/afl-clang
-# LCC=/home/arr/aflgit/AFL/afl-clang-fast
-# LCXX=/home/arr/aflgit/AFL/afl-clang-fast++
+ echo "AFL compilation: enabled"
+
+ LCC=${AFL_HOME}/afl-clang-fast
+ LCXX=${AFL_HOME}/afl-clang-fast++
+# LCC=${AFL_HOME}/afl-clang
+# LCXX=${AFL_HOME}/afl-clang
 fi
+
+#
+# If you do not want ASan, make this empty
+#
+ASAN_BUILD="-fsanitize=address"
+
+#
+# If you want to compile for x86-64, just leave empty
+#
+IA32_TARGET="-m32 -march=i686"
 
 #
 # Set these, hopefully, for CFLAGS and CXXFLAGS
 #
 # Note: 32-bit for ASan + AFL
 #
-LCFLAGS="-m32 -march=i686 -nopie -fno-stack-protector -fsanitize=address"
-LCXXFLAGS="-m32 -march=i686 -nopie -fno-stack-protector -fsanitize=address"
+LCFLAGS="${IA32_TARGET} -nopie -fno-stack-protector ${ASAN_BUILD}"
+LCXXFLAGS="${IA32_TARGET} -nopie -fno-stack-protector ${ASAN_BUILD}"
+
 #LCFLAGS="-nopie -fno-stack-protector"
 #LCXXFLAGS="-nopie -fno-stack-protector"
 
