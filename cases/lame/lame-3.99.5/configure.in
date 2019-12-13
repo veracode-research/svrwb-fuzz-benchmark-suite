@@ -96,18 +96,8 @@ AC_CHECK_HEADERS( \
 		 sys/soundcard.h \
 		 sys/time.h \
 		 unistd.h \
+		 xmmintrin.h \
 		 linux/soundcard.h)
-
-dnl Checks for actually working SSE intrinsics
-AC_MSG_CHECKING(working SSE intrinsics)
-AC_COMPILE_IFELSE(
-    [AC_LANG_PROGRAM(
-	[[#include <xmmintrin.h>]],
-	[[_mm_sfence();]])],
-    [AC_DEFINE([HAVE_XMMINTRIN_H], [1], [Define if SSE intrinsics work.])
-     ac_cv_header_xmmintrin_h=yes],
-   [ac_cv_header_xmmintrin_h=no])
-AC_MSG_RESULT(${ac_cv_header_xmmintrin_h})
 
 dnl Checks for typedefs, structures, and compiler characteristics.
 AC_C_CONST

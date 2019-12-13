@@ -6,5 +6,7 @@ pushd lame-3.99.5
 rm -rf install
 make clean
 make distclean
+patch -p0 -R < configure-patch.diff
+rm configure-patch.diff configure.orig
 popd
 
