@@ -1,11 +1,11 @@
 #!/bin/bash
 
-SRCDIR=wavpack
+SRCDIR=wavpack-5.0.0
 
 . ../config.sh
 
 
-PREFX="--prefix=`pwd`/${SRCDIR}/install"
+PREFX="--prefix=`pwd`/${SRCDIR}/install --host=x86"
 
 mkdir ${SRCDIR}/install
 

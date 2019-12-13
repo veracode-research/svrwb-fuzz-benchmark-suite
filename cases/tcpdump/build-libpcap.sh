@@ -6,7 +6,7 @@ PSRCDIR=libpcap
 . ../config.sh
 
 
-PREFX="--prefix=`pwd`/${PSRCDIR}/install"
+PREFX="--prefix=`pwd`/${PSRCDIR}/install --target=x86 --host=x86"
 
 mkdir ${PSRCDIR}/install
 

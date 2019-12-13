@@ -39,11 +39,11 @@ fi
 
 #
 # Set these, hopefully, for CFLAGS and CXXFLAGS
-# Sigh... the -m32 is for ASAN memory save, but is that ok?
 #
+# Note: 32-bit for ASan + AFL
 #
-LCFLAGS="-nopie -fno-stack-protector -fsanitize=address"
-LCXXFLAGS="-nopie -fno-stack-protector -fsanitize=address"
+LCFLAGS="-m32 -march=i686 -nopie -fno-stack-protector -fsanitize=address"
+LCXXFLAGS="-m32 -march=i686 -nopie -fno-stack-protector -fsanitize=address"
 #LCFLAGS="-nopie -fno-stack-protector"
 #LCXXFLAGS="-nopie -fno-stack-protector"
 

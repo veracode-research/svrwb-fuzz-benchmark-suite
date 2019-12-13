@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SRCDIR=ytnef
+SRCDIR=ytnef-1.9.2
 
 . ../config.sh
 

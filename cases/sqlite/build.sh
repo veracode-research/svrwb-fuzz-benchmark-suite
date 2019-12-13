@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SRCDIR=sqlite
+SRCDIR=sqlite-3.8.7.4
 
 . ../config.sh
 
