@@ -18,7 +18,7 @@ AFL_HOME=/home/arr/AFLplusplus-git
 #
 # Set to non-zero for AFL compilation mode
 #
-AFL_ON=0
+AFL_ON=1
 
 #
 # Turn to non-zero to enable GCC

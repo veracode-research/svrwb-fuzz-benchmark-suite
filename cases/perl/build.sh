@@ -13,7 +13,15 @@ mkdir ${SRCDIR}/install
 
 pushd ${SRCDIR}
 
-AFL_CC=${ACC} AFL_CXX=${ACXX} CC=${LCC} CXX=${LCXX} ASAN_OPTIONS=detect_leaks=0 LD_LIBRARYPATH=$LD_LIBRARY_PATH sh Configure   -Dafl_cc=${AFL_CC} -Dcc=${LCC}  -Accflags="${LCFLAGS}"   -de -Dusedevel -des -Aldflags="${LCFLAGS}" -Alddlflags="-shared -Wc,${ASAN_BUILD} ${IA32_TARGET}"
+
+if [ "$USE_GCC" -eq "0" ]; then
+ AFL_CC=${ACC} AFL_CXX=${ACXX} CC=${LCC} CXX=${LCXX} ASAN_OPTIONS=detect_leaks=0 LD_LIBRARYPATH=$LD_LIBRARY_PATH sh Configure   -Dafl_cc=${AFL_CC} -Dcc=${LCC}  -Accflags="${LCFLAGS}"   -de -Dusedevel -des -Aldflags="${LCFLAGS}" -Alddlflags="-shared -Wc,${ASAN_BUILD} ${IA32_TARGET}"
+else
+ AFL_CC=${ACC} AFL_CXX=${ACXX} CC=${LCC} CXX=${LCXX} ASAN_OPTIONS=detect_leaks=0 LD_LIBRARYPATH=$LD_LIBRARY_PATH sh Configure   -Dafl_cc=${AFL_CC} -Dcc=${LCC}  -Accflags="${LCFLAGS}"   -de -Dusedevel -des -Aldflags="${LCFLAGS}" -Alddlflags="-shared ${ASAN_BUILD} ${IA32_TARGET}"
+fi
+
+
+
 
 AFL_CC=${ACC} AFL_CXX=${ACXX} CC=${LCC} CXX=${LCXX} ASAN_OPTIONS=detect_leaks=0 make
 AFL_CC=${ACC} AFL_CXX=${ACXX} CC=${LCC} CXX=${LCXX} ASAN_OPTIONS=detect_leaks=0 make install DESTDIR=install

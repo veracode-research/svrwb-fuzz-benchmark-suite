@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SRCDIR=libarchive
+SRCDIR=libarchive+81ce2c24f9fec640740de9bcea920ab71ef89059
 
 . ../config.sh
 
@@ -10,8 +10,6 @@ mkdir ${SRCDIR}/install
 
 LocCFLAGS="${LCFLAGS} -Wno-unused-function -Wno-error=unused-command-line-argument -Wno-error=deprecated-declarations"
 LocCXXFLAGS="${LCXXFLAGS} -Wno-error=unused-command-line-argument -Wno-error=deprecated-declarations"
-
-mkdir ${SRCDIR}/install
 
 pushd ${SRCDIR}
 /bin/sh build/autogen.sh

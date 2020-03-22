@@ -14,7 +14,6 @@ L=$1
 S=$2
 
 sudo mkdir ${L}
+sudo mount -t tmpfs -o size=${S} tmpfs ${L}
 sudo chown arr:arr  ${L}
-sudo mount -t tmpfs -o sizeof=${S} tmpfs ${L}
-
 
