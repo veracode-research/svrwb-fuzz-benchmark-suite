@@ -1,1 +1,379 @@
-bugs-audiofile-0.3.6.json
+{
+    "application": "audiofile",
+    "apppath": "audiofile-0.3.6/install/bin/sfconvert",
+    "args": "@@ out.mp3 format aiff",
+    "bugs": {
+        "CVE-2017-6827": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b085c|sfconvert`__sanitizer::Die()|172",
+                            "2|0x000000000049a0c9|sfconvert`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049965f|sfconvert`::ReportGenericError()|367",
+                            "4|0x0000000000493839|sfconvert`::__asan_memcpy()|473",
+                            "5|0x00007feeee58fb06|libaudiofile.so.1`___lldb_unnamed_symbol1120$$libaudiofile.so.1|806",
+                            "6|0x00007feeee58fc33|libaudiofile.so.1`___lldb_unnamed_symbol1121$$libaudiofile.so.1|99",
+                            "7|0x00007feeee590172|libaudiofile.so.1`___lldb_unnamed_symbol1124$$libaudiofile.so.1|66",
+                            "8|0x00007feeee572804|libaudiofile.so.1`___lldb_unnamed_symbol743$$libaudiofile.so.1|1652",
+                            "9|0x00007feeee572c75|libaudiofile.so.1`___lldb_unnamed_symbol744$$libaudiofile.so.1|37",
+                            "10|0x00007feeee55e953|libaudiofile.so.1`___lldb_unnamed_symbol579$$libaudiofile.so.1|3987",
+                            "11|0x00007feeee55f19f|libaudiofile.so.1`afOpenFile|719",
+                            "12|0x00000000004c4c68|sfconvert`main|4520",
+                            "13|0x00007feeee162b6b|libc.so.6`__libc_start_main|235",
+                            "14|0x000000000041c4da|sfconvert`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/02/20/audiofile-heap-based-buffer-overflow-in-msadpcminitializecoefficients-msadpcm-cpp/",
+            "testcase": "bug_2017_6827"
+        },
+        "CVE-2017-6828": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b085c|sfconvert`__sanitizer::Die()|172",
+                            "2|0x000000000049a0c9|sfconvert`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049965f|sfconvert`::ReportGenericError()|367",
+                            "4|0x000000000043484d|sfconvert`::__interceptor_read()|429",
+                            "5|0x00007f0c5794fd05|libaudiofile.so.1`___lldb_unnamed_symbol140$$libaudiofile.so.1|117",
+                            "6|0x00007f0c579572f6|libaudiofile.so.1`___lldb_unnamed_symbol221$$libaudiofile.so.1|134",
+                            "7|0x00007f0c579549b0|libaudiofile.so.1`___lldb_unnamed_symbol184$$libaudiofile.so.1|32",
+                            "8|0x00007f0c57954978|libaudiofile.so.1`___lldb_unnamed_symbol183$$libaudiofile.so.1|184",
+                            "9|0x00007f0c5798334c|libaudiofile.so.1`___lldb_unnamed_symbol478$$libaudiofile.so.1|5884",
+                            "10|0x00007f0c57988b9c|libaudiofile.so.1`___lldb_unnamed_symbol489$$libaudiofile.so.1|1388",
+                            "11|0x00007f0c5799e434|libaudiofile.so.1`___lldb_unnamed_symbol579$$libaudiofile.so.1|2676",
+                            "12|0x00007f0c5799f19f|libaudiofile.so.1`afOpenFile|719",
+                            "13|0x00000000004c4c68|sfconvert`main|4520",
+                            "14|0x00007f0c575a2b6b|libc.so.6`__libc_start_main|235",
+                            "15|0x000000000041c4da|sfconvert`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/02/20/audiofile-heap-based-buffer-overflow-in-readvalue-filehandle-cpp/",
+            "testcase": "bug_2017_6828"
+        },
+        "CVE-2017-6829": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b085c|sfconvert`__sanitizer::Die()|172",
+                            "2|0x000000000049a0c9|sfconvert`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049965f|sfconvert`::ReportGenericError()|367",
+                            "4|0x000000000049a2e8|sfconvert`__asan_report_load2|40",
+                            "5|0x00007efe518ed767|libaudiofile.so.1`___lldb_unnamed_symbol707$$libaudiofile.so.1|183",
+                            "6|0x00007efe518eccb6|libaudiofile.so.1`___lldb_unnamed_symbol705$$libaudiofile.so.1|1814",
+                            "7|0x00007efe518ec508|libaudiofile.so.1`___lldb_unnamed_symbol704$$libaudiofile.so.1|136",
+                            "8|0x00007efe518e7adb|libaudiofile.so.1`___lldb_unnamed_symbol646$$libaudiofile.so.1|1339",
+                            "9|0x00007efe518efde8|libaudiofile.so.1`___lldb_unnamed_symbol734$$libaudiofile.so.1|248",
+                            "10|0x00007efe519110d2|libaudiofile.so.1`___lldb_unnamed_symbol1155$$libaudiofile.so.1|3090",
+                            "11|0x00007efe518d3e19|libaudiofile.so.1`afReadFrames|3609",
+                            "12|0x00000000004c54b8|sfconvert`copyaudiodata|168",
+                            "13|0x00000000004c5005|sfconvert`main|5445",
+                            "14|0x00007efe514e0b6b|libc.so.6`__libc_start_main|235",
+                            "15|0x000000000041c4da|sfconvert`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/02/20/audiofile-global-buffer-overflow-in-decodesample-ima-cpp/",
+            "testcase": "bug_2017_6829"
+        },
+        "CVE-2017-6830": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b085c|sfconvert`__sanitizer::Die()|172",
+                            "2|0x000000000049a0c9|sfconvert`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049965f|sfconvert`::ReportGenericError()|367",
+                            "4|0x000000000049a62b|sfconvert`__asan_report_store2|43",
+                            "5|0x00007ff0915ad994|libaudiofile.so.1`___lldb_unnamed_symbol692$$libaudiofile.so.1|212",
+                            "6|0x00007ff0915ad631|libaudiofile.so.1`___lldb_unnamed_symbol690$$libaudiofile.so.1|1073",
+                            "7|0x00007ff091595e19|libaudiofile.so.1`afReadFrames|3609",
+                            "8|0x00000000004c54b8|sfconvert`copyaudiodata|168",
+                            "9|0x00000000004c5005|sfconvert`main|5445",
+                            "10|0x00007ff0911a2b6b|libc.so.6`__libc_start_main|235",
+                            "11|0x000000000041c4da|sfconvert`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/02/20/audiofile-heap-based-buffer-overflow-in-alaw2linear_buf-g711-cpp/",
+            "testcase": "bug_2017_6830"
+        },
+        "CVE-2017-6831": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b085c|sfconvert`__sanitizer::Die()|172",
+                            "2|0x000000000049a0c9|sfconvert`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049965f|sfconvert`::ReportGenericError()|367",
+                            "4|0x000000000049a62b|sfconvert`__asan_report_store2|43",
+                            "5|0x00007fab8e046e4d|libaudiofile.so.1`___lldb_unnamed_symbol705$$libaudiofile.so.1|2221",
+                            "6|0x00007fab8e046508|libaudiofile.so.1`___lldb_unnamed_symbol704$$libaudiofile.so.1|136",
+                            "7|0x00007fab8e041adb|libaudiofile.so.1`___lldb_unnamed_symbol646$$libaudiofile.so.1|1339",
+                            "8|0x00007fab8e049de8|libaudiofile.so.1`___lldb_unnamed_symbol734$$libaudiofile.so.1|248",
+                            "9|0x00007fab8e06b0d2|libaudiofile.so.1`___lldb_unnamed_symbol1155$$libaudiofile.so.1|3090",
+                            "10|0x00007fab8e02de19|libaudiofile.so.1`afReadFrames|3609",
+                            "11|0x00000000004c54b8|sfconvert`copyaudiodata|168",
+                            "12|0x00000000004c5005|sfconvert`main|5445",
+                            "13|0x00007fab8dc3ab6b|libc.so.6`__libc_start_main|235",
+                            "14|0x000000000041c4da|sfconvert`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/02/20/audiofile-heap-based-buffer-overflow-in-imadecodeblockwave-ima-cpp/",
+            "testcase": "bug_2017_6831"
+        },
+        "CVE-2017-6832": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b085c|sfconvert`__sanitizer::Die()|172",
+                            "2|0x000000000049a0c9|sfconvert`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049965f|sfconvert`::ReportGenericError()|367",
+                            "4|0x000000000049a62b|sfconvert`__asan_report_store2|43",
+                            "5|0x00007f885f092adc|libaudiofile.so.1`___lldb_unnamed_symbol1111$$libaudiofile.so.1|4924",
+                            "6|0x00007f885f06fadb|libaudiofile.so.1`___lldb_unnamed_symbol646$$libaudiofile.so.1|1339",
+                            "7|0x00007f885f077de8|libaudiofile.so.1`___lldb_unnamed_symbol734$$libaudiofile.so.1|248",
+                            "8|0x00007f885f0990d2|libaudiofile.so.1`___lldb_unnamed_symbol1155$$libaudiofile.so.1|3090",
+                            "9|0x00007f885f05be19|libaudiofile.so.1`afReadFrames|3609",
+                            "10|0x00000000004c54b8|sfconvert`copyaudiodata|168",
+                            "11|0x00000000004c5005|sfconvert`main|5445",
+                            "12|0x00007f885ec68b6b|libc.so.6`__libc_start_main|235",
+                            "13|0x000000000041c4da|sfconvert`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/02/20/audiofile-heap-based-buffer-overflow-in-msadpcmdecodeblock-msadpcm-cpp/",
+            "testcase": "bug_2017_6832"
+        },
+        "CVE-2017-6833": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x00007f1d32ae77ae|libaudiofile.so.1`___lldb_unnamed_symbol646$$libaudiofile.so.1|526",
+                            "1|0x00007f1d32aefde8|libaudiofile.so.1`___lldb_unnamed_symbol734$$libaudiofile.so.1|248",
+                            "2|0x00007f1d32b110d2|libaudiofile.so.1`___lldb_unnamed_symbol1155$$libaudiofile.so.1|3090",
+                            "3|0x00007f1d32ad3e19|libaudiofile.so.1`afReadFrames|3609",
+                            "4|0x00000000004c54b8|sfconvert`copyaudiodata|168",
+                            "5|0x00000000004c5005|sfconvert`main|5445",
+                            "6|0x00007f1d326e0b6b|libc.so.6`__libc_start_main|235",
+                            "7|0x000000000041c4da|sfconvert`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/02/20/audiofile-divide-by-zero-in-blockcodecrunpull-blockcodec-cpp/",
+            "testcase": "bug_2017_6833"
+        },
+        "CVE-2017-6834": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b085c|sfconvert`__sanitizer::Die()|172",
+                            "2|0x000000000049a0c9|sfconvert`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049965f|sfconvert`::ReportGenericError()|367",
+                            "4|0x000000000049a62b|sfconvert`__asan_report_store2|43",
+                            "5|0x00007f57201c2894|libaudiofile.so.1`___lldb_unnamed_symbol691$$libaudiofile.so.1|212",
+                            "6|0x00007f57201c257f|libaudiofile.so.1`___lldb_unnamed_symbol690$$libaudiofile.so.1|895",
+                            "7|0x00007f57201aae19|libaudiofile.so.1`afReadFrames|3609",
+                            "8|0x00000000004c54b8|sfconvert`copyaudiodata|168",
+                            "9|0x00000000004c5005|sfconvert`main|5445",
+                            "10|0x00007f571fdb7b6b|libc.so.6`__libc_start_main|235",
+                            "11|0x000000000041c4da|sfconvert`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/02/20/audiofile-heap-based-buffer-overflow-in-ulaw2linear_buf-g711-cpp/",
+            "testcase": "bug_2017_6834"
+        },
+        "CVE-2017-6835": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x00007f9344a0dd50|libaudiofile.so.1`___lldb_unnamed_symbol647$$libaudiofile.so.1|224",
+                            "1|0x00007f9344a19a9f|libaudiofile.so.1`___lldb_unnamed_symbol748$$libaudiofile.so.1|719",
+                            "2|0x00007f9344a17e22|libaudiofile.so.1`___lldb_unnamed_symbol746$$libaudiofile.so.1|4338",
+                            "3|0x00007f93449ffc85|libaudiofile.so.1`afGetFrameCount|165",
+                            "4|0x00000000004c5462|sfconvert`copyaudiodata|82",
+                            "5|0x00000000004c5005|sfconvert`main|5445",
+                            "6|0x00007f9344606b6b|libc.so.6`__libc_start_main|235",
+                            "7|0x000000000041c4da|sfconvert`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/02/20/audiofile-divide-by-zero-in-blockcodecreset1-blockcodec-cpp/",
+            "testcase": "bug_2017_6835"
+        },
+        "CVE-2017-6836": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b085c|sfconvert`__sanitizer::Die()|172",
+                            "2|0x000000000049a0c9|sfconvert`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049965f|sfconvert`::ReportGenericError()|367",
+                            "4|0x000000000049a6eb|sfconvert`__asan_report_store4|43",
+                            "5|0x00007fca91a3c6b6|libaudiofile.so.1`___lldb_unnamed_symbol835$$libaudiofile.so.1|422",
+                            "6|0x00007fca91a3c463|libaudiofile.so.1`___lldb_unnamed_symbol834$$libaudiofile.so.1|403",
+                            "7|0x00007fca91a57537|libaudiofile.so.1`___lldb_unnamed_symbol1164$$libaudiofile.so.1|247",
+                            "8|0x00007fca91a17e19|libaudiofile.so.1`afReadFrames|3609",
+                            "9|0x00000000004c54b8|sfconvert`copyaudiodata|168",
+                            "10|0x00000000004c5005|sfconvert`main|5445",
+                            "11|0x00007fca91624b6b|libc.so.6`__libc_start_main|235",
+                            "12|0x000000000041c4da|sfconvert`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/02/20/audiofile-heap-based-buffer-overflow-in-expand3to4modulerun-simplemodule-h/",
+            "testcase": "bug_2017_6836"
+        },
+        "CVE-2017-6837": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b085c|sfconvert`__sanitizer::Die()|172",
+                            "2|0x000000000049a0c9|sfconvert`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049965f|sfconvert`::ReportGenericError()|367",
+                            "4|0x0000000000493839|sfconvert`::__asan_memcpy()|473",
+                            "5|0x00007fa7ffcb6b06|libaudiofile.so.1`___lldb_unnamed_symbol1120$$libaudiofile.so.1|806",
+                            "6|0x00007fa7ffcb6c33|libaudiofile.so.1`___lldb_unnamed_symbol1121$$libaudiofile.so.1|99",
+                            "7|0x00007fa7ffcb7172|libaudiofile.so.1`___lldb_unnamed_symbol1124$$libaudiofile.so.1|66",
+                            "8|0x00007fa7ffc99804|libaudiofile.so.1`___lldb_unnamed_symbol743$$libaudiofile.so.1|1652",
+                            "9|0x00007fa7ffc99c75|libaudiofile.so.1`___lldb_unnamed_symbol744$$libaudiofile.so.1|37",
+                            "10|0x00007fa7ffc85953|libaudiofile.so.1`___lldb_unnamed_symbol579$$libaudiofile.so.1|3987",
+                            "11|0x00007fa7ffc8619f|libaudiofile.so.1`afOpenFile|719",
+                            "12|0x00000000004c4c68|sfconvert`main|4520",
+                            "13|0x00007fa7ff889b6b|libc.so.6`__libc_start_main|235",
+                            "14|0x000000000041c4da|sfconvert`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/02/20/audiofile-multiple-ubsan-crashes/",
+            "testcase": "bug_2017_6837"
+        },
+        "CVE-2017-6838": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b085c|sfconvert`__sanitizer::Die()|172",
+                            "2|0x000000000049a0c9|sfconvert`::~ScopedInErrorReport()|441",
+                            "3|0x0000000000498cc9|sfconvert`::ReportAllocationSizeTooBig()|233",
+                            "4|0x000000000041e8ef|sfconvert`::Allocate()|559",
+                            "5|0x000000000041cc54|sfconvert`::asan_malloc()|36",
+                            "6|0x000000000049443c|sfconvert`::__interceptor_malloc()|252",
+                            "7|0x00000000004c5450|sfconvert`copyaudiodata|64",
+                            "8|0x00000000004c5005|sfconvert`main|5445",
+                            "9|0x00007f90e707eb6b|libc.so.6`__libc_start_main|235",
+                            "10|0x000000000041c4da|sfconvert`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/02/20/audiofile-multiple-ubsan-crashes/",
+            "testcase": "bug_2017_6838"
+        },
+        "CVE-2017-6839": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b085c|sfconvert`__sanitizer::Die()|172",
+                            "2|0x000000000049a0c9|sfconvert`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049965f|sfconvert`::ReportGenericError()|367",
+                            "4|0x000000000049a62b|sfconvert`__asan_report_store2|43",
+                            "5|0x00007faa74fd8adc|libaudiofile.so.1`___lldb_unnamed_symbol1111$$libaudiofile.so.1|4924",
+                            "6|0x00007faa74fb5adb|libaudiofile.so.1`___lldb_unnamed_symbol646$$libaudiofile.so.1|1339",
+                            "7|0x00007faa74fbdde8|libaudiofile.so.1`___lldb_unnamed_symbol734$$libaudiofile.so.1|248",
+                            "8|0x00007faa74fdf0d2|libaudiofile.so.1`___lldb_unnamed_symbol1155$$libaudiofile.so.1|3090",
+                            "9|0x00007faa74fa1e19|libaudiofile.so.1`afReadFrames|3609",
+                            "10|0x00000000004c54b8|sfconvert`copyaudiodata|168",
+                            "11|0x00000000004c5005|sfconvert`main|5445",
+                            "12|0x00007faa74baeb6b|libc.so.6`__libc_start_main|235",
+                            "13|0x000000000041c4da|sfconvert`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/02/20/audiofile-multiple-ubsan-crashes/",
+            "testcase": "bug_2017_6839"
+        },
+        "CVE-2018-13440": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b085c|sfconvert`__sanitizer::Die()|172",
+                            "2|0x000000000049a0c9|sfconvert`::~ScopedInErrorReport()|441",
+                            "3|0x0000000000498cc9|sfconvert`::ReportAllocationSizeTooBig()|233",
+                            "4|0x000000000041e8ef|sfconvert`::Allocate()|559",
+                            "5|0x000000000041cc54|sfconvert`::asan_malloc()|36",
+                            "6|0x000000000049443c|sfconvert`::__interceptor_malloc()|252",
+                            "7|0x00007f789da29a25|libstdc++.so.6`operator new(unsigned long)|21",
+                            "8|0x00007f789dfbbcfc|libaudiofile.so.1`___lldb_unnamed_symbol1149$$libaudiofile.so.1|380",
+                            "9|0x00007f789dfbbb63|libaudiofile.so.1`___lldb_unnamed_symbol1148$$libaudiofile.so.1|1107",
+                            "10|0x00007f789df9cb5a|libaudiofile.so.1`___lldb_unnamed_symbol743$$libaudiofile.so.1|2506",
+                            "11|0x00007f789df9cc75|libaudiofile.so.1`___lldb_unnamed_symbol744$$libaudiofile.so.1|37",
+                            "12|0x00007f789df88953|libaudiofile.so.1`___lldb_unnamed_symbol579$$libaudiofile.so.1|3987",
+                            "13|0x00007f789df8919f|libaudiofile.so.1`afOpenFile|719",
+                            "14|0x00000000004c4c68|sfconvert`main|4520",
+                            "15|0x00007f789db8cb6b|libc.so.6`__libc_start_main|235",
+                            "16|0x000000000041c4da|sfconvert`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://github.com/mpruett/audiofile/issues/49",
+            "testcase": "bug_2018_13440"
+        },
+        "CVE-2018-17095": {
+            "crash": {
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b085c|sfconvert`__sanitizer::Die()|172",
+                            "2|0x000000000049a0c9|sfconvert`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049965f|sfconvert`::ReportGenericError()|367",
+                            "4|0x000000000049a6eb|sfconvert`__asan_report_store4|43",
+                            "5|0x00007fcd7ca3a6b6|libaudiofile.so.1`___lldb_unnamed_symbol835$$libaudiofile.so.1|422",
+                            "6|0x00007fcd7ca3a463|libaudiofile.so.1`___lldb_unnamed_symbol834$$libaudiofile.so.1|403",
+                            "7|0x00007fcd7ca55537|libaudiofile.so.1`___lldb_unnamed_symbol1164$$libaudiofile.so.1|247",
+                            "8|0x00007fcd7ca15e19|libaudiofile.so.1`afReadFrames|3609",
+                            "9|0x00000000004c54b8|sfconvert`copyaudiodata|168",
+                            "10|0x00000000004c5005|sfconvert`main|5445",
+                            "11|0x00007fcd7c622b6b|libc.so.6`__libc_start_main|235",
+                            "12|0x000000000041c4da|sfconvert`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://github.com/mpruett/audiofile/issues/50",
+            "testcase": "bug_2018_17095"
+        }
+    },
+    "evars": {
+        "ASAN_OPTIONS": "detect_leaks=0",
+        "LD_LIBRARY_PATH": "../cases/audiofile+0.3.6/install/lib"
+    },
+    "source": "https://audiofile.68k.org/audiofile-0.3.6.tar.gz",
+    "version": "0.3.6"
+}

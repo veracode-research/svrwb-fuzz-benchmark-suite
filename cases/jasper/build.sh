@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-SRCDIR=jasper
+SRCDIR=jasper-1.701.0
 
 . ../config.sh
 

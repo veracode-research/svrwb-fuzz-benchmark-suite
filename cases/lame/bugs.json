@@ -1,1 +1,727 @@
-bugs-lame-3.99.5.json
+{
+    "application": "lame",
+    "apppath": "lame-3.99.5/install/bin/lame",
+    "args": "-f -V 9 @@",
+    "bugs": {
+        "CVE-2015-9099": {
+            "crash": {
+                "x86_64-*-linux": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x000000000043911a lame`fill_buffer_resample + 1194",
+                            "frame #1: 0x0000000000438bc2 lame`fill_buffer + 178",
+                            "frame #2: 0x000000000041fdba lame`lame_encode_buffer_sample_t + 362",
+                            "frame #3: 0x000000000041dacb lame`lame_encode_buffer_template + 331",
+                            "frame #4: 0x000000000041dd4a lame`lame_encode_buffer_int + 90",
+                            "frame #5: 0x0000000000402e51 lame`lame_encoder_loop + 545",
+                            "frame #6: 0x0000000000402ad3 lame`lame_encoder + 51",
+                            "frame #7: 0x0000000000401ce8 lame`lame_main + 936",
+                            "frame #8: 0x000000000040362b lame`c_main + 91",
+                            "frame #9: 0x00000000004035c2 lame`main + 34",
+                            "frame #10: 0x00007ffff721ab97 libc.so.6`__libc_start_main(main=(lame`main), argc=6, argv=0x00007fffffffed88, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007fffffffed78) at libc-start.c:310",
+                            "frame #11: 0x000000000040187a lame`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-apple-macosx10.14.0": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x0000000100039824 lame`fill_buffer + 1812",
+                            "frame #1: 0x000000010001f458 lame`lame_encode_buffer_sample_t + 296",
+                            "frame #2: 0x000000010001deb5 lame`lame_encode_buffer_int + 21",
+                            "frame #3: 0x0000000100001823 lame`lame_encoder + 275",
+                            "frame #4: 0x000000010000113c lame`lame_main + 1564",
+                            "frame #5: 0x0000000100001d80 lame`main + 48",
+                            "frame #6: 0x00007fff631b33d5 libdyld.dylib`start + 1",
+                            "frame #7: 0x00007fff631b33d5 libdyld.dylib`start + 1"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x0000000000577e8a|lame`fill_buffer_resample|2810",
+                            "1|0x000000000057712e|lame`fill_buffer|574",
+                            "2|0x0000000000521cfc|lame`lame_encode_buffer_sample_t|1836",
+                            "3|0x000000000051ac28|lame`lame_encode_buffer_template|472",
+                            "4|0x000000000051aeca|lame`lame_encode_buffer_int|90",
+                            "5|0x00000000004c716d|lame`lame_encoder_loop|1197",
+                            "6|0x00000000004c6b03|lame`lame_encoder|51",
+                            "7|0x00000000004c46d5|lame`lame_main|3093",
+                            "8|0x00000000004c808b|lame`c_main|91",
+                            "9|0x00000000004c8022|lame`main|34",
+                            "10|0x00007fe0cfea7b6b|libc.so.6`__libc_start_main|235",
+                            "11|0x000000000041c4da|lame`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=775959",
+            "testcase": "lame_2015_9099.wav"
+        },
+        "CVE-2015-9100": {
+            "crash": {
+                "x86_64-*-linux": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x0000000000439173 lame`fill_buffer_resample + 1283",
+                            "frame #1: 0x0000000000438bc2 lame`fill_buffer + 178",
+                            "frame #2: 0x000000000041fdba lame`lame_encode_buffer_sample_t + 362",
+                            "frame #3: 0x000000000041dacb lame`lame_encode_buffer_template + 331",
+                            "frame #4: 0x000000000041d972 lame`lame_encode_buffer + 98",
+                            "frame #5: 0x000000000041e43a lame`lame_encode_flush + 746",
+                            "frame #6: 0x0000000000402f68 lame`lame_encoder_loop + 824",
+                            "frame #7: 0x0000000000402ad3 lame`lame_encoder + 51",
+                            "frame #8: 0x0000000000401ce8 lame`lame_main + 936",
+                            "frame #9: 0x000000000040362b lame`c_main + 91",
+                            "frame #10: 0x00000000004035c2 lame`main + 34",
+                            "frame #11: 0x00007ffff721ab97 libc.so.6`__libc_start_main(main=(lame`main), argc=6, argv=0x00007fffffffed88, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007fffffffed78) at libc-start.c:310",
+                            "frame #12: 0x000000000040187a lame`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-apple-macosx10.14.0": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x000000010003981f lame`fill_buffer + 1807",
+                            "frame #1: 0x000000010001f458 lame`lame_encode_buffer_sample_t + 296",
+                            "frame #2: 0x000000010001e298 lame`lame_encode_flush + 488",
+                            "frame #3: 0x00000001000019ee lame`lame_encoder + 734",
+                            "frame #4: 0x000000010000113c lame`lame_main + 1564",
+                            "frame #5: 0x0000000100001d80 lame`main + 48",
+                            "frame #6: 0x00007fff631b33d5 libdyld.dylib`start + 1",
+                            "frame #7: 0x00007fff631b33d5 libdyld.dylib`start + 1"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x0000000000577fe6|lame`fill_buffer_resample|3158",
+                            "1|0x000000000057712e|lame`fill_buffer|574",
+                            "2|0x0000000000521cfc|lame`lame_encode_buffer_sample_t|1836",
+                            "3|0x000000000051ac28|lame`lame_encode_buffer_template|472",
+                            "4|0x000000000051aa42|lame`lame_encode_buffer|98",
+                            "5|0x000000000051be42|lame`lame_encode_flush|1986",
+                            "6|0x00000000004c730c|lame`lame_encoder_loop|1612",
+                            "7|0x00000000004c6b03|lame`lame_encoder|51",
+                            "8|0x00000000004c46d5|lame`lame_main|3093",
+                            "9|0x00000000004c808b|lame`c_main|91",
+                            "10|0x00000000004c8022|lame`main|34",
+                            "11|0x00007fed225a8b6b|libc.so.6`__libc_start_main|235",
+                            "12|0x000000000041c4da|lame`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2015-9100",
+            "testcase": "lame_2015_9100.wav"
+        },
+        "CVE-2015-9101": {
+            "crash": {
+                "x86_64-*-linux": {
+                    "bt": null
+                },
+                "x86_64-apple-macosx10.14.0": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b085c|lame`__sanitizer::Die()|172",
+                            "2|0x000000000049a0c9|lame`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049965f|lame`::ReportGenericError()|367",
+                            "4|0x000000000049a388|lame`__asan_report_load4|40",
+                            "5|0x0000000000577e83|lame`fill_buffer_resample|2803",
+                            "6|0x000000000057712e|lame`fill_buffer|574",
+                            "7|0x0000000000521cfc|lame`lame_encode_buffer_sample_t|1836",
+                            "8|0x000000000051ac28|lame`lame_encode_buffer_template|472",
+                            "9|0x000000000051aa42|lame`lame_encode_buffer|98",
+                            "10|0x000000000051be42|lame`lame_encode_flush|1986",
+                            "11|0x00000000004c730c|lame`lame_encoder_loop|1612",
+                            "12|0x00000000004c6b03|lame`lame_encoder|51",
+                            "13|0x00000000004c46d5|lame`lame_main|3093",
+                            "14|0x00000000004c808b|lame`c_main|91",
+                            "15|0x00000000004c8022|lame`main|34",
+                            "16|0x00007f6a4b0b6b6b|libc.so.6`__libc_start_main|235",
+                            "17|0x000000000041c4da|lame`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/06/17/lame-heap-based-buffer-overflow-in-fill_buffer_resample-util-c/",
+            "testcase": "lame_2015_9101.wav"
+        },
+        "CVE-2017-11720": {
+            "crash": {
+                "x86_64-*-linux": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x0000000000408a63 lame`parse_wave_header + 963",
+                            "frame #1: 0x000000000040849c lame`parse_file_header + 92",
+                            "frame #2: 0x0000000000405822 lame`open_wave_file + 354",
+                            "frame #3: 0x0000000000405275 lame`init_infile + 261",
+                            "frame #4: 0x000000000040247a lame`init_files + 122",
+                            "frame #5: 0x0000000000401be6 lame`lame_main + 678",
+                            "frame #6: 0x000000000040362b lame`c_main + 91",
+                            "frame #7: 0x00000000004035c2 lame`main + 34",
+                            "frame #8: 0x00007ffff721ab97 libc.so.6`__libc_start_main(main=(lame`main), argc=6, argv=0x00007fffffffed88, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007fffffffed78) at libc-start.c:310",
+                            "frame #9: 0x000000000040187a lame`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-apple-macosx10.14.0": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000001000048ba lame`init_infile + 4858",
+                            "frame #1: 0x00000001000016a0 lame`init_files + 64",
+                            "frame #2: 0x0000000100000fe8 lame`lame_main + 1224",
+                            "frame #3: 0x0000000100001d80 lame`main + 48",
+                            "frame #4: 0x00007fff631b33d5 libdyld.dylib`start + 1",
+                            "frame #5: 0x00007fff631b33d5 libdyld.dylib`start + 1"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x00000000004d648a|lame`parse_wave_header|1434",
+                            "1|0x00000000004d5792|lame`parse_file_header|194",
+                            "2|0x00000000004cd7c1|lame`open_wave_file|1009",
+                            "3|0x00000000004cc978|lame`init_infile|1016",
+                            "4|0x00000000004c6031|lame`init_files|129",
+                            "5|0x00000000004c4461|lame`lame_main|2465",
+                            "6|0x00000000004c808b|lame`c_main|91",
+                            "7|0x00000000004c8022|lame`main|34",
+                            "8|0x00007f583e280b6b|libc.so.6`__libc_start_main|235",
+                            "9|0x000000000041c4da|lame`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-11720",
+            "testcase": "lame_2017_11720.wav"
+        },
+        "CVE-2017-15018": {
+            "crash": {
+                "x86_64-*-linux": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00000000004030c9 lame`lame_encoder_loop + 1177"
+                        ]
+                    }
+                },
+                "x86_64-apple-macosx10.14.0": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x0000000100039824 lame`fill_buffer + 1812",
+                            "frame #1: 0x000000010001f458 lame`lame_encode_buffer_sample_t + 296",
+                            "frame #2: 0x000000010001e298 lame`lame_encode_flush + 488",
+                            "frame #3: 0x00000001000019ee lame`lame_encoder + 734",
+                            "frame #4: 0x000000010000113c lame`lame_main + 1564",
+                            "frame #5: 0x0000000100001d80 lame`main + 48",
+                            "frame #6: 0x00007fff631b33d5 libdyld.dylib`start + 1",
+                            "frame #7: 0x00007fff631b33d5 libdyld.dylib`start + 1"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b085c|lame`__sanitizer::Die()|172",
+                            "2|0x000000000049a0c9|lame`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049965f|lame`::ReportGenericError()|367",
+                            "4|0x000000000049a388|lame`__asan_report_load4|40",
+                            "5|0x0000000000577e83|lame`fill_buffer_resample|2803",
+                            "6|0x000000000057712e|lame`fill_buffer|574",
+                            "7|0x0000000000521cfc|lame`lame_encode_buffer_sample_t|1836",
+                            "8|0x000000000051ac28|lame`lame_encode_buffer_template|472",
+                            "9|0x000000000051aa42|lame`lame_encode_buffer|98",
+                            "10|0x000000000051be42|lame`lame_encode_flush|1986",
+                            "11|0x00000000004c730c|lame`lame_encoder_loop|1612",
+                            "12|0x00000000004c6b03|lame`lame_encoder|51",
+                            "13|0x00000000004c46d5|lame`lame_main|3093",
+                            "14|0x00000000004c808b|lame`c_main|91",
+                            "15|0x00000000004c8022|lame`main|34",
+                            "16|0x00007f2bb10a9b6b|libc.so.6`__libc_start_main|235",
+                            "17|0x000000000041c4da|lame`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://www.cvedetails.com/cve-details.php?t=1&cve_id=CVE-2017-15018",
+            "testcase": "lame_2017_15018.wav"
+        },
+        "CVE-2017-15045": {
+            "crash": {
+                "x86_64-*-linux": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00007ffff7237e97 libc.so.6`__GI_raise(sig=2) at raise.c:51",
+                            "frame #1: 0x00007ffff7239801 libc.so.6`__GI_abort at abort.c:79",
+                            "frame #2: 0x00007ffff7282897 libc.so.6`__libc_message(action=do_abort, fmt=\"\") at libc_fatal.c:181",
+                            "frame #3: 0x00007ffff728990a libc.so.6`malloc_printerr(str=<unavailable>) at malloc.c:5350",
+                            "frame #4: 0x00007ffff7290ecc libc.so.6`__GI___libc_free at malloc.c:2846",
+                            "frame #5: 0x00007ffff7290ec0 libc.so.6`__GI___libc_free at malloc.c:3117",
+                            "frame #6: 0x00007ffff7290c30 libc.so.6`__GI___libc_free(mem=0x00000000006b6e10)",
+                            "frame #7: 0x0000000000437cdf lame`freegfc + 79",
+                            "frame #8: 0x000000000041e700 lame`lame_close + 144",
+                            "frame #9: 0x0000000000403637 lame`c_main + 103",
+                            "frame #10: 0x00000000004035c2 lame`main + 34",
+                            "frame #11: 0x00007ffff721ab97 libc.so.6`__libc_start_main(main=(lame`main), argc=6, argv=0x00007fffffffed88, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007fffffffed78) at libc-start.c:310",
+                            "frame #12: 0x000000000040187a lame`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-apple-macosx10.14.0": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x0000000100039824 lame`fill_buffer + 1812",
+                            "frame #1: 0x000000010001f458 lame`lame_encode_buffer_sample_t + 296",
+                            "frame #2: 0x000000010001e298 lame`lame_encode_flush + 488",
+                            "frame #3: 0x00000001000019ee lame`lame_encoder + 734",
+                            "frame #4: 0x000000010000113c lame`lame_main + 1564",
+                            "frame #5: 0x0000000100001d80 lame`main + 48",
+                            "frame #6: 0x00007fff631b33d5 libdyld.dylib`start + 1",
+                            "frame #7: 0x00007fff631b33d5 libdyld.dylib`start + 1"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b085c|lame`__sanitizer::Die()|172",
+                            "2|0x000000000049a0c9|lame`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049965f|lame`::ReportGenericError()|367",
+                            "4|0x000000000049a388|lame`__asan_report_load4|40",
+                            "5|0x0000000000577e83|lame`fill_buffer_resample|2803",
+                            "6|0x000000000057712e|lame`fill_buffer|574",
+                            "7|0x0000000000521cfc|lame`lame_encode_buffer_sample_t|1836",
+                            "8|0x000000000051ac28|lame`lame_encode_buffer_template|472",
+                            "9|0x000000000051aa42|lame`lame_encode_buffer|98",
+                            "10|0x000000000051be42|lame`lame_encode_flush|1986",
+                            "11|0x00000000004c730c|lame`lame_encoder_loop|1612",
+                            "12|0x00000000004c6b03|lame`lame_encoder|51",
+                            "13|0x00000000004c46d5|lame`lame_main|3093",
+                            "14|0x00000000004c808b|lame`c_main|91",
+                            "15|0x00000000004c8022|lame`main|34",
+                            "16|0x00007fac6bf5ab6b|libc.so.6`__libc_start_main|235",
+                            "17|0x000000000041c4da|lame`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://sourceforge.net/p/lame/bugs/478/",
+            "testcase": "lame_2017_15045.wav"
+        },
+        "CVE-2017-15046": {
+            "crash": {
+                "x86_64-*-linux": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x0000000000406385 lame`get_audio_common + 1429"
+                        ]
+                    }
+                },
+                "x86_64-apple-macosx10.14.0": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00007fff632ee2c6 libsystem_kernel.dylib`__pthread_kill + 10",
+                            "frame #1: 0x00007fff633a9bf1 libsystem_pthread.dylib`pthread_kill + 284",
+                            "frame #2: 0x00007fff63258745 libsystem_c.dylib`__abort + 144",
+                            "frame #3: 0x00007fff63258ff3 libsystem_c.dylib`__stack_chk_fail + 205",
+                            "frame #4: 0x00000001000059ac lame`get_audio_common + 3500"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b085c|lame`__sanitizer::Die()|172",
+                            "2|0x000000000049a0c9|lame`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049965f|lame`::ReportGenericError()|367",
+                            "4|0x000000000049a6eb|lame`__asan_report_store4|43",
+                            "5|0x00000000004d4ed2|lame`unpack_read_samples|2130",
+                            "6|0x00000000004d428b|lame`read_samples_pcm|651",
+                            "7|0x00000000004ce805|lame`get_audio_common|1173",
+                            "8|0x00000000004ce1df|lame`get_audio|47",
+                            "9|0x00000000004c7119|lame`lame_encoder_loop|1113",
+                            "10|0x00000000004c6b03|lame`lame_encoder|51",
+                            "11|0x00000000004c46d5|lame`lame_main|3093",
+                            "12|0x00000000004c808b|lame`c_main|91",
+                            "13|0x00000000004c8022|lame`main|34",
+                            "14|0x00007fe4db5c4b6b|libc.so.6`__libc_start_main|235",
+                            "15|0x000000000041c4da|lame`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://sourceforge.net/p/lame/bugs/479/",
+            "testcase": "lame_2017_15046.wav"
+        },
+        "CVE-2017-8419": {
+            "crash": {
+                "x86_64-*-linux": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x0000000000406385 lame`get_audio_common + 1429"
+                        ]
+                    }
+                },
+                "x86_64-apple-macosx10.14.0": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00007fff632ee2c6 libsystem_kernel.dylib`__pthread_kill + 10",
+                            "frame #1: 0x00007fff633a9bf1 libsystem_pthread.dylib`pthread_kill + 284",
+                            "frame #2: 0x00007fff63258745 libsystem_c.dylib`__abort + 144",
+                            "frame #3: 0x00007fff63258ff3 libsystem_c.dylib`__stack_chk_fail + 205",
+                            "frame #4: 0x00000001000059ac lame`get_audio_common + 3500"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b085c|lame`__sanitizer::Die()|172",
+                            "2|0x000000000049a0c9|lame`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049965f|lame`::ReportGenericError()|367",
+                            "4|0x000000000049a6eb|lame`__asan_report_store4|43",
+                            "5|0x00000000004d4ed2|lame`unpack_read_samples|2130",
+                            "6|0x00000000004d428b|lame`read_samples_pcm|651",
+                            "7|0x00000000004ce805|lame`get_audio_common|1173",
+                            "8|0x00000000004ce1df|lame`get_audio|47",
+                            "9|0x00000000004c7119|lame`lame_encoder_loop|1113",
+                            "10|0x00000000004c6b03|lame`lame_encoder|51",
+                            "11|0x00000000004c46d5|lame`lame_main|3093",
+                            "12|0x00000000004c808b|lame`c_main|91",
+                            "13|0x00000000004c8022|lame`main|34",
+                            "14|0x00007efe6cf62b6b|libc.so.6`__libc_start_main|235",
+                            "15|0x000000000041c4da|lame`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://sourceforge.net/p/lame/bugs/458/",
+            "testcase": "lame_2017_8419.wav"
+        },
+        "CVE-2017-9410": {
+            "crash": {
+                "x86_64-*-linux": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x000000000043911a lame`fill_buffer_resample + 1194",
+                            "frame #1: 0x0000000000438bc2 lame`fill_buffer + 178",
+                            "frame #2: 0x000000000041fdba lame`lame_encode_buffer_sample_t + 362",
+                            "frame #3: 0x000000000041dacb lame`lame_encode_buffer_template + 331",
+                            "frame #4: 0x000000000041dd4a lame`lame_encode_buffer_int + 90",
+                            "frame #5: 0x0000000000402e51 lame`lame_encoder_loop + 545",
+                            "frame #6: 0x0000000000402ad3 lame`lame_encoder + 51",
+                            "frame #7: 0x0000000000401ce8 lame`lame_main + 936",
+                            "frame #8: 0x000000000040362b lame`c_main + 91",
+                            "frame #9: 0x00000000004035c2 lame`main + 34",
+                            "frame #10: 0x00007ffff721ab97 libc.so.6`__libc_start_main(main=(lame`main), argc=6, argv=0x00007fffffffed88, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007fffffffed78) at libc-start.c:310",
+                            "frame #11: 0x000000000040187a lame`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-apple-macosx10.14.0": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x0000000100039824 lame`fill_buffer + 1812",
+                            "frame #1: 0x000000010001f458 lame`lame_encode_buffer_sample_t + 296",
+                            "frame #2: 0x000000010001deb5 lame`lame_encode_buffer_int + 21",
+                            "frame #3: 0x0000000100001823 lame`lame_encoder + 275",
+                            "frame #4: 0x000000010000113c lame`lame_main + 1564",
+                            "frame #5: 0x0000000100001d80 lame`main + 48",
+                            "frame #6: 0x00007fff631b33d5 libdyld.dylib`start + 1",
+                            "frame #7: 0x00007fff631b33d5 libdyld.dylib`start + 1"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x0000000000577e8a|lame`fill_buffer_resample|2810",
+                            "1|0x000000000057712e|lame`fill_buffer|574",
+                            "2|0x0000000000521cfc|lame`lame_encode_buffer_sample_t|1836",
+                            "3|0x000000000051ac28|lame`lame_encode_buffer_template|472",
+                            "4|0x000000000051aeca|lame`lame_encode_buffer_int|90",
+                            "5|0x00000000004c716d|lame`lame_encoder_loop|1197",
+                            "6|0x00000000004c6b03|lame`lame_encoder|51",
+                            "7|0x00000000004c46d5|lame`lame_main|3093",
+                            "8|0x00000000004c808b|lame`c_main|91",
+                            "9|0x00000000004c8022|lame`main|34",
+                            "10|0x00007f5200702b6b|libc.so.6`__libc_start_main|235",
+                            "11|0x000000000041c4da|lame`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://seclists.org/fulldisclosure/2017/Jul/63",
+            "testcase": "lame_2017_9410.wav"
+        },
+        "CVE-2017-9411": {
+            "crash": {
+                "x86_64-*-linux": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x0000000000439173 lame`fill_buffer_resample + 1283",
+                            "frame #1: 0x0000000000438bc2 lame`fill_buffer + 178",
+                            "frame #2: 0x000000000041fdba lame`lame_encode_buffer_sample_t + 362",
+                            "frame #3: 0x000000000041dacb lame`lame_encode_buffer_template + 331",
+                            "frame #4: 0x000000000041dd4a lame`lame_encode_buffer_int + 90",
+                            "frame #5: 0x0000000000402e51 lame`lame_encoder_loop + 545",
+                            "frame #6: 0x0000000000402ad3 lame`lame_encoder + 51",
+                            "frame #7: 0x0000000000401ce8 lame`lame_main + 936",
+                            "frame #8: 0x000000000040362b lame`c_main + 91",
+                            "frame #9: 0x00000000004035c2 lame`main + 34",
+                            "frame #10: 0x00007ffff721ab97 libc.so.6`__libc_start_main(main=(lame`main), argc=6, argv=0x00007fffffffed88, init=<unavailable>, fini=<unavailable>, rtld_fini=<unavailable>, stack_end=0x00007fffffffed78) at libc-start.c:310",
+                            "frame #11: 0x000000000040187a lame`_start + 42"
+                        ]
+                    }
+                },
+                "x86_64-apple-macosx10.14.0": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x000000010003981f lame`fill_buffer + 1807",
+                            "frame #1: 0x000000010001f458 lame`lame_encode_buffer_sample_t + 296",
+                            "frame #2: 0x000000010001deb5 lame`lame_encode_buffer_int + 21",
+                            "frame #3: 0x0000000100001823 lame`lame_encoder + 275",
+                            "frame #4: 0x000000010000113c lame`lame_main + 1564",
+                            "frame #5: 0x0000000100001d80 lame`main + 48",
+                            "frame #6: 0x00007fff631b33d5 libdyld.dylib`start + 1",
+                            "frame #7: 0x00007fff631b33d5 libdyld.dylib`start + 1"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "0|0x0000000000577fe6|lame`fill_buffer_resample|3158",
+                            "1|0x000000000057712e|lame`fill_buffer|574",
+                            "2|0x0000000000521cfc|lame`lame_encode_buffer_sample_t|1836",
+                            "3|0x000000000051ac28|lame`lame_encode_buffer_template|472",
+                            "4|0x000000000051aeca|lame`lame_encode_buffer_int|90",
+                            "5|0x00000000004c716d|lame`lame_encoder_loop|1197",
+                            "6|0x00000000004c6b03|lame`lame_encoder|51",
+                            "7|0x00000000004c46d5|lame`lame_main|3093",
+                            "8|0x00000000004c808b|lame`c_main|91",
+                            "9|0x00000000004c8022|lame`main|34",
+                            "10|0x00007f0b2b91eb6b|libc.so.6`__libc_start_main|235",
+                            "11|0x000000000041c4da|lame`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://seclists.org/fulldisclosure/2017/Jul/63",
+            "testcase": "lame_2017_9411.wav"
+        },
+        "CVE-2017-9412": {
+            "crash": {
+                "x86_64-*-linux": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x0000000000406385 lame`get_audio_common + 1429"
+                        ]
+                    }
+                },
+                "x86_64-apple-macosx10.14.0": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x00007fff632ee2c6 libsystem_kernel.dylib`__pthread_kill + 10",
+                            "frame #1: 0x00007fff633a9bf1 libsystem_pthread.dylib`pthread_kill + 284",
+                            "frame #2: 0x00007fff63258745 libsystem_c.dylib`__abort + 144",
+                            "frame #3: 0x00007fff63258ff3 libsystem_c.dylib`__stack_chk_fail + 205",
+                            "frame #4: 0x00000001000059ac lame`get_audio_common + 3500"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b085c|lame`__sanitizer::Die()|172",
+                            "2|0x000000000049a0c9|lame`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049965f|lame`::ReportGenericError()|367",
+                            "4|0x000000000049a6eb|lame`__asan_report_store4|43",
+                            "5|0x00000000004d4ed2|lame`unpack_read_samples|2130",
+                            "6|0x00000000004d428b|lame`read_samples_pcm|651",
+                            "7|0x00000000004ce805|lame`get_audio_common|1173",
+                            "8|0x00000000004ce1df|lame`get_audio|47",
+                            "9|0x00000000004c7119|lame`lame_encoder_loop|1113",
+                            "10|0x00000000004c6b03|lame`lame_encoder|51",
+                            "11|0x00000000004c46d5|lame`lame_main|3093",
+                            "12|0x00000000004c808b|lame`c_main|91",
+                            "13|0x00000000004c8022|lame`main|34",
+                            "14|0x00007f8bd102ab6b|libc.so.6`__libc_start_main|235",
+                            "15|0x000000000041c4da|lame`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://seclists.org/fulldisclosure/2017/Jul/63",
+            "testcase": "lame_2017_9412.wav"
+        },
+        "CVE-2017-9869": {
+            "crash": {
+                "x86_64-*-linux": {
+                    "bt": null
+                },
+                "x86_64-apple-macosx10.14.0": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {}
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/06/17/lame-global-buffer-overflow-in-ii_step_one-layer2-c/",
+            "testcase": "lame_2017_9869.data"
+        },
+        "CVE-2017-9870": {
+            "crash": {
+                "x86_64-*-linux": {
+                    "bt": null
+                },
+                "x86_64-apple-macosx10.14.0": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b085c|lame`__sanitizer::Die()|172",
+                            "2|0x000000000049a0c9|lame`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049965f|lame`::ReportGenericError()|367",
+                            "4|0x000000000049a388|lame`__asan_report_load4|40",
+                            "5|0x00000000005b0913|lame`III_i_stereo|1331",
+                            "6|0x00000000005a6b77|lame`decode_layer3_frame|4631",
+                            "7|0x0000000000596688|lame`decodeMP3_clipchoice|7832",
+                            "8|0x00000000005947d5|lame`decodeMP3|165",
+                            "9|0x000000000058a5f5|lame`decode1_headersB_clipchoice|693",
+                            "10|0x000000000058ce76|lame`hip_decode1_headersB|166",
+                            "11|0x000000000058cd51|lame`hip_decode1_headers|417",
+                            "12|0x00000000004d44c6|lame`lame_decode_fromfile|390",
+                            "13|0x00000000004d3d32|lame`read_samples_mp3|66",
+                            "14|0x00000000004ce76b|lame`get_audio_common|1019",
+                            "15|0x00000000004ce1df|lame`get_audio|47",
+                            "16|0x00000000004c7119|lame`lame_encoder_loop|1113",
+                            "17|0x00000000004c6b03|lame`lame_encoder|51",
+                            "18|0x00000000004c46d5|lame`lame_main|3093",
+                            "19|0x00000000004c808b|lame`c_main|91",
+                            "20|0x00000000004c8022|lame`main|34",
+                            "21|0x00007faa28660b6b|libc.so.6`__libc_start_main|235",
+                            "22|0x000000000041c4da|lame`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/06/17/lame-global-buffer-overflow-in-iii_i_stereo-layer3-c/",
+            "testcase": "lame_2017_9870.mp3"
+        },
+        "CVE-2017-9871": {
+            "crash": {
+                "x86_64-*-linux": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x0000000000449653 lame`III_antialias + 179",
+                            "frame #1: 0x0000000000446fee lame`decode_layer3_frame + 4222"
+                        ]
+                    }
+                },
+                "x86_64-apple-macosx10.14.0": {
+                    "bt": {
+                        "thd0": [
+                            "frame #0: 0x000000010004dc78 lame`III_dequantize_sample + 1848",
+                            "frame #1: 0x000000010004a4bd lame`decode_layer3_frame + 1469",
+                            "frame #2: 0x0000000100043e68 lame`decodeMP3_clipchoice + 3288",
+                            "frame #3: 0x0000000100043181 lame`decodeMP3 + 81",
+                            "frame #4: 0x0000000100040333 lame`hip_decode1_headersB + 67",
+                            "frame #5: 0x00000001000402e8 lame`hip_decode1_headers + 24",
+                            "frame #6: 0x0000000100006afb lame`read_samples_mp3 + 283",
+                            "frame #7: 0x0000000100004d7f lame`get_audio_common + 383",
+                            "frame #8: 0x0000000100004b8d lame`get_audio + 61",
+                            "frame #9: 0x00000001000017eb lame`lame_encoder + 219",
+                            "frame #10: 0x000000010000113c lame`lame_main + 1564",
+                            "frame #11: 0x0000000100001d80 lame`main + 48",
+                            "frame #12: 0x00007fff631b33d5 libdyld.dylib`start + 1",
+                            "frame #13: 0x00007fff631b33d5 libdyld.dylib`start + 1"
+                        ]
+                    }
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b085c|lame`__sanitizer::Die()|172",
+                            "2|0x000000000049a0c9|lame`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049965f|lame`::ReportGenericError()|367",
+                            "4|0x000000000049a6eb|lame`__asan_report_store4|43",
+                            "5|0x00000000005b1cbf|lame`III_i_stereo|6367",
+                            "6|0x00000000005a6b77|lame`decode_layer3_frame|4631",
+                            "7|0x0000000000596688|lame`decodeMP3_clipchoice|7832",
+                            "8|0x00000000005947d5|lame`decodeMP3|165",
+                            "9|0x000000000058a5f5|lame`decode1_headersB_clipchoice|693",
+                            "10|0x000000000058ce76|lame`hip_decode1_headersB|166",
+                            "11|0x000000000058cd51|lame`hip_decode1_headers|417",
+                            "12|0x00000000004d4540|lame`lame_decode_fromfile|512",
+                            "13|0x00000000004d3d32|lame`read_samples_mp3|66",
+                            "14|0x00000000004ce76b|lame`get_audio_common|1019",
+                            "15|0x00000000004ce1df|lame`get_audio|47",
+                            "16|0x00000000004c7119|lame`lame_encoder_loop|1113",
+                            "17|0x00000000004c6b03|lame`lame_encoder|51",
+                            "18|0x00000000004c46d5|lame`lame_main|3093",
+                            "19|0x00000000004c808b|lame`c_main|91",
+                            "20|0x00000000004c8022|lame`main|34",
+                            "21|0x00007f04ff1c1b6b|libc.so.6`__libc_start_main|235",
+                            "22|0x000000000041c4da|lame`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/06/17/lame-stack-based-buffer-overflow-in-iii_i_stereo-layer3-c/",
+            "testcase": "lame_2017_9871.mp3"
+        },
+        "CVE-2017-9872": {
+            "crash": {
+                "x86_64-*-linux": {
+                    "bt": null
+                },
+                "x86_64-apple-macosx10.14.0": {
+                    "bt": null
+                },
+                "x86_64-unknown-linux-gnu": {
+                    "bt": {
+                        "thd0": [
+                            "1|0x00000000004b085c|lame`__sanitizer::Die()|172",
+                            "2|0x000000000049a0c9|lame`::~ScopedInErrorReport()|441",
+                            "3|0x000000000049965f|lame`::ReportGenericError()|367",
+                            "4|0x000000000049a6eb|lame`__asan_report_store4|43",
+                            "5|0x00000000005ada89|lame`III_dequantize_sample|12137",
+                            "6|0x00000000005a6816|lame`decode_layer3_frame|3766",
+                            "7|0x0000000000596688|lame`decodeMP3_clipchoice|7832",
+                            "8|0x00000000005947d5|lame`decodeMP3|165",
+                            "9|0x000000000058a5f5|lame`decode1_headersB_clipchoice|693",
+                            "10|0x000000000058ce76|lame`hip_decode1_headersB|166",
+                            "11|0x000000000058cd51|lame`hip_decode1_headers|417",
+                            "12|0x00000000004d44c6|lame`lame_decode_fromfile|390",
+                            "13|0x00000000004d3d32|lame`read_samples_mp3|66",
+                            "14|0x00000000004ce76b|lame`get_audio_common|1019",
+                            "15|0x00000000004ce1df|lame`get_audio|47",
+                            "16|0x00000000004c7119|lame`lame_encoder_loop|1113",
+                            "17|0x00000000004c6b03|lame`lame_encoder|51",
+                            "18|0x00000000004c46d5|lame`lame_main|3093",
+                            "19|0x00000000004c808b|lame`c_main|91",
+                            "20|0x00000000004c8022|lame`main|34",
+                            "21|0x00007faeb7cdcb6b|libc.so.6`__libc_start_main|235",
+                            "22|0x000000000041c4da|lame`_start|42"
+                        ]
+                    }
+                }
+            },
+            "description": "https://blogs.gentoo.org/ago/2017/06/17/lame-stack-based-buffer-overflow-in-iii_dequantize_sample-layer3-c/",
+            "testcase": "lame_2017_9872.mp3"
+        }
+    },
+    "evars": {
+        "ASAN_OPTIONS": "detect_leaks=0"
+    },
+    "source": "https://sourceforge.net/projects/lame/files/lame/3.99/lame-3.99.5.tar.gz/download",
+    "version": "3.99.5"
+}
