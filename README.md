@@ -1,6 +1,6 @@
 # Single Version, Real World (Dead) Bug Fuzzer Benchmark Suite
 
-Note: Some/all of these apps will be added to the Google FuzzBench project.
+Note: Some/all of these apps will be added to the [Google FuzzBench](https://github.com/google/fuzzbench) project.
 While there are no comparisons of bugs found, there will be and this project
 is likely what you want to use if you are building a new general purpose
 fuzzer. First push of some apps from here is in pull req 259.
