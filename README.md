@@ -1,6 +1,9 @@
 # Single Version, Real World (Dead) Bug Fuzzer Benchmark Suite
 
-Note: This is a **Work in Progress**.
+Note: Some/all of these apps will be added to the Google FuzzBench project.
+While there are no comparisons of bugs found, there will be and this project
+is likely what you want to use if you are building a new general purpose
+fuzzer. First push of some apps from here is in pull req 259.
 
 Prior to going into any details, I will note that I have mixed opinions
 on how to do benchmarking of fuzzers and whether or not that is a good
